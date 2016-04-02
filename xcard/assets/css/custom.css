@@ -1,0 +1,46 @@
+.iphone {
+    position: absolute;
+    height: 766px;
+    width: 326px;
+    left: 160px;
+    top: 100px;
+    background: url("../../images/xcard.png") no-repeat;
+    z-index: 1;
+}
+
+#banner h2 {
+    text-align: right;
+}
+
+#banner p {
+    text-align: right;
+}
+
+#one {
+    z-index: 2;
+}
+
+.copyright li {
+    float: right;
+}
+
+.ending {
+    text-align: center;
+    font-family: Meiryo;
+}
+
+.wrapper.spotlight .image {
+    border-radius: 5px;
+}
+
+.wrapper.spotlight .image img {
+    border-radius: 5px;
+}
+
+#one div.content h2.major {
+    color: #4f4f4f;
+}
+
+#one div.content p {
+    color: #4f4f4f;
+}
