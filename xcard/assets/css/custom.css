@@ -16,9 +16,38 @@
     text-align: right;
 }
 
+#banner .inner a {
+    float: right;
+    background-color: black;
+    border-radius: 5px;
+    display: block;
+    width: 185px;
+    height: 54px;
+    border-bottom: none;
+}
+
+    #banner .inner a img {
+        margin: 6px auto 0;
+        display: block;
+    }
+
+    #banner .inner .sns-button {
+        margin-top: 1em;
+        clear: both;
+        float: right;
+    }
+
 #one {
     z-index: 2;
 }
+
+    #one div.content h2.major {
+        color: #4f4f4f;
+    }
+
+    #one div.content p {
+        color: #4f4f4f;
+    }
 
 .copyright li {
     float: right;
@@ -33,14 +62,6 @@
     border-radius: 5px;
 }
 
-.wrapper.spotlight .image img {
-    border-radius: 5px;
-}
-
-#one div.content h2.major {
-    color: #4f4f4f;
-}
-
-#one div.content p {
-    color: #4f4f4f;
-}
+    .wrapper.spotlight .image img {
+        border-radius: 5px;
+    }
