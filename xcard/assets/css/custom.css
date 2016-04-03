@@ -65,6 +65,22 @@
         color: #4f4f4f;
     }
 
+    #one div h2.major {
+        border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+    }
+
+    #three div.content h2.major {
+        color: #4f4f4f;
+    }
+
+    #three div.content p {
+        color: #4f4f4f;
+    }
+
+    #three div h2.major {
+        border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+    }
+
 .copyright li {
     float: right;
 }
