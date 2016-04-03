@@ -39,13 +39,13 @@
 
         #banner .inner .sns-button .twitter {
             float: right;
-            margin-top: 6px;
+            margin-top: 8px;
             margin-right: 8px;
         }
 
         #banner .inner .sns-button .hatena {
             float: right;
-            margin-top: 6px;
+            margin-top: 8px;
             margin-right: 8px;
         }
 
@@ -162,6 +162,14 @@
         float: none;
         margin: 8px auto 0;
         display: block;
+    }
+
+    #banner .inner .sns-button .twitter {
+            margin-top: 6px;
+        }
+
+    #banner .inner .sns-button .hatena {
+        margin-top: 6px;
     }
 
 }
