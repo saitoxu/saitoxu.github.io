@@ -165,3 +165,9 @@
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    #banner {
+        padding: 5em 10px 4.25em;
+    }
+}
