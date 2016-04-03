@@ -1,5 +1,5 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+/* @import url(font-awesome.min.css); */
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic"); */
 
 /*
 	Solid State by HTML5 UP
@@ -2002,7 +2002,8 @@
 
 	select option {
 		color: #ffffff;
-		background: #2e3141;
+		/* background: #2e3141; */
+		background: #0f9d58;
 	}
 
 	input[type="text"],
@@ -2077,7 +2078,8 @@
 			background: #ffffff;
 			border-color: #ffffff;
 			content: '\f00c';
-			color: #2e3141;
+			/* color: #2e3141; */
+			color: #0f9d58;
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -3120,9 +3122,11 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				/* padding: 7em 0 8.25em 0 ; */
+				padding: 7em 0 12.25em 0 ;
+				/* background-color: #2e3141; */
+				background-color: #0f9d58;
+				/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 				background-size: auto, cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
@@ -3231,8 +3235,9 @@
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			/* background-color: #2e3141; */
+			background-color: #0f9d58;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
@@ -3274,7 +3279,8 @@
 	}
 
 	.wrapper {
-		background-color: #2e3141;
+		/* background-color: #2e3141; */
+		background-color: #0f9d58;
 		margin: 6.5em 0;
 		position: relative;
 	}
@@ -3629,8 +3635,9 @@
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			/* background-color: #2e3141; */
+			background-color: #0f9d58;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
