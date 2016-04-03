@@ -16,7 +16,7 @@
     text-align: right;
 }
 
-#banner .inner a {
+#banner .inner a.btn-download {
     float: right;
     background-color: black;
     border-radius: 5px;
@@ -46,6 +46,11 @@
         #banner .inner .sns-button .hatena {
             float: right;
             margin-top: 8px;
+            margin-right: 8px;
+        }
+
+        #banner .inner .sns-button .fb-like {
+            float: right;
         }
 
 #one {
