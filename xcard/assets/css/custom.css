@@ -32,10 +32,21 @@
     }
 
     #banner .inner .sns-button {
-        margin-top: 1em;
+        /* margin-top: 1em; */
         clear: both;
         float: right;
     }
+
+        #banner .inner .sns-button .twitter {
+            float: right;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+
+        #banner .inner .sns-button .hatena {
+            float: right;
+            margin-top: 8px;
+        }
 
 #one {
     z-index: 2;
