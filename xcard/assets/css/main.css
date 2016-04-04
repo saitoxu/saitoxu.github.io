@@ -3722,3 +3722,216 @@
 		}
 
 	}
+
+/* ---------- custom ---------- */
+
+.iphone {
+    position: absolute;
+    float: left;
+    height: 600px;
+    width: 326px;
+    left: 10em;
+    top: 6.25em;
+    background: url("../../images/xcard.png") no-repeat;
+    z-index: 1;
+}
+
+.iphone:after {
+    clear: both !important;
+}
+
+#banner h2 {
+    text-align: right;
+}
+
+#banner p {
+    text-align: right;
+}
+
+#banner .inner a.btn-download {
+    float: right;
+    background-color: black;
+    border-radius: 5px;
+    display: block;
+    width: 185px;
+    height: 54px;
+    border-bottom: none;
+}
+
+    #banner .inner a img {
+        margin: 6px auto 0;
+        display: block;
+    }
+
+    #banner .inner .sns-button {
+        margin-top: 1px;
+        clear: both;
+        float: right;
+    }
+
+        #banner .inner .sns-button .twitter {
+            float: right;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+
+        #banner .inner .sns-button .hatena {
+            float: right;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+
+        #banner .inner .sns-button .fb-like {
+            float: right;
+        }
+
+#one {
+    z-index: 2;
+}
+
+    #one div.content h2.major {
+        color: #4f4f4f;
+    }
+
+    #one div.content p {
+        color: #4f4f4f;
+    }
+
+    #one div h2.major {
+        border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+    }
+
+    #three div.content h2.major {
+        color: #4f4f4f;
+    }
+
+    #three div.content p {
+        color: #4f4f4f;
+    }
+
+    #three div h2.major {
+        border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+    }
+
+.copyright li {
+    float: right;
+}
+
+.ending {
+    text-align: center;
+    border-bottom: none;
+}
+
+.ending img {
+    width: 120px;
+}
+
+.wrapper.spotlight .image {
+    border-radius: 5px;
+}
+
+    .wrapper.spotlight .image img {
+        border-radius: 5px;
+    }
+
+.logo-link {
+    clear: both;
+}
+
+#banner .inner .logo-link img {
+    margin-right: 0;
+    margin-top: 0;
+    width: 240px;
+}
+
+.header-logo img {
+    margin-top: 21px;
+    width: 60px;
+}
+
+.languages {
+    float: right;
+    color: #4f4f4f;
+}
+
+.languages a {
+    color: #0f9d58;
+    border-bottom: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .iphone {
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    #banner .inner .logo-link img {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    #banner p {
+        text-align: center;
+    }
+
+    .iphone {
+        display: none;
+    }
+
+    #banner .inner a.btn-download {
+        margin: 0 auto;
+        float: none;
+        width: 150px;
+        height: 50px;
+    }
+
+    #banner .inner a.btn-download img {
+        padding-top: 9px;
+        width: 120px;
+        /*height: 36px;*/
+    }
+
+    .ending img {
+        display: block;
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    .header-logo img {
+        margin-top: 17px;
+        width: 40px;
+    }
+
+    #banner .inner .sns-button {
+        width: 297px;
+        height: 36px;
+        float: none;
+        margin: 8px auto 0;
+        display: block;
+    }
+
+    #banner .inner .sns-button .twitter {
+            margin-top: 6px;
+        }
+
+    #banner .inner .sns-button .hatena {
+        margin-top: 6px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .copyright li {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #banner {
+        padding: 5em 10px 4.25em;
+    }
+}
+
+
