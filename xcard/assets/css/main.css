@@ -3465,7 +3465,7 @@
 				}
 
 				@media all and (-ms-high-contrast:none){
-					.wrapper.spotlight:after {
+					.wrapper.spotlight.style2:after {
 						background-color: #8ab19e;
 					}
 				}
