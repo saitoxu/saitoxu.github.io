@@ -3035,8 +3035,8 @@
 /* Banner */
 
 	#banner {
-		/* padding: 10em 0 4.75em 0 ; */
-		padding: 8em 0 6em 0 ;
+		/* padding: 10em 0 4.75em 0; */
+		padding: 8em 0 5em 0;
 	}
 
 		#banner .inner {
@@ -3383,6 +3383,19 @@
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:#dddddd;' /%3E%3C/svg%3E");
 			}
 
+			@-moz-document url-prefix() {
+				.wrapper.spotlight:after {
+					background-color: #dddddd;
+				}
+			}
+
+			@media all and (-ms-high-contrast:none){
+				.wrapper.spotlight:after {
+					background-color: #dddddd;
+				}
+			}
+
+
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -3436,6 +3449,18 @@
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
 					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d;' /%3E%3C/svg%3E"); */
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:#8ab19e;' /%3E%3C/svg%3E");
+				}
+
+				@-moz-document url-prefix() {
+					.wrapper.spotlight.style2:after {
+						background-color: #8ab19e;
+					}
+				}
+
+				@media all and (-ms-high-contrast:none){
+					.wrapper.spotlight:after {
+						background-color: #8ab19e;
+					}
 				}
 
 			.wrapper.spotlight.style3 {
@@ -3725,13 +3750,17 @@
 
 /* ---------- custom ---------- */
 
+.inner {
+	position: relative;
+}
+
 .iphone {
     position: absolute;
-    float: left;
+    /*float: left;*/
     height: 600px;
-    width: 326px;
-    left: 10em;
-    top: 6.25em;
+    width: 292px;
+    left: -1em;
+    top: -3em;
     background: url("../../images/xcard.png") no-repeat;
     z-index: 1;
 }
@@ -3742,10 +3771,12 @@
 
 #banner h2 {
     text-align: right;
+    margin-bottom: 0.4em;
 }
 
 #banner p {
     text-align: right;
+    margin-bottom: 1em;
 }
 
 #banner .inner a.btn-download {
@@ -3857,12 +3888,6 @@
 .languages a {
     color: #0f9d58;
     border-bottom: none;
-}
-
-@media screen and (max-width: 1280px) {
-    .iphone {
-        left: 80px;
-    }
 }
 
 @media screen and (max-width: 1080px) {
