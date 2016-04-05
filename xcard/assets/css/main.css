@@ -3129,7 +3129,8 @@
 				/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 				background-size: auto, cover;
 				background-position: center, center;
-				margin-bottom: -6.5em;
+				/* margin-bottom: -6.5em; */
+				margin-bottom: -3em;
 			}
 
 		}
@@ -3240,7 +3241,8 @@
 			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
-			margin-bottom: -6.5em;
+			/* margin-bottom: -6.5em; */
+			margin-bottom: -3em;
 		}
 
 	}
@@ -3263,7 +3265,8 @@
 	@media screen and (max-width: 736px) {
 
 		#wrapper > header {
-			padding: 6.5em 2em 3em 2em ;
+			/* padding: 6.5em 2em 3em 2em ; */
+			padding: 3em 2em 3em 2em ;
 			background-size: auto, 125%;
 			margin-bottom: -2.5em;
 		}
@@ -3281,7 +3284,8 @@
 	.wrapper {
 		/* background-color: #2e3141; */
 		background-color: #0f9d58;
-		margin: 6.5em 0;
+		/* margin: 6.5em 0; */
+		margin: 3em 0;
 		position: relative;
 	}
 
@@ -3294,14 +3298,16 @@
 			background-size: 100% 100%;
 			content: '';
 			display: block;
-			height: 6.5em;
+			/* height: 6.5em; */
+			height: 3em;
 			position: absolute;
 			width: 100%;
 		}
 
 		.wrapper:before {
 			left: 0;
-			top: -6.5em;
+			/* top: -6.5em; */
+			top: -3em;
 		}
 
 		.wrapper:after {
@@ -3309,7 +3315,8 @@
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -6.5em;
+			/* bottom: -6.5em; */
+			bottom: -3em;
 			left: 0;
 		}
 
@@ -3669,8 +3676,9 @@
 			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto, cover;
 			background-position: center, center;
-			margin-top: -6.5em;
-			padding-top: 6.5em;
+			/* margin-top: -6.5em; */
+			margin-top: -3em;
+			padding-top: 3em;
 		}
 
 	}
@@ -3818,6 +3826,7 @@
 
 #one {
     z-index: 2;
+    margin-top: 6.5em;
 }
 
     #one div.content h2.major {
@@ -3832,17 +3841,17 @@
         border-bottom: solid 2px rgba(0, 0, 0, 0.125);
     }
 
-    #three div.content h2.major {
-        color: #4f4f4f;
-    }
+#three div.content h2.major {
+    color: #4f4f4f;
+}
 
-    #three div.content p {
-        color: #4f4f4f;
-    }
+#three div.content p {
+    color: #4f4f4f;
+}
 
-    #three div h2.major {
-        border-bottom: solid 2px rgba(0, 0, 0, 0.125);
-    }
+#three div h2.major {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.125);
+}
 
 .copyright li {
     float: right;
