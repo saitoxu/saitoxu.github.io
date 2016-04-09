@@ -3825,6 +3825,10 @@
             float: right;
         }
 
+.wrapper .inner .content p {
+	text-align: left;
+}
+
 #one {
     z-index: 2;
     margin-top: 6.5em;
