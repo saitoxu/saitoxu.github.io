@@ -3,3 +3,27 @@
 #service {
     background-color: #fafafa;
 }
+.fa-pencil:before {
+    position: absolute;
+    font-size: 3em;
+    margin-top: -0.32em;
+    margin-left: -0.4em;
+}
+.fa-code:before {
+    position: absolute;
+    font-size: 2.8em;
+    margin-top: -0.32em;
+    margin-left: -0.52em;
+}
+.fa-desktop:before {
+    position: absolute;
+    font-size: 2.6em;
+    margin-top: -0.18em;
+    margin-left: -0.52em;
+}
+@media screen and (max-width : 1024px) {
+    .main-head h1 { font-size : 4em };
+}
+@media screen and (max-width : 396px) {
+    .main-head h1 { font-size : 3em };
+}
