@@ -13,7 +13,7 @@
     position: absolute;
     font-size: 2.8em;
     margin-top: -0.32em;
-    margin-left: -0.52em;
+    margin-left: -0.54em;
 }
 .fa-desktop:before {
     position: absolute;
@@ -26,4 +26,7 @@
 }
 @media screen and (max-width : 396px) {
     .main-head h1 { font-size : 3em };
+}
+.btn-primary {
+    background: #39c5f9;
 }
