@@ -28,5 +28,14 @@
     .main-head h1 { font-size : 3em };
 }
 .btn-primary {
-    background: #39c5f9;
+    background: #2d7aed;
+}
+.my-icon {
+    border: 1px solid #2d7aed;
+}
+.my-service:hover .my-icon {
+    background: #2d7aed;
+}
+p, address {
+    font-family: Montserrat;
 }
