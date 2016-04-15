@@ -19,7 +19,7 @@
     position: absolute;
     font-size: 2.6em;
     margin-top: -0.18em;
-    margin-left: -0.52em;
+    margin-left: -0.54em;
 }
 @media screen and (max-width : 1024px) {
     .main-head h1 { font-size : 4em };
