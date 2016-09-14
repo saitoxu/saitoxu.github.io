@@ -1,0 +1,25 @@
+{
+  "name": "saitoxu.github.io",
+  "version": "1.0.0",
+  "description": "my portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saitoxu/saitoxu.github.io.git"
+  },
+  "author": "Yosuke Saito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saitoxu/saitoxu.github.io/issues"
+  },
+  "homepage": "https://github.com/saitoxu/saitoxu.github.io#readme",
+  "devDependencies": {
+    "gulp-cssmin": "^0.1.7",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
