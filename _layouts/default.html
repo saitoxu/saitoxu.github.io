@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <meta name="description" content="Programming, Web, Books, AI, Machine Learning from Tokyo">
-    <link rel="stylesheet" href="http://saitoxu.io/blog/css/main.css">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ site.url }}/blog/css/main.css">
     <link rel="canonical" href="http://saitoxu.io/blog/">
     <link rel="alternate" type="application/rss+xml" title="Yosuke Saito&#39;s Blog" href="http://saitoxu.io/blog/feed.xml">
   </head>
   <body>
     <header class="site-header" role="banner">
       <div class="wrapper">
-        <a class="site-title" href="http://saitoxu.io/blog/">Yosuke Saito&#39;s Blog</a>
+        <a class="site-title" href="{{ site.url }}/blog/">Yosuke Saito&#39;s Blog</a>
         <nav class="site-nav">
           <a href="#" class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -23,7 +23,7 @@
             </svg>
           </a>
           <div class="trigger">
-            <a class="page-link" href="http://saitoxu.io/blog/about/">About</a>
+            <a class="page-link" href="{{ site.url }}/blog/about/">About</a>
           </div>
         </nav>
       </div>
@@ -68,7 +68,7 @@
             </ul>
           </div>
           <div class="footer-col footer-col-3">
-            <p>Programming, Web, Books, AI, Machine Learning from Tokyo</p>
+            <p>{{ site.description }}</p>
           </div>
         </div>
       </div>
