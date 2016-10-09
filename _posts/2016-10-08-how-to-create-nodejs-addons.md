@@ -122,6 +122,8 @@ const addon = require('bindings')('factorial.node');
 console.log(addon.factorial(10)); // 3628800
 ```
 
+I put the above code on GitHub repository: [Node.js Addon Sample](https://github.com/saitoxu/nodejs-addon-sample)
+
 Thanks for reading, following steps are written in here.
 
 [nodejs/node-addon-examples: Node.js C++ addon examples from http://nodejs.org/docs/latest/api/addons.html](https://github.com/nodejs/node-addon-examples)
