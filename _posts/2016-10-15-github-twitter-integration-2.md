@@ -122,3 +122,5 @@ $ sudo service nginx start
 GitHub Webhook and Twitter API are easy to use,
 
 please use this post as reference and try to use them!
+
+Sample code: [GitHub Twitter integration](https://github.com/saitoxu/github-twitter-integration)
