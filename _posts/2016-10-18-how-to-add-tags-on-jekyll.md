@@ -8,7 +8,6 @@ I added tags on my top page and every posts without plugin.
 
 Today, I'll introduce how to add tags on Jekyll.
 
-
 #### **Step 1**
 Add tags on your post.
 For example, this article has tags like this.
@@ -22,15 +21,12 @@ Then each post has `tags` variable.
 You can access these tags by the following code from `index.html`.
 
 ```html
-<div class="home">
-
+{% raw %}<div class="home">
   <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
         </h2>
@@ -40,11 +36,8 @@ You can access these tags by the following code from `index.html`.
       </li>
     {% endfor %}
   </ul>
-
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
-
+</div>{% endraw %}
 ```
 
 #### **Step 3**
@@ -53,7 +46,7 @@ From each page, you can access it via `page` variable.
 See the following example.
 
 ```html
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+{% raw %}<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -65,7 +58,7 @@ See the following example.
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-</article>
+</article>{% endraw %}
 ```
 
 #### **Step 4**
