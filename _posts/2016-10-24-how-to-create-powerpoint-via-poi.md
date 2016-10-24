@@ -13,7 +13,7 @@ you can create the following PowerPoint file automatically.
 ![Sample PowerPoint]({{site.baseurl}}/images/2016-10-24-sample-power-point.png)
 
 #### **Step 1**
-Install POI libraries, modify `pom.xml` like this.
+To install POI libraries, add these dependencies to `pom.xml` like this.
 
 ```xml
 <dependencies>
