@@ -12,7 +12,7 @@ and executes tasks which you want to do automatically.
 Usage is below.
 
 ```js
-gulp.watch(['監視したいファイル'], ['行いたいタスク'])
+gulp.watch(['files you want to watch'], ['tasks you want to do'])
 ```
 
 Let's create task which watches the change of SCSS file and compile it
