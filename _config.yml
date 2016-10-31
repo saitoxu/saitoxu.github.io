@@ -25,3 +25,7 @@ github_username:  saitoxu
 # Build settings
 markdown: kramdown
 theme: minima
+
+# pagination
+gems: [jekyll-paginate]
+paginate: 10

@@ -2,11 +2,11 @@
 layout: post
 title: "Gulp first step"
 date: 2016-10-29
-tags: Gulp JavaScript
+tags: Gulp JavaScript Sass SCSS
 ---
 Today I'll introduce the first step of Gulp.
 
-As first step, let's try to compile Scss file by using Gulp.
+As first step, let's try to compile SCSS file by using Gulp.
 
 #### **Step 1**
 First, create npm project.
