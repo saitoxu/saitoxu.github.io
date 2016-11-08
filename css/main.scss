@@ -79,6 +79,9 @@ img {
 table {
   margin-bottom: 15px;
   border-collapse: collapse;
-  th, td { padding: 5px 10px; }
-  thead, tr:nth-child(even) { background-color: #f7f7f7; }
+  th, td {
+    padding: 5px 10px;
+    border: 1px #ddd solid;
+  }
+  tr:nth-child(even) { background-color: #f7f7f7; }
 }
