@@ -1,3 +1,3 @@
-# saitoxu.github.io
+# saitoxu.io
 
-my portfolio site
+My blog & portfolio site
