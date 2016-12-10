@@ -6,7 +6,7 @@ tags: JavaScript MachineLearning
 ---
 Previously, I realized logical AND by creating a neuron.
 
-[Neuron](http://saitoxu.io/blog/2016/11/29/neuron.html)
+[Neuron]({{ site.baseurl }}/2016/11/29/neuron.html)
 
 At this time, by using a neural network that combines neurons,
 I will make XOR.

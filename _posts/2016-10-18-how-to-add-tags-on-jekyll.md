@@ -64,5 +64,5 @@ See the following example.
 #### **Step 4**
 Finally, you just add some cool styles to tags.
 
-Entire code is [here](https://github.com/saitoxu/blog),
+Entire code is [here](https://github.com/saitoxu/saitoxu.github.io),
 please use that as reference.

@@ -4,7 +4,7 @@ title: "Speech Recognition API (3)"
 date: 2016-12-09
 tags: Swift iOS Xcode
 ---
-This is continued article of [the previous post](http://saitoxu.io/blog/2016/12/07/speech-recognition-api-2.html).
+This is continued article of [the previous post]({{ site.baseurl }}/2016/12/07/speech-recognition-api-2.html).
 
 This time, we will finally implement the speech recognition part.
 

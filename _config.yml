@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Yosuke Saito's Blog
+title: yosuke.saito
 email: yosuke.saito1202@gmail.com
 description: Programming, Web, Books, AI, Machine Learning
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://saitoxu.io" # the base hostname & protocol for your site
 # url: "http://127.0.0.1:4000"
 twitter_username: saitoxu
@@ -28,4 +28,4 @@ theme: minima
 
 # pagination
 gems: [jekyll-paginate]
-paginate: 10
+paginate: 5

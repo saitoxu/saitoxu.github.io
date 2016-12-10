@@ -1,3 +1,3 @@
-# blog
+# saitoxu.io
 
-[http://saitoxu.io/blog/](http://saitoxu.io/blog/)
+My blog & portfolio site

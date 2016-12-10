@@ -4,7 +4,7 @@ title: "Speech Recognition API (2)"
 date: 2016-12-07
 tags: Swift iOS Xcode
 ---
-This is continued article of [the previous post](http://saitoxu.io/blog/2016/12/02/speech-recognition-api.html).
+This is continued article of [the previous post]({{ site.baseurl }}/2016/12/02/speech-recognition-api.html).
 
 #### **Step 5**
 Add a label and a button to first view on storyboard.

@@ -5,7 +5,7 @@ date: 2016-10-15
 tags: Twitter Ruby Sinatra GitHub Thin Nginx
 ---
 I will start from where we left off, in this post,
-I will introduce my small system I mentioned in [the previous post](http://saitoxu.io/blog/2016/10/12/github-twitter-integration.html).
+I will introduce my small system I mentioned in [the previous post]({{ site.baseurl }}/2016/10/12/github-twitter-integration.html).
 
 The system works as below.
 
@@ -13,7 +13,7 @@ The system works as below.
 2. GitHub sends a POST request to my system.
 3. My system posts a tweet automatically.
 
-![Figure]({{site.baseurl}}/images/2016-10-15-figure.png)
+![Figure]({{ site.baseurl }}/images/2016-10-15-figure.png)
 
 As I said at the last time, my system is built by Sinatra, Thin, Nginx.
 
@@ -52,7 +52,7 @@ post '/payload' do
             month = md[2]
             day   = md[3]
             page  = md[4] + '.html'
-            url = ['http://saitoxu.io/blog', year, month, day, page].join('/')
+            url = ['http://saitoxu.io', year, month, day, page].join('/')
 
             client.update(title + "\n" + url)
             count += 1
