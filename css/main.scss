@@ -114,6 +114,22 @@ a:visited {
   }
 }
 
+.post-header {
+  .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #828282;
+  }
+}
+
 .pagination {
   .page_number {
     text-align: center;
