@@ -4,22 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title | append: ' | yosuke.saito' }}{% else %}yosuke.saito{% endif %}</title>
+    {% capture title %}{% if page.title %}{{ page.title | append: ' | yosuke.saito' }}{% else %}yosuke.saito{% endif %}{% endcapture %}
+    {% capture description %}{% if page.url != '/' and page.url != '/about/' %}{{ page.content | strip_html | strip_new_lines | slice: 0, 50 | append: '...' }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+    {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+    {% capture keywords %}{% if page.url != '/' and page.url != '/about/' %}{{ page.tags | join: ',' }}{% else %}{{ site.keywords }}{% endif %}{% endcapture %}
+    <title>{{ title }}</title>
 
-    <meta name="title" content="{{ site.title }}">
-    <meta name="description" content="{{ site.description }}">
-    <!-- <meta name="keywords" content="Pomoron,Pomodoro,Pomodoro Technique,Timer,Simple">
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="{{ description }}">
+
+    <meta name="keywords" content="{{ keywords }}">
     <meta property="og:locale" content="en_US">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="Pomoron">
-    <meta property="og:url" content="http://saitoxu.io/pomoron/">
-		<meta property="og:site_name" content="Pomoron">
-    <meta property="og:description" content="The Simplest Pomodoro Technique Timer">
-		<meta property="og:image" content="http://saitoxu.io/xcard/images/ogp.png">
-		<meta name="twitter:card" content="summary_large_image"> -->
+		<meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="{{ url }}">
+		<meta property="og:site_name" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+		<meta property="og:image" content="{{ site.url }}/images/ogp.png">
+		<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:text:description" content="{{ description }}">
 
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="canonical" href="{{ url }}">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
     <!-- <link rel="alternate" type="application/rss+xml" title="yosuke.saito" href="{{ site.baseurl }}/feed.xml"> -->
     <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico" >

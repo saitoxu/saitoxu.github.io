@@ -15,7 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: yosuke.saito
 email: yosuke.saito1202@gmail.com
-description: Programming, Web, Books, AI, Machine Learning
+description: This is Yosuke Saito's blog & portfolio site.
+keywords: Programming,Web,AI,Machine Learning,saitoxu,Yosuke Saito,斎藤,斎藤陽介
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://saitoxu.io" # the base hostname & protocol for your site
 # url: "http://127.0.0.1:4000"
