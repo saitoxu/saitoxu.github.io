@@ -30,3 +30,6 @@ theme: minima
 # pagination
 gems: [jekyll-paginate]
 paginate: 5
+
+kramdown:
+  syntax_highlighter: rouge

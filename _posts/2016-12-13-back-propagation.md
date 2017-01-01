@@ -19,7 +19,7 @@ First, prepare a data set of pairs of input and output.
 
 For example, it is the following data.
 
-The first three of each row are input data, The last one is the correct output data.
+The first three of each row are input data, the last one is the correct output data.
 
 ```bash
 $ cat data.txt
