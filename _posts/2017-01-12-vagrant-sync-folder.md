@@ -2,7 +2,7 @@
 layout: post
 title: "Vagrantの共有フォルダ上でファイル変更が検知されない問題に対応する"
 date: 2017-01-12
-tags: Vagrant Bash Jekyll
+tags: Vagrant Shell Jekyll
 ---
 
 Vagrantの共有フォルダを使っているとき、
