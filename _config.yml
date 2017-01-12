@@ -33,3 +33,5 @@ paginate: 5
 
 kramdown:
   syntax_highlighter: rouge
+
+exclude: [vendor]

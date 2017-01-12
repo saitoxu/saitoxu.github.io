@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,20 +14,23 @@
     <meta name="description" content="{{ description }}">
 
     <meta name="keywords" content="{{ keywords }}">
-    <meta property="og:locale" content="en_US">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="{{ title }}">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
     <meta property="og:url" content="{{ url }}">
-		<meta property="og:site_name" content="{{ title }}">
+    <meta property="og:site_name" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-		<meta property="og:image" content="{{ site.url }}/images/ogp.png">
-		<meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ site.url }}/images/ogp.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@saitoxu">
+    <meta name="twitter:creator" content="@saitoxu">
     <meta name="twitter:text:description" content="{{ description }}">
 
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
     <link rel="canonical" href="{{ url }}">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- <link rel="alternate" type="application/rss+xml" title="yosuke.saito" href="{{ site.baseurl }}/feed.xml"> -->
     <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico" >
   </head>
@@ -58,7 +61,13 @@
     </main>
     <footer class="site-footer">
       <div class="wrapper">
-        <p>© Yosuke Saito</p>
+        <p class="links">
+          <a href="https://github.com/saitoxu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/yosuke.saito.125" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/saitoxu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/yosukesaito" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </p>
+        <p class="copyright">© Yosuke Saito</p>
       </div>
     </footer>
     <script>

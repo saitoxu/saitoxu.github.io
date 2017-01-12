@@ -54,11 +54,5 @@ Newly flush card app, which is created for mainly people who want to study forei
 
 The simplest pomodoro technique timer. You can concentrate on your task by using this.
 
-### Links
-- [Facebook](https://www.facebook.com/yosuke.saito.125)
-- [Twitter](https://twitter.com/saitoxu)
-- [GitHub](https://github.com/saitoxu)
-- [LinkedIn](https://www.linkedin.com/in/yosukesaito)
-
 ### Contact
 [yosuke.saito1202@gmail.com](mailto:yosuke.saito1202@gmail.com)

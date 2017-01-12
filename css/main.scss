@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Noto Sans JP", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -16,6 +16,8 @@ $text-color:       #111;
 // $background-color: #fdfdfd;
 $background-color: #ffffff;
 $brand-color:      #2a7ae2;
+$label-color:      #4a4a4a;
+$dark-color:       #222222;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -44,6 +46,9 @@ $on-laptop:        800px;
   // border-top: 5px solid #2d7aed;
   border-top: none;
 }
+.site-title {
+  font-weight: bold;
+}
 .highlighter-rouge .highlight, code {
   background-color: #f8f8f8;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -57,9 +62,9 @@ img {
   max-width: 100%;
 }
 .home h2 {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
-a, a:visited {
+a, a:visited, a:hover {
   color: $brand-color;
 }
 
@@ -88,28 +93,43 @@ a, a:visited {
       white-space: nowrap;
       vertical-align: baseline;
       border-radius: .25em;
-      background-color: #828282;
+      background-color: $label-color;
+    }
+    .post-link {
+      font-weight: bold;
     }
 
     .partial {
-      margin-top: 8px;
+      margin-top: 16px;
     }
   }
 }
 
 .post-header {
+  .post-title {
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
   .label {
     display: inline;
     padding: .2em .6em .3em;
     font-size: 75%;
     font-weight: 700;
-    line-height: 1;
+    line-height: 2.2;
     color: white;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
-    background-color: #828282;
+    background-color: $label-color;
+  }
+}
+
+.post-content {
+  h1 {
+    margin-top: 45px;
   }
 }
 
@@ -142,7 +162,17 @@ table {
   .wrapper {
     p {
       text-align: center;
-      margin-bottom: 0;
+      &.links {
+        font-size: 32px;
+        margin-bottom: 30px;
+        a {
+          color: $dark-color;
+          margin: 0 3px;
+        }
+      }
+      &.copyright {
+        margin-bottom: 0;
+      }
     }
   }
 }

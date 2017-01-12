@@ -4,8 +4,6 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
@@ -31,7 +29,7 @@ layout: default
 
 <!-- Pagination links -->
 <div class="pagination">
-  <p class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
+  <p class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</p>
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">&lt; Previous</a>
   {% else %}
