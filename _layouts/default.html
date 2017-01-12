@@ -8,6 +8,7 @@
     {% capture description %}{% if page.url != '/' and page.url != '/about/' %}{{ page.content | strip_html | strip_new_lines | slice: 0, 200 | append: '...' }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
     {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
     {% capture keywords %}{% if page.url != '/' and page.url != '/about/' %}{{ page.tags | join: ',' }}{% else %}{{ site.keywords }}{% endif %}{% endcapture %}
+    {% capture ogp %}{% if page.url != '/' and page.url != '/about/' %}{{ site.url | append: '/images/' | append: page.ogp }}{% else %}{{ site.url | append: '/images/ogp.png' }}{% endif %}{% endcapture %}
     <title>{{ title }}</title>
 
     <meta name="title" content="{{ title }}">
@@ -20,7 +21,7 @@
     <meta property="og:url" content="{{ url }}">
     <meta property="og:site_name" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="{{ site.url }}/images/ogp.png">
+    <meta property="og:image" content="{{ ogp }}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@saitoxu">
     <meta name="twitter:creator" content="@saitoxu">

@@ -3,7 +3,10 @@ layout: post
 title: "Vagrantの共有フォルダ上でファイル変更が検知されない問題に対応する"
 date: 2017-01-12
 tags: Vagrant Shell Jekyll
+ogp: 2017-01-12-vagrant.jpg
 ---
+
+![Vagrant](/images/2017-01-12-vagrant.jpg)
 
 Vagrantの共有フォルダを使っているとき、
 ホストからのファイルの変更が検知されない問題があり、
