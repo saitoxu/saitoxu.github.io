@@ -2,7 +2,10 @@
 layout: post
 title: "Easy Implementation of Convolution and Pooling Layer in Deep Learning"
 date: 2017-01-01
-tags: JavaScript MachineLearning DeepLearning
+tags:
+  - JavaScript
+  - Machine Learning
+  - Deep Learning
 ---
 
 I implemented a sample of part of CNN (Convolutional Neural Network), Convolutional Layer and Pooling Layer.

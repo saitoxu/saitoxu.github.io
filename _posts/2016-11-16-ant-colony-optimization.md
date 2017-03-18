@@ -2,7 +2,9 @@
 layout: post
 title: "Ant Colony Optimization"
 date: 2016-11-16
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 Since I created ant colony optimization algorithm this time,
 I will introduce it.

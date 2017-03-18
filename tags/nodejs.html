@@ -3,8 +3,9 @@ layout: default
 ---
 
 <div class="home">
+  {% capture tag_name %}{{ "Node.js" }}{% endcapture %}
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.tags[tag_name] %}
       <li>
         <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
         <h2>
@@ -20,17 +21,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-</div>
-<div class="pagination text-center">
-  <p class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</p>
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">&lt; Previous</a>
-  {% else %}
-    <span class="previous">&lt; Previous</span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next &gt;</a>
-  {% else %}
-    <span class="next ">Next &gt;</span>
-  {% endif %}
 </div>

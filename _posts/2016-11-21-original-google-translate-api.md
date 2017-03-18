@@ -2,7 +2,10 @@
 layout: post
 title: "Original Google Translate API"
 date: 2016-11-21
-tags: JavaScript PhantomJS GoogleTranslate
+tags:
+  - JavaScript
+  - PhantomJS
+  - Google Translate
 ---
 Recently, Google Translate has evolved using a neural network.
 

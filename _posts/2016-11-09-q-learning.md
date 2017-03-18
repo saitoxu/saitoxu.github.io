@@ -2,7 +2,9 @@
 layout: post
 title: "Q Learning"
 date: 2016-11-09
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 I created a simple module to do a Q Learning.
 

@@ -22,19 +22,16 @@ url: "http://saitoxu.io" # the base hostname & protocol for your site
 # url: "http://127.0.0.1:4000"
 twitter_username: saitoxu
 github_username:  saitoxu
-
 # Build settings
 markdown: kramdown
 theme: minima
-
 # pagination
 gems:
   - jekyll-paginate
   - jekyll-gist
-
 paginate: 5
-
 kramdown:
   syntax_highlighter: rouge
-
 exclude: [vendor]
+sass:
+    sass_dir: css/_scss

@@ -2,7 +2,9 @@
 layout: post
 title: "Inductive Learning"
 date: 2016-11-04
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 I created a simple module to do an inductive learning.
 

@@ -2,7 +2,9 @@
 layout: post
 title: "Back Propagation"
 date: 2016-12-13
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 
 This time, I will explain about Back Propagation by making a simple program.

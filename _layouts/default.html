@@ -27,27 +27,18 @@
     <meta name="twitter:creator" content="@saitoxu">
     <meta name="twitter:text:description" content="{{ description }}">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
-    <link rel="canonical" href="{{ url }}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- <link rel="alternate" type="application/rss+xml" title="yosuke.saito" href="{{ site.baseurl }}/feed.xml"> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="canonical" href="{{ url }}">
     <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico" >
   </head>
   <body>
-    <!-- <div class="bg"></div> -->
     <header class="site-header" role="banner">
       <div class="wrapper">
         <a class="site-title" href="{{ site.url }}">yosuke.saito</a>
-        <!-- <nav class="site-nav"> -->
         <nav class="my-site-nav">
-          <a href="#" class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </a>
           <div class="trigger">
             <a class="page-link" href="{{ site.baseurl }}/about/">About</a>
           </div>
@@ -61,15 +52,37 @@
     </main>
     <footer class="site-footer">
       <div class="wrapper">
-        <p class="links">
-          <a href="https://github.com/saitoxu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/saitoxu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/yosuke.saito.125" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/yosukesaito" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </p>
-        <p class="copyright">© Yosuke Saito</p>
+        <div class="col-xs-12 col-sm-4 about-me">
+          <h3><strong>About me</strong></h3>
+          <img src="/images/killer-machine.png">
+          <h4 class="media-heading"><strong>Yosuke Saito</strong></h4>
+          <h5 class="help-block">株式会社CaratでCTOをやってます。Ruby on Railsでサービス作ってます。</h5>
+          <p class="links">
+            <a href="https://github.com/saitoxu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/saitoxu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yosuke.saito.125" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/yosukesaito" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 latest">
+          <h3><strong>Latest</strong></h3>
+          {% for i in (0..4) %}
+            <h6 class="help-block">{{ site.posts[i].date | date: "%Y-%m-%d" }}</h6>
+            <h5><a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title | escape }}</a></h5>
+          {% endfor %}
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h3><strong>Tags</strong></h3>
+          {% for tag in site.tags %}
+            <span class="label label-default"><a href="/tags/{{ tag[0] | slugify: 'pretty' | replace: '.', '' }}">{{ tag[0] }}</a></span>
+          {% endfor %}
+        </div>
+        <div class="col-xs-12 text-center copyright">
+          <p>© Yosuke Saito</p>
+        </div>
       </div>
     </footer>
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

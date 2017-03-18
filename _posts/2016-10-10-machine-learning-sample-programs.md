@@ -2,7 +2,9 @@
 layout: post
 title:  "Sample programs of Machine Learning"
 date: 2016-10-10
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 I'm creating sample code collection of machine learning,
 this is the repository.

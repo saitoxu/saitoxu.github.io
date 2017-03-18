@@ -2,7 +2,9 @@
 layout: post
 title: "Genetic Algorithm"
 date: 2016-11-18
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 I created a program to solve the knapsack problem with genetic algorithm.
 

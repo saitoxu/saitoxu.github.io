@@ -2,7 +2,9 @@
 layout: post
 title: "Neural Network"
 date: 2016-11-30
-tags: JavaScript MachineLearning
+tags:
+  - JavaScript
+  - Machine Learning
 ---
 Previously, I realized logical AND by creating a neuron.
 
