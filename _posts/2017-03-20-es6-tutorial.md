@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Yarn + Webpack + BabelでES6入門
+title: Yarn + webpack + BabelでES6入門
 date: 2017-03-20
 tags: Yarn webpack Babel JavaScript
+ogp: 2017-03-20-ogp.png
 ---
 
 Yarnやwebpackを使ったことがなかったので、
@@ -24,7 +25,7 @@ Yarn入ってない人はインストールしてください。
 
 ## **2. webpack + babelインストール**
 
-最初にyarnを使ってwebpackとbabelをインストールします。
+最初にYarnを使ってwebpackとbabelをインストールします。
 
 <code data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="init.sh" data-gist-enable-cache="true"></code>
 
