@@ -34,6 +34,9 @@ $on-laptop:        800px;
 @import "highlight";
 
 // Override
+body {
+  word-break: break-word;
+}
 .label-default {
   background: $label-color !important;
   line-height: 28px;
@@ -63,6 +66,9 @@ $on-laptop:        800px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 14px;
   border: none;
+}
+code {
+  padding: 0;
 }
 img {
   max-width: 100%;
