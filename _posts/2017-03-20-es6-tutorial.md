@@ -19,7 +19,7 @@ Yarnやwebpackを使ったことがなかったので、
 
 ## **1. Yarnインストール**
 
-Yarn入ってない人はインストールしてください。
+Yarnが入ってない人はインストールしてください。
 
 <code data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="yarn.sh" data-gist-enable-cache="true"></code>
 
