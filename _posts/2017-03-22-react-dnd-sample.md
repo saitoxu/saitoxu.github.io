@@ -46,7 +46,7 @@ $ yarn start
 - `Game` : ドラッグ＆ドロップを監視してレンダリングの指示を出すObserver
 - `Constants` : 定数
 
-まあまあ長くなってしまったので、コードは[Gist](ff)を確認してみてください。
+まあまあ長くなってしまったので、コードは[Gist](https://gist.github.com/saitoxu/70aa7204b3b3fb4e82b749fa55115a1b)を確認してみてください。
 
 ## **3. 所感**
 
