@@ -1,0 +1,31 @@
+.about {
+  .thumbnail {
+    border: none;
+  }
+
+  section {
+    margin-bottom: 50px;
+    &.basic-info {
+      .media-object {
+        max-width: none;
+        width: 64px;
+      }
+
+      .media-heading {
+        margin-top: 12px;
+      }
+    }
+
+    &.skills {
+      h4 {
+        line-height: 34px;
+      }
+    }
+
+    &.products {
+      h3 {
+        margin-top: 10px;
+      }
+    }
+  }
+}

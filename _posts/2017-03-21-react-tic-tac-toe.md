@@ -25,7 +25,7 @@ Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/
 
 `create-react-app`が入ってない場合は`yarn`か`npm`でインストールすると便利です。
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="create-react-app.sh" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="create-react-app.sh" data-gist-enable-cache="true"></code>
 
 ## **2. マスの作成**
 
@@ -33,13 +33,13 @@ Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/
 
 `Square`クラスは状態を持たないので`React.Component`を継承するのではなく`stateless functional components`という関数でよいみたいです。
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Square.js" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Square.js" data-gist-enable-cache="true"></code>
 
 ## **3. ボードの作成**
 
 次にボードを表す`Board`クラスを作ります。
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Board.js" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Board.js" data-gist-enable-cache="true"></code>
 
 ## **4. ゲームの作成**
 
@@ -49,15 +49,15 @@ Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/
 
 勝敗の判定は`calculateWinner`というヘルパーメソッドで行っています。
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Game.js" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Game.js" data-gist-enable-cache="true"></code>
 
 ## **5. 最後に**
 
 エントリーポイントとなる`index.js`でゲーム盤のコンポーネントをレンダリングして、
 あとはCSSなどを修正して終わりです。
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.js" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.js" data-gist-enable-cache="true"></code>
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.html" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.html" data-gist-enable-cache="true"></code>
 
-<code data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.css" data-gist-enable-cache="true"></code>
+<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.css" data-gist-enable-cache="true"></code>

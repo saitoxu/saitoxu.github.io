@@ -1,0 +1,32 @@
+.site-footer {
+  .wrapper {
+    p {
+      &.links {
+        font-size: 28px;
+
+        a {
+          color: $dark-color;
+          margin: 0 3px;
+        }
+      }
+    }
+
+    .about-me {
+      img {
+        max-width: none;
+        width: 64px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .latest {
+      h6 {
+        margin-bottom: 5px;
+      }
+    }
+
+    .copyright {
+      margin-top: 50px;
+    }
+  }
+}

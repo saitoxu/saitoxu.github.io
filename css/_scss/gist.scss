@@ -1,0 +1,16 @@
+.gist-code {
+  padding: 0;
+  border: none;
+
+  .gist {
+    table {
+      tr:nth-child(even) {
+        background: transparent;
+      }
+
+      td {
+        border: none;
+      }
+    }
+  }
+}

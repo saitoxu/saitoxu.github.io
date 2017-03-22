@@ -32,6 +32,9 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "minima";
 @import "highlight";
+@import "gist";
+@import "about";
+@import "footer";
 
 // Override
 body {
@@ -52,9 +55,6 @@ body {
     margin-top: -4px;
   }
 }
-.thumbnail {
-  border: none;
-}
 .site-header {
   border-top: none;
 }
@@ -65,10 +65,6 @@ body {
   background-color: #f8f8f8;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 14px;
-  border: none;
-}
-code {
-  padding: 0;
 }
 img {
   max-width: 100%;
@@ -89,49 +85,6 @@ a, a:visited, a:hover {
   .page-link {
     color: #111;
     line-height: 1.4;
-  }
-}
-
-.about {
-  section {
-    margin-bottom: 50px;
-    &.basic-info {
-      .media-object {
-        max-width: none;
-        width: 64px;
-      }
-      .media-heading {
-        margin-top: 12px;
-      }
-    }
-    &.skills {
-      h4 {
-        line-height: 34px;
-      }
-    }
-    &.products {
-      h3 {
-        margin-top: 10px;
-      }
-    }
-  }
-}
-
-.site-footer {
-  .about-me {
-    img {
-      max-width: none;
-      width: 64px;
-      margin-bottom: 12px;
-    }
-  }
-  .latest {
-    h6 {
-      margin-bottom: 5px;
-    }
-  }
-  .copyright {
-    margin-top: 50px;
   }
 }
 
@@ -208,23 +161,6 @@ table {
   tr:nth-child(even) { background-color: #f7f7f7; }
 }
 
-.site-footer {
-  .wrapper {
-    p {
-      &.links {
-        font-size: 28px;
-        a {
-          color: $dark-color;
-          margin: 0 3px;
-        }
-      }
-      &.copyright {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
 .page-navigation {
   margin-top: 20px;
   .next {
@@ -232,22 +168,5 @@ table {
   }
   .prev {
     float: right;
-  }
-}
-
-.fb-like {
-  span {
-    padding-bottom: 4px;
-  }
-}
-
-.gist {
-  table {
-    tr:nth-child(even) {
-      background: transparent;
-    }
-    td {
-      border: none;
-    }
   }
 }
