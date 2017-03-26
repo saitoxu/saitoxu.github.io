@@ -81,4 +81,4 @@ If you have extra time or want to practice your new skills, here are some ideas 
 
 あとは勝利判定のときにこの値を変えて、`Square`まで渡るようにすればOKです。
 
-大まかなアイデアはこんな感じで、実装は[Gist](https://gist.github.com/saitoxu/5aa916e0452aad6a647499ebab2520e3)に上げたのでこちらを確認してください。
+大まかなアイデアはこんな感じで、ソースコードは[Gist](https://gist.github.com/saitoxu/5aa916e0452aad6a647499ebab2520e3)に上げたのでこちらを確認してください。
