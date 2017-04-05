@@ -10,7 +10,7 @@ Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/
 
 成果物はここにおいたので確認してみてください。
 
-[react-tic-tac-toe](http://saitoxu.io/playground/react-tic-tac-toe/)
+[react-tic-tac-toe](/playground/react-tic-tac-toe/)
 
 ## **環境**
 
