@@ -4,6 +4,7 @@ layout: default
 
 <div class="home">
   {% capture tag_name %}{{ "Vagrant" }}{% endcapture %}
+  <h1>{{ tag_name }}</h1>
   <ul class="post-list">
     {% for post in site.tags[tag_name] %}
       <li>
