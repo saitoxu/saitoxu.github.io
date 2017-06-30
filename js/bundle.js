@@ -77,10 +77,14 @@ var Archive = function (_Component) {
             { key: i },
             (0, _preact.h)('i', { 'data-archive-index': i, 'class': 'button fa ' + caret, 'aria-hidden': 'true', onClick: _this2.handleClick }),
             ' ',
-            archive.year,
-            ' (',
-            archive.size,
-            ')'
+            (0, _preact.h)(
+              'a',
+              { href: '/' + archive.year + '/' },
+              archive.year,
+              ' (',
+              archive.size,
+              ')'
+            )
           ),
           archive.open && _this2.renderMonthArchives(archive.year, archive.months)
         );
@@ -96,12 +100,16 @@ var Archive = function (_Component) {
         archives.push((0, _preact.h)(
           'h5',
           { key: i },
-          year,
-          ' / ',
-          month.month,
-          ' (',
-          month.size,
-          ')'
+          (0, _preact.h)(
+            'a',
+            { href: '/' + year + '/' + month.month + '/' },
+            year,
+            ' / ',
+            month.month,
+            ' (',
+            month.size,
+            ')'
+          )
         ));
       });
       return (0, _preact.h)(

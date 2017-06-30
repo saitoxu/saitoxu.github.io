@@ -25,7 +25,6 @@ github_username:  saitoxu
 # Build settings
 markdown: kramdown
 theme: minima
-# pagination
 gems:
   - jekyll-paginate
   - jekyll-gist
@@ -34,4 +33,4 @@ kramdown:
   syntax_highlighter: rouge
 exclude: [vendor]
 sass:
-    sass_dir: css/_scss
+  sass_dir: css/_scss

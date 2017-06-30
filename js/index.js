@@ -51,7 +51,7 @@ class Archive extends Component {
       const caret = archive.open ? 'fa-chevron-down' : 'fa-chevron-right'
       const dom = (
         <div>
-          <h5 key={i}><i data-archive-index={i} class={`button fa ${caret}`} aria-hidden="true" onClick={this.handleClick} /> {archive.year} ({archive.size})</h5>
+          <h5 key={i}><i data-archive-index={i} class={`button fa ${caret}`} aria-hidden="true" onClick={this.handleClick} /> <a href={`/${archive.year}/`}>{archive.year} ({archive.size})</a></h5>
           {archive.open && this.renderMonthArchives(archive.year, archive.months)}
         </div>
       )
@@ -63,7 +63,7 @@ class Archive extends Component {
   renderMonthArchives(year, months) {
     const archives = []
     months.forEach((month, i) => {
-      archives.push(<h5 key={i}>{year} / {month.month} ({month.size})</h5>)
+      archives.push(<h5 key={i}><a href={`/${year}/${month.month}/`}>{year} / {month.month} ({month.size})</a></h5>)
     })
     return <div class="months">{archives}</div>
   }
