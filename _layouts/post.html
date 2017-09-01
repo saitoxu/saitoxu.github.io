@@ -25,11 +25,14 @@ layout: default
       }(document, 'script', 'facebook-jssdk'));</script>
       <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
       <!-- Twitter -->
+      {% capture hashtags %}{{ page.tags | join: ',' | remove: ' ' }}{% endcapture %}
       <a class="twitter-share-button"
          href="https://twitter.com/share"
          data-size="small"
          data-text="{{ page.title | append: ' | yosuke.saito' }}"
          data-url="{{ site.url }}{{ page.url }}"
+         data-via="saitoxu"
+         data-hashtags="{{hashtags}}"
          data-lang="en">Tweet</a>
       <script>
        window.twttr = (function(d, s, id) {
