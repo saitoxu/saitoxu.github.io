@@ -20,6 +20,8 @@ keywords: Programming,Web,AI,Machine Learning,saitoxu,Yosuke Saito,斎藤,斎藤
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://saitoxu.io" # the base hostname & protocol for your site
 # url: "http://127.0.0.1:4000"
+show_drafts: false
+future: false
 twitter_username: saitoxu
 github_username:  saitoxu
 # Build settings
