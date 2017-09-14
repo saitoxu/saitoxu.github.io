@@ -70,11 +70,13 @@ class ResourceUploader < CarrierWave::Uploader::Base
   # rest of uploader
 
   def url
-    return super if super.nil? || default_url.present?
-    # 開発・テスト環境はローカルに保存
-    return "#{super}?updatedAt=#{model.updated_at.to_i}" if Rails.env.development? || Rails.env.test?
-    # 本番環境
-    "#{Settings.asset_host}/#{path}?updatedAt=#{model.updated_at.to_i}"
+    if path.present?
+      # 保存先がローカルの場合
+      return "#{super}?updatedAt=#{model.updated_at.to_i}" if Rails.env.development? || Rails.env.test?
+      # 保存先がS3の場合
+      return "#{Settings.asset_host}/#{path}?updatedAt=#{model.updated_at.to_i}"
+    end
+    super
   end
 end
 ```
