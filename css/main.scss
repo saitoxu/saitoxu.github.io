@@ -66,6 +66,13 @@ body {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 14px;
 }
+pre {
+  &.highlight {
+    code {
+      white-space: pre;
+    }
+  }
+}
 img {
   max-width: 100%;
 }
