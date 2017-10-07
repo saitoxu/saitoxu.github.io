@@ -66,11 +66,8 @@
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 latest">
-          <h3><strong>Recent Posts</strong></h3>
-          {% for i in (0..4) %}
-            <h6 class="help-block">{{ site.posts[i].date | date: "%Y-%m-%d" }}</h6>
-            <h5><a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title | escape }}</a></h5>
-          {% endfor %}
+          <h3><strong>Popular Posts</strong></h3>
+          <div id="popular"></div>
         </div>
         <div class="col-xs-12 col-sm-4">
           <h3><strong>Archives</strong></h3>
