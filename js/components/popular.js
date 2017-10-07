@@ -1,9 +1,8 @@
 /** @jsx h */
 
 import { h, render, Component } from 'preact'
-import fetchJsonp from 'fetch-jsonp'
 
-const url = 'http://b.hatena.ne.jp/entrylist/json?url=saitoxu.io&mode=rss&threshold=1&sort=count'
+const url = 'https://cfcaxb39dk.execute-api.ap-northeast-1.amazonaws.com/production'
 
 export default class Popular extends Component {
   constructor(props) {
@@ -12,10 +11,10 @@ export default class Popular extends Component {
   }
 
   componentDidMount() {
-    fetchJsonp(url).then(response => {
+    fetch(url).then(response => {
       return response.json()
     }).then(json => {
-      this.setState({ populars: [].concat(json.slice(0, 5)) })
+      this.setState({ populars: json })
     }).catch(error => {
       // do nothing
     })
