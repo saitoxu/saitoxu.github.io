@@ -29,7 +29,7 @@ export default class Popular extends Component {
           <h5>
             <a href={url}>{title}</a>
             <span>&nbsp;</span>
-            <img src={`http://b.hatena.ne.jp/entry/image/${url}`} />
+            <img src={`https://b.hatena.ne.jp/entry/image/${url}`} />
           </h5>
         )
       })

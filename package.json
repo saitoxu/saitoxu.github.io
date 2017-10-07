@@ -2,7 +2,8 @@
   "name": "saitoxu.github.io",
   "private": true,
   "scripts": {
-    "watch": "node_modules/.bin/watchify js/index.js -t babelify -o js/bundle.js"
+    "watch": "node_modules/.bin/watchify js/index.js -t babelify -o js/bundle.js",
+    "build": "node_modules/.bin/browserify js/index.js -o js/bundle.js -t [ babelify --presets [ es2015 react ] ]"
   },
   "version": "1.0.0",
   "description": "",

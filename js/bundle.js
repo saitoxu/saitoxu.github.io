@@ -203,7 +203,7 @@ var Popular = function (_Component) {
             null,
             '\xA0'
           ),
-          (0, _preact.h)('img', { src: 'http://b.hatena.ne.jp/entry/image/' + url })
+          (0, _preact.h)('img', { src: 'https://b.hatena.ne.jp/entry/image/' + url })
         );
       });
     }
