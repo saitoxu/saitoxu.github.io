@@ -17,6 +17,7 @@ title: yosuke.saito
 email: yosuke.saito1202@gmail.com
 description: This is Yosuke Saito's blog & portfolio site.
 keywords: Programming,Web,AI,Machine Learning,saitoxu,Yosuke Saito,斎藤,斎藤陽介
+timezone: Asia/Tokyo
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://saitoxu.io" # the base hostname & protocol for your site
 # url: "http://127.0.0.1:4000"
