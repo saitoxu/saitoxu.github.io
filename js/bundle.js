@@ -158,6 +158,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /** @jsx h */
 
 var url = 'https://cfcaxb39dk.execute-api.ap-northeast-1.amazonaws.com/production';
+var options = {
+  headers: {
+    'x-api-key': 'fB9opPsaIY5Phfc18jeZW4GZThzRbVXKaFO0HW63'
+  }
+};
 
 var Popular = function (_Component) {
   _inherits(Popular, _Component);
@@ -176,7 +181,7 @@ var Popular = function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch(url).then(function (response) {
+      fetch(url, options).then(function (response) {
         return response.json();
       }).then(function (json) {
         _this2.setState({ populars: json });

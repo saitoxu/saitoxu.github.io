@@ -3,6 +3,11 @@
 import { h, render, Component } from 'preact'
 
 const url = 'https://cfcaxb39dk.execute-api.ap-northeast-1.amazonaws.com/production'
+const options = {
+  headers: {
+    'x-api-key': 'fB9opPsaIY5Phfc18jeZW4GZThzRbVXKaFO0HW63'
+  }
+}
 
 export default class Popular extends Component {
   constructor(props) {
@@ -11,7 +16,7 @@ export default class Popular extends Component {
   }
 
   componentDidMount() {
-    fetch(url).then(response => {
+    fetch(url, options).then(response => {
       return response.json()
     }).then(json => {
       this.setState({ populars: json })
