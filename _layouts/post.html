@@ -10,7 +10,7 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <p>
       {% for tag in page.tags %}
-        <span class="label label-default">{{tag}}</span>
+        <span class="label label-default"><a href="/tags/{{ tag | slugify: 'pretty' | replace: '.', '' }}">{{tag}}</a></span>
       {% endfor %}
     </p>
     <div class="social-buttons">

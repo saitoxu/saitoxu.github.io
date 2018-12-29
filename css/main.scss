@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Noto Sans JP", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -12,7 +12,7 @@ $base-line-height: 1.4;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #333;
 // $background-color: #fdfdfd;
 $background-color: #ffffff;
 $brand-color:      #2a7ae2;
