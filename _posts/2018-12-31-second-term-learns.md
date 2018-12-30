@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 創業2期目を終えて - 今期得た4つの学び
-date: 2018-12-27
+date: 2018-12-31
 tags:
   - Startup
 ogp: 2018/12-31-ogp.png
