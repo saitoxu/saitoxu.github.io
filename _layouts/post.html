@@ -108,6 +108,9 @@ layout: default
         {% endif %}
       {% endfor %}
     </ul>
+    {% if max_related_counter == 0 %}
+      <p>No related posts.</p>
+    {% endif %}
   </div>
 
   <div class="adsense">
