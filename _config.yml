@@ -34,6 +34,14 @@ gems:
 paginate: 5
 kramdown:
   syntax_highlighter: rouge
-exclude: [vendor]
+exclude:
+  - bin
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - yarn.lock
 sass:
   sass_dir: css/_scss
