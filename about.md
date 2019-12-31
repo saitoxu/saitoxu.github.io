@@ -42,7 +42,7 @@ M.S. in Social Informatics (2012/04 - 2014/03)
 
 B.S. in Informatics (2008/04 - 2012/03)
 
-## Portfolio
+<!-- ## Portfolio
 
 ### **[Pomoron](/pomoron/)**
 
@@ -50,4 +50,4 @@ The simplest pomodoro technique timer. You can concentrate on your task by using
 
 ### **[Xcard](/xcard/)**
 
-Newly flush card app, which is created for mainly people who want to study foreign languages and allows you to create and study original flush cards efficiently.
+Newly flush card app, which is created for mainly people who want to study foreign languages and allows you to create and study original flush cards efficiently. -->
