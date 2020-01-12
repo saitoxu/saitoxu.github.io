@@ -1,7 +1,9 @@
 ---
 title: Reactでマインスイーパーを作ってみた②
 date: "2017-06-25T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ---
 
 「[Reactでマインスイーパーを作ってみた](/2017/04/25/react-minesweeper.html)」で作ったマインスイーパーに、

@@ -1,7 +1,9 @@
 ---
 title: RubyからRustを呼び出す
 date: "2017-05-24T00:00:00.000Z"
-tags: Rust Ruby
+tags:
+  - Rust
+  - Ruby
 ogp: ./2017-05-24-ogp.png
 ---
 

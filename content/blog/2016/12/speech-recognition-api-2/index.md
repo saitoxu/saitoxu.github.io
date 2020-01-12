@@ -1,7 +1,10 @@
 ---
 title: "Speech Recognition API (2)"
 date: "2016-12-07T00:00:00.000Z"
-tags: Swift iOS Xcode
+tags:
+  - Swift
+  - iOS
+  - Xcode
 ---
 This is continued article of [the previous post]({{ site.baseurl }}/2016/12/02/speech-recognition-api.html).
 

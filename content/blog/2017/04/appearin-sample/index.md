@@ -1,7 +1,9 @@
 ---
 title: appear.inのAPIを使って簡単ビデオチャット
 date: "2017-04-05T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ogp: ./2017-04-05-ogp.png
 ---
 

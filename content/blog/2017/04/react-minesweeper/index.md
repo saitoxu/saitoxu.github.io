@@ -1,7 +1,9 @@
 ---
 title: Reactでマインスイーパーを作ってみた
 date: "2017-04-25T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ---
 
 Reactでマインスイーパーを作りました。デモは[こちら](/playground/react-minesweeper/)。

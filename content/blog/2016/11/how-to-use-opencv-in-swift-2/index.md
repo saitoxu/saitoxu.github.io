@@ -1,7 +1,10 @@
 ---
 title: "How to use OpenCV in Swift (2)"
 date: "2016-11-07T00:00:00.000Z"
-tags: Swift OpenCV Xcode
+tags:
+  - Swift
+  - OpenCV
+  - Xcode
 ---
 This is a continuation of [my previous post]({{ site.baseurl }}/2016/11/06/how-to-use-opencv-in-swift.html).
 

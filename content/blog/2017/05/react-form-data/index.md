@@ -1,7 +1,8 @@
 ---
 title: JavaScriptでフォームデータを送信する
 date: "2017-05-09T00:00:00.000Z"
-tags: JavaScript
+tags:
+  - JavaScript
 ---
 
 JavaScriptでフォームデータを送信する方法のメモです。

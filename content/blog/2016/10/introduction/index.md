@@ -1,7 +1,8 @@
 ---
 title:  "Introduction"
 date: "2016-10-06T00:00:00.000Z"
-tags: Daily
+tags:
+  - Daily
 ---
 My name is Yosuke Saito, I'm a web developer living in Tokyo, Japan.
 

@@ -1,7 +1,10 @@
 ---
 title: "Vagrantの共有フォルダ上でファイル変更が検知されない問題に対応する"
 date: "2017-01-12T00:00:00.000Z"
-tags: Vagrant Shell Jekyll
+tags:
+  - Vagrant
+  - Shell
+  - Jekyll
 ogp: ./2017-01-12-vagrant.jpg
 ---
 

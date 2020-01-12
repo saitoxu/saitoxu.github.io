@@ -1,7 +1,11 @@
 ---
 title: "How to use Gulp \"watch\""
 date: "2016-10-31T00:00:00.000Z"
-tags: Gulp JavaScript Sass SCSS
+tags:
+  - Gulp
+  - JavaScript
+  - Sass
+  - SCSS
 ---
 Gulp has `watch` method as default.
 

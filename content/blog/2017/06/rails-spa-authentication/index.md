@@ -1,7 +1,9 @@
 ---
 title: RailsにおけるSPAの認証方法について
 date: "2017-06-17T00:00:00.000Z"
-tags: Rails React
+tags:
+  - Rails
+  - React
 ogp: ./2017-06-17-ogp.png
 ---
 

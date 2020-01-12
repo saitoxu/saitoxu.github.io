@@ -1,7 +1,10 @@
 ---
 title: React+ReduxでAJAXを使ったアプリを作ってみる
 date: "2017-04-16T00:00:00.000Z"
-tags: React Redux JavaScript
+tags:
+  - React
+  - Redux
+  - JavaScript
 ogp: ./2017-04-16-ogp.png
 ---
 

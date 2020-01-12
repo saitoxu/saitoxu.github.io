@@ -1,7 +1,8 @@
 ---
 title: Rustのメモリ安全性を支える3つの概念
 date: "2017-05-27T00:00:00.000Z"
-tags: Rust
+tags:
+  - Rust
 ogp: ./2017-05-24-ogp.png
 ---
 

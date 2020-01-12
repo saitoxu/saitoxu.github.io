@@ -1,7 +1,10 @@
 ---
 title: preactを使ってブログのアーカイブメニューを作る
 date: "2017-07-01T00:00:00.000Z"
-tags: React JavaScript Jekyll
+tags:
+  - React
+  - JavaScript
+  - Jekyll
 ogp: ./2017-07-01-ogp.png
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: "How to use OpenCV in Swift (1)"
 date: "2016-11-06T00:00:00.000Z"
-tags: Swift OpenCV Xcode
+tags:
+  - Swift
+  - OpenCV
+  - Xcode
 ---
 I try to use OpenCV library in Swift today.
 

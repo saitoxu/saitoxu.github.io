@@ -1,7 +1,9 @@
 ---
 title: ReactでTODOアプリ
 date: "2017-03-30T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ogp: ./2017-03-30-ogp.jpg
 ---
 

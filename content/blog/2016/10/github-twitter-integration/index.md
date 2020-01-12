@@ -1,7 +1,11 @@
 ---
 title: "GitHub and Twitter integration"
 date: "2016-10-12T00:00:00.000Z"
-tags: Twitter Ruby Sinatra GitHub
+tags:
+  - Twitter
+  - Ruby
+  - Sinatra
+  - GitHub
 ---
 I used GitHub webhook to integrate with Twitter,
 and created a below service.
@@ -17,7 +21,7 @@ POST: GitHub and Twitter integration
 
 then a tweet is automatically posted like this.
 
-![GitHub and Twitter integration]({{site.baseurl}}/images/2016-10-12-github-twitter-integration.png)
+![GitHub and Twitter integration](./2016-10-12-github-twitter-integration.png)
 
 I created this small service by using Sinatra, Thin, Nginx.
 

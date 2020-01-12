@@ -1,7 +1,9 @@
 ---
 title: "How to add tags on Jekyll"
 date: "2016-10-18T00:00:00.000Z"
-tags: Jekyll Ruby
+tags:
+  - Jekyll
+  - Ruby
 ---
 I added tags on my top page and every posts without plugin.
 

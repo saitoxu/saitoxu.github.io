@@ -1,7 +1,10 @@
 ---
 title: 人工知能系スタートアップ約200社まとめてみた
 date: "2017-02-28T00:00:00.000Z"
-tags: Book AI Startup
+tags:
+  - Book
+  - AI
+  - Startup
 ogp: ./2017-02-28-ogp.jpg
 ---
 

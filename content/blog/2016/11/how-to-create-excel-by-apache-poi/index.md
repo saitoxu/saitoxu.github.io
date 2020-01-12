@@ -1,7 +1,10 @@
 ---
 title: "How to create Excel by Apache POI"
 date: "2016-11-01T00:00:00.000Z"
-tags: POI Java Excel
+tags:
+  - POI
+  - Java
+  - Excel
 ---
 I often use Apache POI to deal with Microsoft Office in these days.
 
@@ -9,9 +12,9 @@ Today I introduce how to create Excel file by using Apache POI.
 
 Let's create the following Excel file.
 
-![Sample Excel]({{site.baseurl}}/images/2016-11-01-sample-excel.png)
+![Sample Excel](./2016-11-01-sample-excel.png)
 
-Please refer [a previous article]({{site.baseurl}}/2016/10/24/how-to-create-powerpoint-via-poi.html)
+Please refer [a previous article](/2016/10/how-to-create-powerpoint-via-poi)
 for install of Apache POI.
 
 #### **Step 1**

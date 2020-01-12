@@ -1,7 +1,9 @@
 ---
 title: React DnDを使ってみた
 date: "2017-03-22T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ---
 
 Reactでドラッグ＆ドロップを簡単に実装できる[React DnD](http://react-dnd.github.io/react-dnd/)を使ってみました。

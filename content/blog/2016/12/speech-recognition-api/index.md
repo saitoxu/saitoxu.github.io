@@ -1,7 +1,10 @@
 ---
 title: "Speech Recognition API (1)"
 date: "2016-12-02T00:00:00.000Z"
-tags: Swift iOS Xcode
+tags:
+	- Swift
+	- iOS
+	- Xcode
 ---
 Let's try voice recognition by using "Speech Recognition API" which is released in iOS 10.0.
 

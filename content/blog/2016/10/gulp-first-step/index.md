@@ -1,7 +1,11 @@
 ---
 title: "Gulp first step"
 date: "2016-10-29T00:00:00.000Z"
-tags: Gulp JavaScript Sass SCSS
+tags:
+  - Gulp
+  - JavaScript
+  - Sass
+  - SCSS
 ---
 Today I'll introduce the first step of Gulp.
 

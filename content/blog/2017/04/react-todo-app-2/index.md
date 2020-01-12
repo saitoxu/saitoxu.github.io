@@ -1,7 +1,9 @@
 ---
 title: TODOアプリでReact Routerを使ってみる
 date: "2017-04-02T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ogp: ./2017-04-02-ogp.png
 ---
 

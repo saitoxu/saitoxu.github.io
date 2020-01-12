@@ -1,7 +1,8 @@
 ---
 title: "SOFT SKILLS"
 date: "2016-10-16T00:00:00.000Z"
-tags: Book
+tags:
+  - Book
 ---
 I read the following book written by John Sonmez.
 

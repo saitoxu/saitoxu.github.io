@@ -1,7 +1,9 @@
 ---
 title: "How to create sticky window on Electron"
 date: "2016-10-22T00:00:00.000Z"
-tags: Electron JavaScript
+tags:
+  - Electron
+  - JavaScript
 ---
 Today, I will introduce how to create sticky window on top by Electron.
 

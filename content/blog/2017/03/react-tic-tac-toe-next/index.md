@@ -1,7 +1,9 @@
 ---
 title: Reactで三目並べの続き
 date: "2017-03-26T00:00:00.000Z"
-tags: React JavaScript
+tags:
+  - React
+  - JavaScript
 ogp: ./2017-03-21-ogp.png
 ---
 
@@ -21,7 +23,7 @@ If you have extra time or want to practice your new skills, here are some ideas 
 4. Add a toggle button that lets you sort the moves in either ascending or descending order.
 5. When someone wins, highlight the three squares that caused the win.
 
-[前回](/2017/03/21/react-tic-tac-toe.html)は基本の三目並べを作ったので、今回はこの続きをやってみます。
+[前回](/2017/03/react-tic-tac-toe)は基本の三目並べを作ったので、今回はこの続きをやってみます。
 
 最終的な成果物はこちら↓
 

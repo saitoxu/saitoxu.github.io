@@ -1,7 +1,11 @@
 ---
 title:  "How to create C/C++ Addons of Node.js"
 date: "2016-10-08T00:00:00.000Z"
-tags: JavaScript Node.js C C++
+tags:
+  - JavaScript
+  - Node.js
+  - C
+  - C++
 ---
 We can create Node.js Addons written in C/C++.
 

@@ -1,7 +1,9 @@
 ---
 title: ReactでRailsのassets内のリソースを使う
 date: "2017-07-31T00:00:00.000Z"
-tags: Rails React
+tags:
+  - Rails
+  - React
 ---
 
 React × Railsの環境で、ReactからRailsのassets内のリソースを使う方法について調べました。

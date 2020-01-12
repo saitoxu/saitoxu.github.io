@@ -1,7 +1,9 @@
 ---
 title: React on Railsの環境構築手順
 date: "2017-04-13T00:00:00.000Z"
-tags: Rails React
+tags:
+  - Rails
+  - React
 ogp: ./2017-04-13-ogp.png
 ---
 

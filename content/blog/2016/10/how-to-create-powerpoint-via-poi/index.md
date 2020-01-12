@@ -1,7 +1,10 @@
 ---
 title: "How to create PowerPoint via Apache POI"
 date: "2016-10-24T00:00:00.000Z"
-tags: POI Java PowerPoint
+tags:
+  - POI
+  - Java
+  - PowerPoint
 ---
 I introduce to create PowerPoint file by using Apache POI library today.
 At this time, I'll use Maven for dependency management.
@@ -9,7 +12,7 @@ At this time, I'll use Maven for dependency management.
 After you finish this tutorial,
 you can create the following PowerPoint file automatically.
 
-![Sample PowerPoint]({{site.baseurl}}/images/2016-10-24-sample-power-point.png)
+![Sample PowerPoint](./2016-10-24-sample-power-point.png)
 
 #### **Step 1**
 To install POI libraries, add these dependencies to `pom.xml` like this.

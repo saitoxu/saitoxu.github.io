@@ -1,7 +1,11 @@
 ---
 title: Yarn + webpack + BabelでES6入門
 date: "2017-03-20T00:00:00.000Z"
-tags: Yarn webpack Babel JavaScript
+tags:
+  - Yarn
+  - webpack
+  - Babel
+  - JavaScript
 ogp: ./2017-03-20-ogp.png
 ---
 
