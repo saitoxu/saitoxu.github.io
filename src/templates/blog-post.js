@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tags from '../components/tags'
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -38,6 +39,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
+          <Tags tags={post.frontmatter.tags} />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{

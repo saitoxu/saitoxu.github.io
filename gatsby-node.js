@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const slugify = require(`slugify`)
 // const relatedPost = require(`./gatsby-related-posts`)
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -72,7 +73,10 @@ exports.createPages = async ({ graphql, actions }) => {
   if (tagList.length > 0) {
     tagList.forEach(tag => {
       createPage({
-        path: `/blog/tags/${tag}`,
+        path: `/tags/${slugify(tag, {
+          remove: /[*+~.()'"!:@]/g,
+          lower: true,
+        })}`,
         component: tagPage,
         context: {
           slug: tag,
@@ -90,7 +94,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value: `/blog${value}`,
+      value,
     })
   }
 }
