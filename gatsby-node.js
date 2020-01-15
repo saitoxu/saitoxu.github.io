@@ -63,9 +63,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagListTemp = []
   posts.forEach(post => {
     const tags = post.node.frontmatter.tags
-    tags.forEach(tag => {
-      tagListTemp.push(tag)
-    })
+    if (tags) {
+      tags.forEach(tag => {
+        tagListTemp.push(tag)
+      })
+    }
   })
   // 被ってるタグを削除して配列に再変換
   const tagList = Array.from(new Set(tagListTemp))

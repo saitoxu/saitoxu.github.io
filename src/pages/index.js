@@ -58,7 +58,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { fields: { slug: { ne: "/about" } } },
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt(truncate: true)
