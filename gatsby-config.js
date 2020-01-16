@@ -1,12 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `saitoxu.io`,
+    author: `Yosuke Saito`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://saitoxu.io`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `saitoxu`,
+      github: `saitoxu`
     },
+    keywords: [
+      'Programming',
+      'Web',
+      'AI',
+      'Machine Learning',
+      'saitoxu',
+      'Yosuke Saito',
+      '斎藤',
+      '斎藤陽介'
+    ]
   },
   plugins: [
     {

@@ -36,8 +36,31 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          charSet: 'utf-8'
+        },
+        {
+          httpEquiv: 'X-UA-Compatible',
+          content: 'IE=edge'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        },
+        {
+          name: `title`,
+          content: title
+        },
+        {
+          name: `og:locale`,
+          content: `ja_JP`
+        },
+        {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:site_name`,
+          content: title
         },
         {
           property: `og:title`,
@@ -53,11 +76,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: '@saitoxu',
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: '@saitoxu',
         },
         {
           name: `twitter:title`,
@@ -73,7 +100,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `ja`,
   meta: [],
   description: ``,
 }

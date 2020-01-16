@@ -9,14 +9,23 @@ import { rhythm, scale } from "../utils/typography"
 
 class AboutPage extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { data } = this.props
+    const post = data.markdownRemark
+    const siteTitle = data.site.siteMetadata.title
+    const { siteUrl, keywords } = data.site.siteMetadata
+    const ogpImage = `${siteUrl}${data.ogp.childImageSharp.fixed.src}`
+    const url = `${siteUrl}${post.fields.slug}`
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          meta={[
+            { property: `og:url`, content: url },
+            { property: `og:image`, content: ogpImage },
+            { name: `keywords`, content: keywords.join(',') }
+          ]}
         />
         <article>
           <header>
@@ -61,6 +70,15 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
+        keywords
+      }
+    }
+    ogp: file(absolutePath: { regex: "/content\/assets\/ogp.png/" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: "/about" } }) {
@@ -71,6 +89,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         tags
+      }
+      fields {
+        slug
       }
     }
   }

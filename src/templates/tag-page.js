@@ -6,14 +6,22 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 const TagPageTemplate = ({ data, location, pageContext }) => {
+  const url = `${data.site.siteMetadata.siteUrl}${location.pathname}`
+  const ogpImage = `${data.site.siteMetadata.siteUrl}${data.ogp.childImageSharp.fixed.src}`
+  const { keywords } = data.site.siteMetadata
   const tagName = pageContext.slug
   const posts = data.allMarkdownRemark.edges
+
   return (
     <Layout location={location} title="title">
       <SEO
         title={`タグ: ${tagName}`}
         description={`${tagName}タグを含む記事の一覧ページです`}
-        noindex
+        meta={[
+          { property: `og:url`, content: url },
+          { property: `og:image`, content: ogpImage },
+          { name: `keywords`, content: keywords.join(',') }
+        ]}
       />
       <div className="top">
         <h1>{tagName}</h1>
@@ -59,6 +67,15 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+        siteUrl
+        keywords
+      }
+    }
+    ogp: file(absolutePath: { regex: "/content\/assets\/ogp.png/" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
     allMarkdownRemark(
