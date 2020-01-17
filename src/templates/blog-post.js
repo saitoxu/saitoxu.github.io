@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import AdSense from 'react-adsense'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -26,7 +27,7 @@ class BlogPostTemplate extends React.Component {
           meta={[
             { property: `og:url`, content: url },
             { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords }
+            { name: `keywords`, content: keywords },
           ]}
         />
         <article>
@@ -60,6 +61,22 @@ class BlogPostTemplate extends React.Component {
             <Bio />
           </footer>
         </article>
+
+        <AdSense.Google
+          client="ca-pub-9850282304993778"
+          slot="1979280137"
+          style={{ display: "block" }}
+          layout="in-article"
+          format="fluid"
+        />
+
+        {/* <AdSense.Google
+          client="ca-pub-9850282304993778"
+          slot="6628204643"
+          style={{ display: "block" }}
+          layout="in-article"
+          format="fluid"
+        /> */}
 
         <nav>
           <ul
