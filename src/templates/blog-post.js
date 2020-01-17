@@ -9,15 +9,25 @@ import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
+    const { uri } = this.props
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
+    const keywords = post.frontmatter.tags.join(',')
+    const ogpImage = `${siteUrl}${post.frontmatter.ogp.childImageSharp.fixed.src}`
+    const url = `${siteUrl}${uri}`
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          meta={[
+            { property: `og:url`, content: url },
+            { property: `og:image`, content: ogpImage },
+            { name: `keywords`, content: keywords }
+          ]}
         />
         <article>
           <header>
@@ -89,6 +99,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -99,6 +110,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         tags
+        ogp {
+          childImageSharp {
+            fixed(width: 1200, height: 630) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
   }
