@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Tags from '../components/tags'
+import Tags from "../components/tags"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
@@ -16,11 +16,14 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="saitoxu.io" meta={[
-          { property: `og:url`, content: siteUrl },
-          { property: `og:image`, content: ogpImage },
-          { name: `keywords`, content: keywords.join(',') }
-        ]} />
+        <SEO
+          title="saitoxu.io"
+          meta={[
+            { property: `og:url`, content: siteUrl },
+            { property: `og:image`, content: ogpImage },
+            { name: `keywords`, content: keywords.join(",") },
+          ]}
+        />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -64,7 +67,7 @@ export const pageQuery = graphql`
         keywords
       }
     }
-    ogp: file(absolutePath: { regex: "/content\/assets\/ogp.png/" }) {
+    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
       childImageSharp {
         fixed(width: 1200, height: 630) {
           ...GatsbyImageSharpFixed
@@ -72,7 +75,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { slug: { ne: "/about" } } },
+      filter: { fields: { slug: { ne: "/about" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

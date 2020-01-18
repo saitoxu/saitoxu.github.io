@@ -6,9 +6,11 @@ tags:
   - OpenCV
   - Xcode
 ---
+
 This is a continuation of [my previous post]({{ site.baseurl }}/2016/11/06/how-to-use-opencv-in-swift.html).
 
 #### **Step 5**
+
 Create a header file to use OpenCV.
 
 ```objc
@@ -22,6 +24,7 @@ Create a header file to use OpenCV.
 ```
 
 #### **Step 6**
+
 Next, prepare the content of defined method.
 
 To use OpenCV, we have to write C++,
@@ -57,6 +60,7 @@ so change the extension from m to mm.
 ```
 
 #### **Step 7**
+
 Add some modifications to `ViewController.swift`
 to take a shot when tapping a button.
 
@@ -94,6 +98,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 ```
 
 #### **Step 8**
+
 Well done!
 
 Let's start your app and check it.

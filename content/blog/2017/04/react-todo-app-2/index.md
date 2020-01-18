@@ -8,11 +8,11 @@ ogp: ./2017-04-02-ogp.png
 ---
 
 前回作った
-[TODOアプリ](/playground/todo-app/)に、
+[TODO アプリ](/playground/todo-app/)に、
 [react-router](https://github.com/ReactTraining/react-router)
 を使ってルーティングを組み込んでみます。
 
-できたものはこちら↓
+できたものはこちら ↓
 
 [todo-app-2](/playground/todo-app-2/)
 
@@ -25,13 +25,13 @@ ogp: ./2017-04-02-ogp.png
 また、ルーティングは次のとおりとします。
 
 - `/` トップページ
-- `/:id` 各TODOの詳細ページ
+- `/:id` 各 TODO の詳細ページ
 
-各TODOのリンクをクリックすると、その詳細が表示されるという簡単なものです。
+各 TODO のリンクをクリックすると、その詳細が表示されるという簡単なものです。
 
 ## **2. 実装**
 
-前回はちょっとややこしい作りにしてましたが、今回は`App`コンポーネントだけでstate管理をし、他のコンポーネントは基本レンダリングするだけにしました。
+前回はちょっとややこしい作りにしてましたが、今回は`App`コンポーネントだけで state 管理をし、他のコンポーネントは基本レンダリングするだけにしました。
 
 <code class="gist-code" data-gist-id="ea1f9838f288975bbbfe3722fe13d8ad" data-gist-file="App.js" data-gist-enable-cache="true"></code>
 
@@ -39,6 +39,6 @@ ogp: ./2017-04-02-ogp.png
 
 ## **3. おわりに**
 
-TODOアプリにreact-routerを使ってルーティングを組み込んでみました。
+TODO アプリに react-router を使ってルーティングを組み込んでみました。
 
-次はReduxを触ってみる予定です。
+次は Redux を触ってみる予定です。

@@ -10,17 +10,17 @@ ogp: ./2017-11-10-ogp.png
 デプロイ中にセッションを飛ばさないために、
 セッションをアプリケーション外に保存するケースがあります。
 今回はそういったケースのために、
-RailsのセッションをRedisに保存できる
+Rails のセッションを Redis に保存できる
 [redis-store/redis-rails](https://github.com/redis-store/redis-rails)
 を使ってみました。
 
-## **まずは素のRailsプロジェクトを作成**
+## **まずは素の Rails プロジェクトを作成**
 
-まずは素のRailsプロジェクトを作成します。
+まずは素の Rails プロジェクトを作成します。
 最初のウェルカムページだけだとセッションが生成されないので、
-今回はTodo管理システムを作るということにして、
-Scaffoldを使っていきます。
-ちなみにRailsのバージョンは5.1.4を使っていきます。
+今回は Todo 管理システムを作るということにして、
+Scaffold を使っていきます。
+ちなみに Rails のバージョンは 5.1.4 を使っていきます。
 
 ```sh
 $ rails new redis-rails-sample --skip-bundle --skip-turbolinks
@@ -29,11 +29,11 @@ $ bundle install --path vendor/bundle
 $ rails g scaffold Task title:string status:integer
 ```
 
-## **redis-railsをインストール**
+## **redis-rails をインストール**
 
 次に[redis-store/redis-rails](https://github.com/redis-store/redis-rails)を
 インストールして設定を書いていきます。
-Gemfileに`gem 'redis-rails'`と書いて、`bundle install`を実行します。
+Gemfile に`gem 'redis-rails'`と書いて、`bundle install`を実行します。
 
 次に`config/application.rb`を以下のように編集します。
 
@@ -65,9 +65,9 @@ RedisRailsSample::Application.config.session_store :redis_store, {
 }
 ```
 
-## **Redisにセッションが保存されるか確認**
+## **Redis にセッションが保存されるか確認**
 
-ローカルでRedisとRailsを立ち上げて、ブラウザで
+ローカルで Redis と Rails を立ち上げて、ブラウザで
 `http://localhost:3000/tasks`にアクセスしてみましょう。
 
 ちなみにここで`(error) DENIED Redis is running in protected mode because protected mode is enabled ~`
@@ -75,7 +75,7 @@ RedisRailsSample::Application.config.session_store :redis_store, {
 
 [redis で because protected mode is enabled が出た場合の対処 - Qiita](https://qiita.com/port9/items/94ececff95adaa27b950)
 
-`redis-cli`を使ってRedisの中身を確認すると、セッションが保存されているのが確認できます。
+`redis-cli`を使って Redis の中身を確認すると、セッションが保存されているのが確認できます。
 
 ```sh
 $ redis-cli
@@ -87,12 +87,12 @@ $ redis-cli
 
 ## **セッションの有効期限を設定する**
 
-上記の設定だとRedisに溜まったデータが削除されず、メモリが不足してしまいます。
+上記の設定だと Redis に溜まったデータが削除されず、メモリが不足してしまいます。
 
-> 確認したい場合はブラウザの開発ツールでcookieを削除してページにアクセスするのを繰り返してみてください。
-前のセッションが破棄されずRedisに溜まっていくのが確認できます。
+> 確認したい場合はブラウザの開発ツールで cookie を削除してページにアクセスするのを繰り返してみてください。
+> 前のセッションが破棄されず Redis に溜まっていくのが確認できます。
 
-先ほど作成した`config/initializers/session_store.rb`に1行追加して、
+先ほど作成した`config/initializers/session_store.rb`に 1 行追加して、
 セッションの有効期限を設定しましょう。
 
 ```rb
@@ -111,7 +111,7 @@ RedisRailsSample::Application.config.session_store :redis_store, {
 }
 ```
 
-ここでもう一度RedisとRailsを立ち上げ
+ここでもう一度 Redis と Rails を立ち上げ
 `http://localhost:3000/tasks`にアクセスしてみると、
 同じようにセッションが保存されていますが、
 今度は有効期限が設定されているのが分かります。

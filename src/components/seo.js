@@ -33,15 +33,17 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={title === 'saitoxu.io' ? '' : `%s | ${site.siteMetadata.title}`}
+      titleTemplate={
+        title === "saitoxu.io" ? "" : `%s | ${site.siteMetadata.title}`
+      }
       meta={[
         {
           name: `title`,
-          content: title
+          content: title,
         },
         {
           name: `og:locale`,
-          content: `ja_JP`
+          content: `ja_JP`,
         },
         {
           name: `description`,
@@ -49,7 +51,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:site_name`,
-          content: title
+          content: title,
         },
         {
           property: `og:title`,
@@ -69,11 +71,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:site`,
-          content: '@saitoxu',
+          content: "@saitoxu",
         },
         {
           name: `twitter:creator`,
-          content: '@saitoxu',
+          content: "@saitoxu",
         },
         {
           name: `twitter:title`,

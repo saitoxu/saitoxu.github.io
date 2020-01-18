@@ -7,22 +7,22 @@ tags:
 ogp: ./2017-11-10-ogp.png
 ---
 
-前回の記事ではRailsのセッションを
+前回の記事では Rails のセッションを
 [redis-store/redis-rails](https://github.com/redis-store/redis-rails)
-を使ってRedisに保存するところまでを試しました。
+を使って Redis に保存するところまでを試しました。
 
-[RailsのセッションをRedisに保存する (1) \| yosuke.saito](https://saitoxu.io/2017/11/10/redis-rails.html)
+[Rails のセッションを Redis に保存する (1) \| yosuke.saito](https://saitoxu.io/2017/11/10/redis-rails.html)
 
-今回はRailsの認証ライブラリで有名な
+今回は Rails の認証ライブラリで有名な
 [plataformatec/devise](https://github.com/plataformatec/devise)
 と組み合わせたときの挙動を確認してみます。
 
-Railsのプロジェクトは前回作成したものを引き続き使用します。
+Rails のプロジェクトは前回作成したものを引き続き使用します。
 
-## **Deviseのインストール**
+## **Devise のインストール**
 
-まずはDeviseをインストールします。Gemfileに`gem 'devise'`を書いて`bundle install`を実行します。
-次にDeviseのREADMEに従い`rails g devise:install`を実行し、
+まずは Devise をインストールします。Gemfile に`gem 'devise'`を書いて`bundle install`を実行します。
+次に Devise の README に従い`rails g devise:install`を実行し、
 `config/environments/development.rb`を次のように編集します。
 
 ```rb
@@ -34,20 +34,20 @@ Rails.application.configure do
 end
 ```
 
-最後にDeviseで認証するモデルを作成します。今回は`User`モデルとします。
+最後に Devise で認証するモデルを作成します。今回は`User`モデルとします。
 
 ```sh
 $ rails g devise User
 ```
 
-これでDeviseの準備が完了しました。
+これで Devise の準備が完了しました。
 
 ## **ログイン機能を足す**
 
-次に、これまで作成してきたTodo管理アプリケーションに変更を加え、
+次に、これまで作成してきた Todo 管理アプリケーションに変更を加え、
 ログインしなければタスク一覧などを確認できないようにします。
 
-まずはルートとなるcontrollerを作成し、
+まずはルートとなる controller を作成し、
 
 ```sh
 $ rails g controller home index
@@ -89,7 +89,7 @@ $ rails g controller home index
 </html>
 ```
 
-最後に`app/controllers/tasks_controller.rb`に1行加えてタスクのCRUDにログインを要求するようにします。
+最後に`app/controllers/tasks_controller.rb`に 1 行加えてタスクの CRUD にログインを要求するようにします。
 
 ```rb
 class TasksController < ApplicationController
@@ -100,14 +100,14 @@ class TasksController < ApplicationController
 end
 ```
 
-さて、ここまでで見た目は微妙ですが、一応ログインが必要なWebアプリになりました。
+さて、ここまでで見た目は微妙ですが、一応ログインが必要な Web アプリになりました。
 
 ## **挙動の確認**
 
 ではサーバを起動して、`http://localhost:3000/users/sign_up`からユーザ登録してみましょう。
 デフォルトであればユーザ名とパスワードを入力するとそのままログインできるはずです。
 
-ログインに成功したらRedisを確認してみましょう。
+ログインに成功したら Redis を確認してみましょう。
 セッションが保存されているのを確認できます。
 
 ```sh
@@ -132,5 +132,5 @@ end
 [plataformatec/devise](https://github.com/plataformatec/devise)を組み合わせてみました。
 特段引っかかるところもなく簡単に導入できましたね。
 
-ただ、実環境ではRedisの冗長化が必要となることが多いでしょう。
-そこで次回はRedisの死活監視や自動フェイルオーバーを行ってくれる **Redis Sentinel** を使ってみます。
+ただ、実環境では Redis の冗長化が必要となることが多いでしょう。
+そこで次回は Redis の死活監視や自動フェイルオーバーを行ってくれる **Redis Sentinel** を使ってみます。

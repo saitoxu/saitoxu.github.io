@@ -6,6 +6,7 @@ tags:
   - Java
   - PowerPoint
 ---
+
 I introduce to create PowerPoint file by using Apache POI library today.
 At this time, I'll use Maven for dependency management.
 
@@ -15,6 +16,7 @@ you can create the following PowerPoint file automatically.
 ![Sample PowerPoint](./2016-10-24-sample-power-point.png)
 
 #### **Step 1**
+
 To install POI libraries, add these dependencies to `pom.xml` like this.
 
 ```xml
@@ -40,6 +42,7 @@ To install POI libraries, add these dependencies to `pom.xml` like this.
 ```
 
 #### **Step 2**
+
 Write some java code.
 
 ```java
@@ -85,4 +88,5 @@ public class App {
 ```
 
 #### **Step 3**
+
 Finally, execute the above code, then you can find the PowerPoint file!

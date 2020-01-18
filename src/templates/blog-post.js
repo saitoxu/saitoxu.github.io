@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import AdSense from 'react-adsense'
+import AdSense from "react-adsense"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Tags from '../components/tags'
+import Tags from "../components/tags"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -14,14 +14,14 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
-    const keywords = post.frontmatter.tags.join(',')
+    const keywords = post.frontmatter.tags.join(",")
     const defaultOgpSrc = this.props.data.ogp.childImageSharp.fixed.src
     const ogpImage = `${siteUrl}${
       post.frontmatter.ogp
         ? post.frontmatter.ogp.childImageSharp.fixed.src
         : defaultOgpSrc
     }`
-      
+
     const url = `${siteUrl}${uri}`
 
     return (

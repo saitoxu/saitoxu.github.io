@@ -9,6 +9,7 @@ tags:
   - Thin
   - Nginx
 ---
+
 I will start from where we left off, in this post,
 I will introduce my small system I mentioned in [the previous post]({{ site.baseurl }}/2016/10/12/github-twitter-integration.html).
 

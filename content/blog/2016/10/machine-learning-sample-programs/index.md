@@ -1,10 +1,11 @@
 ---
-title:  "Sample programs of Machine Learning"
+title: "Sample programs of Machine Learning"
 date: "2016-10-10T00:00:00.000Z"
 tags:
   - JavaScript
   - Machine Learning
 ---
+
 I'm creating sample code collection of machine learning,
 this is the repository.
 

@@ -7,21 +7,21 @@ tags:
   - CloudFront
 ---
 
-RailsでCarrierWave+Fogを使って画像などのリソースをS3に保存し、
-それをCloudFront経由で配信するとき、ちょっと困ったことがあったのでメモしておきます。
+Rails で CarrierWave+Fog を使って画像などのリソースを S3 に保存し、
+それを CloudFront 経由で配信するとき、ちょっと困ったことがあったのでメモしておきます。
 
 環境は次のとおりです。
 
-* Rails 5.1.1
-* CarrierWave 1.1.0
-* Fog 1.40.0
+- Rails 5.1.1
+- CarrierWave 1.1.0
+- Fog 1.40.0
 
 ## **問題**
 
-セキュリティのためS3に保存したリソースへの直接アクセスは禁止し、
-CloudFrontからのみのアクセスを許可したいという要求があります。
+セキュリティのため S3 に保存したリソースへの直接アクセスは禁止し、
+CloudFront からのみのアクセスを許可したいという要求があります。
 
-これを実現するには、CarrierWaveの設定を次のようにすればできそうな気がします。
+これを実現するには、CarrierWave の設定を次のようにすればできそうな気がします。
 
 ```rb
 # config/initializers/carrierwave.rb
@@ -43,25 +43,25 @@ end
 ```
 
 しかし、実際に`model.resource.url`のようにアクセスすると、
-以下のようなS3のPre-Signed URLが返ってきます。
+以下のような S3 の Pre-Signed URL が返ってきます。
 
 `https://bucket-example.s3.amazonaws.com/uploads/user/image/1/image.jpeg?X-Amz-Expires=60&X-Amz-Date=20160914T044238Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJTIEVPQZEXU26EJA/20160914/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=53daea895d9b40d5821011ee0e4c776c0ab96bdce5f14d078716f40a2e723244`
 
-古いですが以下のIssueなどを見たところ、
-AWS Specificな課題なのでCarrierWaveの方で対応はされていないようです。
+古いですが以下の Issue などを見たところ、
+AWS Specific な課題なので CarrierWave の方で対応はされていないようです。
 
 [Using CloudFront CDN for private files · Issue #1158 · carrierwaveuploader/carrierwave](https://github.com/carrierwaveuploader/carrierwave/issues/1158)
 
 ## **解決方法**
 
-安直ですが各Uploaderの`url`メソッドをオーバーライドしてCloudFrontのURLを返すようにします。
+安直ですが各 Uploader の`url`メソッドをオーバーライドして CloudFront の URL を返すようにします。
 
-CloudFrontのドメインは[railsconfig/config](https://github.com/railsconfig/config)を使って定義していて、
+CloudFront のドメインは[railsconfig/config](https://github.com/railsconfig/config)を使って定義していて、
 加えて以下の工夫を加えています。
 
-* `default_url`が定義されているときはそれを返す
-* 開発・テスト環境と本番環境で場合分け
-* リソースを更新したあとはキャッシュクリアしたいので更新日時をクエリパラメータに追加
+- `default_url`が定義されているときはそれを返す
+- 開発・テスト環境と本番環境で場合分け
+- リソースを更新したあとはキャッシュクリアしたいので更新日時をクエリパラメータに追加
 
 ```rb
 class ResourceUploader < CarrierWave::Uploader::Base
@@ -84,4 +84,4 @@ end
 
 [amazon s3 - Use CDN with carrierwave + fog in s3 + cloudfront with rails 3.1 - Stack Overflow](https://stackoverflow.com/questions/9956712/use-cdn-with-carrierwave-fog-in-s3-cloudfront-with-rails-3-1)
 
-以上、CarrierWave+FogでリソースをS3に保存・CloudFrontで配信するときの小ネタでした。
+以上、CarrierWave+Fog でリソースを S3 に保存・CloudFront で配信するときの小ネタでした。

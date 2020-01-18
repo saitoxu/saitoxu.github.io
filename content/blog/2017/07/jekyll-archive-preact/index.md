@@ -9,9 +9,9 @@ ogp: ./2017-07-01-ogp.png
 ---
 
 [developit/preact](https://github.com/developit/preact/)という
-Reactから一部機能を除いてサイズを軽くしたライブラリがあります。
+React から一部機能を除いてサイズを軽くしたライブラリがあります。
 
-このpreactを使って、Jekyllで書いてるブログのアーカイブメニューを作ってみた（フッター参照）ので、
+この preact を使って、Jekyll で書いてるブログのアーカイブメニューを作ってみた（フッター参照）ので、
 作り方をメモしておきます。
 
 ## **1. アーカイブページを作る**
@@ -21,27 +21,28 @@ Reactから一部機能を除いてサイズを軽くしたライブラリがあ
 
 ## **2. 記事の投稿日付一覧を書き出す**
 
-記事の投稿日付一覧をDOMに書き出しておきます。
-これを後でpreactで読み込んでアーカイブメニューを作るという流れです。
+記事の投稿日付一覧を DOM に書き出しておきます。
+これを後で preact で読み込んでアーカイブメニューを作るという流れです。
 
 ```html
-<input id="archive-data" type="hidden" value="{{ "{{ site.posts | map: 'date' | jsonify | escape " }}}}" />
+<input id="archive-data" type="hidden" value="{{ "{{ site.posts | map: 'date' |
+jsonify | escape " }}}}" />
 ```
 
-JavaScriptで処理しやすいよう`jsonify`をかませてます。
+JavaScript で処理しやすいよう`jsonify`をかませてます。
 
-## **3. preactのセットアップ**
+## **3. preact のセットアップ**
 
-preactなどのnpmライブラリを使う準備をします。
+preact などの npm ライブラリを使う準備をします。
 
 ```sh
 $ yarn init
 $ yarn install preact watchify babelify babel-preset-es2015 babel-preset-react
 ```
 
-preactの環境構築にはこちらが参考になりました。
+preact の環境構築にはこちらが参考になりました。
 
-[Reactサブセット実装の preact で、ライフゲームのアニメーション書いて使い方を確認した](http://qiita.com/mizchi/items/427713e68e8c980ce0ec)
+[React サブセット実装の preact で、ライフゲームのアニメーション書いて使い方を確認した](http://qiita.com/mizchi/items/427713e68e8c980ce0ec)
 
 ## **4. アーカイブメニューのコンポーネント実装**
 
@@ -51,12 +52,12 @@ preactの環境構築にはこちらが参考になりました。
 ```js
 /** @jsx h */
 
-import { render, Component } from 'preact'
+import { render, Component } from "preact"
 
 class Archive extends Component {
   constructor(props) {
     super(props)
-    const postDates = JSON.parse(document.getElementById('archive-data').value)
+    const postDates = JSON.parse(document.getElementById("archive-data").value)
     // postDatesに記事の日付一覧が入ってるのでよしなに使う
     this.handleClick = this.handleClick.bind(this)
   }
@@ -71,8 +72,8 @@ class Archive extends Component {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  render(<Archive />, document.getElementById('archive'))
+window.addEventListener("DOMContentLoaded", () => {
+  render(<Archive />, document.getElementById("archive"))
 })
 ```
 
@@ -80,6 +81,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ## **おわりに**
 
-preactを使ってアーカイブメニューを作りました。
+preact を使ってアーカイブメニューを作りました。
 
-reactは大仰だけど、ちょっと使いたいってときに使えるなと思いました。
+react は大仰だけど、ちょっと使いたいってときに使えるなと思いました。

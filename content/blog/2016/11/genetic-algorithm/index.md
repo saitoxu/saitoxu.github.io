@@ -5,24 +5,29 @@ tags:
   - JavaScript
   - Machine Learning
 ---
+
 I created a program to solve the knapsack problem with genetic algorithm.
 
 [Genetic Algorithm (GitHub)](https://github.com/saitoxu/ml-kitchen-sink/tree/master/04-genetic-algorithm)
 
 #### **What is Genetic Algorithm?**
+
 Genetic algorithm is an algorithm which prepares a plurality of "individuals" which represent data (candidate solutions) by genes, and selects individuals with high fitness preferentially and searches for solutions while repeating operations such as crossover (recombination) and mutation.
 
 [Genetic Algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm)
 
 #### **What is Knapsack problem?**
+
 The knapsack problem is a problem to find the maximum sum of the value of items that can be packed into knapsack when packing multiple items of which value and weight are fixed in a certain knapsack.
 
 [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem)
 
 #### **How to use?**
+
 This is easy to use.
 
-#### *Data Input*
+#### _Data Input_
+
 The data of items are entered in the following format.
 Enter one item per line, first enter the weight, then the value.
 
@@ -40,16 +45,18 @@ $ cat data.txt
 184 475
 ```
 
-#### *Program usage*
+#### _Program usage_
+
 Just pass the item data and some parameters simply.
 
 1. Initialize `GeneticAlgorithm` with data of items and some parameters.
 2. Call `fit` to solve a knapsack problem.
 3. Call `result` to show related information of the solution.
 
-#### *Parameter*
+#### _Parameter_
 
 {::options parse_block_html="true" /}
+
 <div class="table-scroll">
 |Parameter|Meaning|Mandatory|Default|
 |:---|:---|:---|---:|
@@ -62,20 +69,21 @@ Just pass the item data and some parameters simply.
 </div>
 
 #### **Example**
+
 A concrete example is as below.
 
 ```js
-const fs = require('fs');
-const GeneticAlgorithm = require('./genetic-algorithm');
-const LIMIT = 300;
-const POOLSIZE = 50;
-const LAST = 100;
-const RATE = 0.05;
-const data = fs.readFileSync('data.txt').toString();
-const ga = new GeneticAlgorithm(data, LIMIT, POOLSIZE, LAST, RATE);
+const fs = require("fs")
+const GeneticAlgorithm = require("./genetic-algorithm")
+const LIMIT = 300
+const POOLSIZE = 50
+const LAST = 100
+const RATE = 0.05
+const data = fs.readFileSync("data.txt").toString()
+const ga = new GeneticAlgorithm(data, LIMIT, POOLSIZE, LAST, RATE)
 
-ga.fit();
-console.log(ga.result());
+ga.fit()
+console.log(ga.result())
 ```
 
 When executed, information of the solution is shown as below.

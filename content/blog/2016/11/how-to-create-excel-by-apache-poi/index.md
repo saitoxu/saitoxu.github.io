@@ -6,6 +6,7 @@ tags:
   - Java
   - Excel
 ---
+
 I often use Apache POI to deal with Microsoft Office in these days.
 
 Today I introduce how to create Excel file by using Apache POI.
@@ -18,6 +19,7 @@ Please refer [a previous article](/2016/10/how-to-create-powerpoint-via-poi)
 for install of Apache POI.
 
 #### **Step 1**
+
 At first, create `XSSFWorkBook` object to represent work book of Excel,
 and create `FileOutputStream` to write the Excel file too.
 
@@ -32,6 +34,7 @@ try (XSSFWorkbook book = new XSSFWorkbook();
 ```
 
 #### **Step 2**
+
 Create a sheet.
 
 ```java
@@ -39,6 +42,7 @@ Sheet sheet = book.createSheet();
 ```
 
 #### **Step 3**
+
 Specify a cell to write content.
 
 ```java
@@ -47,6 +51,7 @@ Cell cell = row.createCell(0);
 ```
 
 #### **Step 4**
+
 Specify a format.
 
 There are a lot of options except below, please search others.
@@ -61,14 +66,15 @@ cell.setCellStyle(style);
 ```
 
 #### **Step 5**
+
 Write value to the cell.
 
 ```java
 cell.setCellValue("test");
 ```
 
-
 #### **Step 6**
+
 Finally, write the book to a file.
 
 ```java

@@ -6,11 +6,13 @@ tags:
   - iOS
   - Xcode
 ---
+
 This is continued article of [the previous post]({{ site.baseurl }}/2016/12/07/speech-recognition-api-2.html).
 
 This time, we will finally implement the speech recognition part.
 
 #### **Step 9**
+
 The method to recognize speech is as below.
 
 ```swift
@@ -84,6 +86,7 @@ class ViewController: UIViewController {
 ```
 
 #### **Step 10**
+
 Call the above `startRecording()` method when tapping the start button.
 
 ```swift
@@ -111,6 +114,7 @@ class ViewController: UIViewController {
 ```
 
 #### **Step 11**
+
 That's it!
 
 Please run the app and speak something.

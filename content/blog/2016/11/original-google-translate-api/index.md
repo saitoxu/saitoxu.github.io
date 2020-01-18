@@ -6,6 +6,7 @@ tags:
   - PhantomJS
   - Google Translate
 ---
+
 Recently, Google Translate has evolved using a neural network.
 
 So I created an original API server that uses Google Translate without using the API.
@@ -16,6 +17,7 @@ I slack off this now and so handle only from Japanese to English,
 but it can also correspond easily to other languages.
 
 #### **Usage**
+
 It's very easy to use.
 
 ```bash
@@ -30,6 +32,7 @@ Konjac
 ```
 
 #### **Mechanism**
+
 Mechanism is as below.
 
 1. When receiving a request, access to the Google Translate page by PhantomJS

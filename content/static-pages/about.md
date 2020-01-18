@@ -7,10 +7,10 @@ title: About
 I'm a software engineer with extensive experience from web front to cloud infrastructure construction.
 Especially I'm good at the following.
 
-* SPA Development with React.js
-* iOS/Android App Development with React Native
-* API Development with Rails
-* Developing Machine Laerning System with Python
+- SPA Development with React.js
+- iOS/Android App Development with React Native
+- API Development with Rails
+- Developing Machine Laerning System with Python
 
 My current goal is to make [GLIT](https://glit.io), which I'm developing in my company, the best recruitment service in Japan.
 

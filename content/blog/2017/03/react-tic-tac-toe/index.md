@@ -7,7 +7,7 @@ tags:
 ogp: ./2017-03-21-ogp.png
 ---
 
-Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/tutorial.html)にある三目並べを作ってみました。
+React の[公式チュートリアル](https://facebook.github.io/react/tutorial/tutorial.html)にある三目並べを作ってみました。
 
 成果物はここにおいたので確認してみてください。
 
@@ -22,7 +22,7 @@ Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/
 
 ## **1. プロジェクト作成**
 
-[Create React App](https://github.com/facebookincubator/create-react-app)を使ってReactのプロジェクトを作ります。
+[Create React App](https://github.com/facebookincubator/create-react-app)を使って React のプロジェクトを作ります。
 
 `create-react-app`が入ってない場合は`yarn`か`npm`でインストールすると便利です。
 
@@ -55,7 +55,7 @@ Reactの[公式チュートリアル](https://facebook.github.io/react/tutorial/
 ## **5. 最後に**
 
 エントリーポイントとなる`index.js`でゲーム盤のコンポーネントをレンダリングして、
-あとはCSSなどを修正して終わりです。
+あとは CSS などを修正して終わりです。
 
 <code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.js" data-gist-enable-cache="true"></code>
 

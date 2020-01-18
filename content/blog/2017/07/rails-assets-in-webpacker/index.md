@@ -6,19 +6,19 @@ tags:
   - React
 ---
 
-React × Railsの環境で、ReactからRailsのassets内のリソースを使う方法について調べました。
-Rails 5.1から導入された[rails/webpacker](https://github.com/rails/webpacker)を使っている前提とします。
+React × Rails の環境で、React から Rails の assets 内のリソースを使う方法について調べました。
+Rails 5.1 から導入された[rails/webpacker](https://github.com/rails/webpacker)を使っている前提とします。
 
 ## **環境**
 
-* Rails 5.1.1
-* React 15.5.4
+- Rails 5.1.1
+- React 15.5.4
 
 ## **方法**
 
-webpackerのREADMEに書いてますが、
-assetsのリソースを使いたいJSファイルの拡張子を`.erb`にしておくと、
-erbの記法が使えるようになります（デフォルトで組み込まれている`rails-erb-loader`のおかげです）。
+webpacker の README に書いてますが、
+assets のリソースを使いたい JS ファイルの拡張子を`.erb`にしておくと、
+erb の記法が使えるようになります（デフォルトで組み込まれている`rails-erb-loader`のおかげです）。
 
 ```js
 <%# app/javascript/my_pack/example.js.erb %>
@@ -27,7 +27,7 @@ erbの記法が使えるようになります（デフォルトで組み込ま�
 var railsImagePath = "<%= helpers.image_path('rails.png') %>"
 ```
 
-というわけで、これを使って次のようにassetsのリソースを使えます。
+というわけで、これを使って次のように assets のリソースを使えます。
 
 ```js
 // assets.js.erb
@@ -40,11 +40,10 @@ export const iconPath = "<%= helpers.image_path('icon.png') %>"
 ```js
 // SomeComponent.js
 
-import React from 'react'
-import { iconPath } from './assets.js.erb'
+import React from "react"
+import { iconPath } from "./assets.js.erb"
 
 export default class SomeComponent extends React.Component {
-
   // ...
 
   render() {
@@ -61,7 +60,7 @@ export default class SomeComponent extends React.Component {
 ```js
 // assets.js
 
-import { iconPath } from 'assets.js.erb'
+import { iconPath } from "assets.js.erb"
 export { iconPath }
 ```
 

@@ -7,28 +7,28 @@ tags:
 ogp: ./02-28-ogp.png
 ---
 
-前から気になっていたReactのグラフ描画ライブラリ[Recharts](https://github.com/recharts/recharts)を触ってみた。
-内部で[D3.js](https://github.com/d3/d3)を使っていて、READMEに書いてあるが大きな特徴は3つあるらしい。
+前から気になっていた React のグラフ描画ライブラリ[Recharts](https://github.com/recharts/recharts)を触ってみた。
+内部で[D3.js](https://github.com/d3/d3)を使っていて、README に書いてあるが大きな特徴は 3 つあるらしい。
 
-* Reactコンポーネントとして使える
-* 素のSVGの描画をサポート
-* 画面に表示したいコンポーネントを宣言するだけで描画可能
+- React コンポーネントとして使える
+- 素の SVG の描画をサポート
+- 画面に表示したいコンポーネントを宣言するだけで描画可能
 
 基本は次のように使う。
 
 ```js
-import React, { Component } from 'react'
-import { LineChart, Line, XAxis, YAxis } from 'recharts'
+import React, { Component } from "react"
+import { LineChart, Line, XAxis, YAxis } from "recharts"
 
 class App extends Component {
   render() {
     const data = [
-      { name: 'a', uv: 12, pv: 5 },
-      { name: 'b', uv: 13, pv: 3 },
-      { name: 'c', uv: 19, pv: 9 },
-      { name: 'd', uv: 11, pv: 10 },
-      { name: 'e', uv: 9, pv: 12 },
-      { name: 'f', uv: 22, pv: 13 }
+      { name: "a", uv: 12, pv: 5 },
+      { name: "b", uv: 13, pv: 3 },
+      { name: "c", uv: 19, pv: 9 },
+      { name: "d", uv: 11, pv: 10 },
+      { name: "e", uv: 9, pv: 12 },
+      { name: "f", uv: 22, pv: 13 },
     ]
     return (
       <div className="App">
@@ -57,13 +57,12 @@ export default App
 ```js
 class App extends Component {
   render() {
-
     // ...
 
     return (
       <div className="App">
         <LineChart width={400} height={200} data={data}>
-          <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
+          <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
           <XAxis dataKey="name" />
           <YAxis />
           <Line dataKey="uv" stroke="#8884d8" />
@@ -82,14 +81,18 @@ class App extends Component {
 ```js
 class App extends Component {
   render() {
-
     // ...
 
     return (
       <div className="App">
-        <ResponsiveContainer width="80%" height="40%" minWidth={400} minHeight={200}>
+        <ResponsiveContainer
+          width="80%"
+          height="40%"
+          minWidth={400}
+          minHeight={200}
+        >
           <LineChart data={data}>
-            <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
+            <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
             <XAxis dataKey="name" />
             <YAxis />
             <Line dataKey="uv" stroke="#8884d8" />
@@ -102,7 +105,7 @@ class App extends Component {
 }
 ```
 
-公式では対応していないが、以下の記事によるとReact Nativeでも使えるらしい。
+公式では対応していないが、以下の記事によると React Native でも使えるらしい。
 
 [Using Recharts in React Native project - DZone Web Dev](https://dzone.com/articles/using-recharts-in-react-native-project)
 

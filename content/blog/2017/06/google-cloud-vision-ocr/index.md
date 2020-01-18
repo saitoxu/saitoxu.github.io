@@ -6,21 +6,21 @@ tags:
 ogp: ./2017-06-03-ogp.png
 ---
 
-今更ながらGoogle Cloud Visionを試してみたので導入部分をメモしておきます。
+今更ながら Google Cloud Vision を試してみたので導入部分をメモしておきます。
 
 #### **準備**
 
-Google Cloud Platformのプロジェクトを作成します。
+Google Cloud Platform のプロジェクトを作成します。
 
 プロジェクト作成後、以下の手順が必要です。
 
-- Google Cloud Vision APIを有効にする
-- APIキーまたはサービスアカウントキーを発行する
+- Google Cloud Vision API を有効にする
+- API キーまたはサービスアカウントキーを発行する
 - 課金を有効にする
 
 #### **実装**
 
-Node.js用のクライアントライブラリがあるので、それを使います。
+Node.js 用のクライアントライブラリがあるので、それを使います。
 
 ```sh
 $ mkdir google-cloud-vision-test
@@ -32,19 +32,19 @@ $ yarn add @google-cloud/vision
 今は`google-cloud`のライブラリ自体をインストールするより、
 個別に使用するモジュールをインストールする方が良いみたいです。
 
-Cloud Visionを使用するコードは次のようになります。
-今回はOCRを使ってみました。
+Cloud Vision を使用するコードは次のようになります。
+今回は OCR を使ってみました。
 
 ```js
 // sample.js
-const cloudVision = require('@google-cloud/vision')
+const cloudVision = require("@google-cloud/vision")
 
 const vision = cloudVision({
-  projectId: 'project-name',
-  keyFilename: '/path/to/service-account-key.json'
+  projectId: "project-name",
+  keyFilename: "/path/to/service-account-key.json",
 })
 
-vision.detectText('/path/to/image.jpg', (err, text, apiResponse) => {
+vision.detectText("/path/to/image.jpg", (err, text, apiResponse) => {
   console.log(text)
 })
 ```

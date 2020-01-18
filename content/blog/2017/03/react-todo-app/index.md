@@ -7,10 +7,10 @@ tags:
 ogp: ./2017-03-30-ogp.jpg
 ---
 
-これまで何度かReactを触ってきましたが、
-今回はこれまでの復習がてら、ありがちですがTODOアプリを作ってみます。
+これまで何度か React を触ってきましたが、
+今回はこれまでの復習がてら、ありがちですが TODO アプリを作ってみます。
 
-今回の完成形はこんな感じ↓
+今回の完成形はこんな感じ ↓
 
 [todo-app](/playground/todo-app/)
 
@@ -22,14 +22,14 @@ ogp: ./2017-03-30-ogp.jpg
 
 ![Components](./2017-03-30-components.png)
 
-TODOリスト全体の状態管理は`App`コンポーネントでやって、
-各TODOのそれは`Todo`コンポーネントでやることにします。
+TODO リスト全体の状態管理は`App`コンポーネントでやって、
+各 TODO のそれは`Todo`コンポーネントでやることにします。
 
 ## **2. 実装**
 
 実装は次のようになります。
 
-※これ以外にエントリーポイントのJSやCSSが必要になります。
+※これ以外にエントリーポイントの JS や CSS が必要になります。
 
 <code class="gist-code" data-gist-id="84fcb8f20c23d26fd1cc22b39de13398" data-gist-file="App.js" data-gist-enable-cache="true"></code>
 
@@ -41,7 +41,7 @@ TODOリスト全体の状態管理は`App`コンポーネントでやって、
 
 ## **3. おわりに**
 
-以上、簡単なTODOアプリを作ってみました。
+以上、簡単な TODO アプリを作ってみました。
 
-今回、せっかく用意したTODOのdescriptionフィールドを使っていないのですが、
+今回、せっかく用意した TODO の description フィールドを使っていないのですが、
 これは次回[react-router](https://github.com/ReactTraining/react-router)の練習を兼ねて使う予定です。

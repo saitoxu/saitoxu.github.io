@@ -8,12 +8,12 @@ tags:
 ogp: ./2017-04-16-ogp.png
 ---
 
-Redux公式のページで紹介されているAJAXを使ったアプリをベースに、
-GitHubの公開リポジトリを取得するアプリを作ってみました。
+Redux 公式のページで紹介されている AJAX を使ったアプリをベースに、
+GitHub の公開リポジトリを取得するアプリを作ってみました。
 
 [React Redux Async Sample](/playground/react-redux-async-sample/)
 
-動作イメージ↓
+動作イメージ ↓
 
 ![Anime](./2017-04-16-anime.gif)
 
@@ -28,9 +28,9 @@ GitHubの公開リポジトリを取得するアプリを作ってみました�
 
 大まかなステップだけ説明します。
 
-**1. Stateを決める**
+**1. State を決める**
 
-最初にアプリケーション全体のStateを決めます。
+最初にアプリケーション全体の State を決めます。
 今回は以下のように単純な形でいきます。
 
 ```js
@@ -45,26 +45,26 @@ GitHubの公開リポジトリを取得するアプリを作ってみました�
 }
 ```
 
-**2. Actionの定義**
+**2. Action の定義**
 
-Actionはリクエストを送るときの`REQUEST_REPOS`と、
-レスポンスを受け取ったときの`RECEIVE_REPOS`の2種類定義します。
+Action はリクエストを送るときの`REQUEST_REPOS`と、
+レスポンスを受け取ったときの`RECEIVE_REPOS`の 2 種類定義します。
 
-GitHubの公開リポジトリを取得するのはFetch APIを使いました。
+GitHub の公開リポジトリを取得するのは Fetch API を使いました。
 
 <code class="gist-code" data-gist-id="705e41267e50dee76d28eb98849edd90" data-gist-file="actions.js" data-gist-enable-cache="true"></code>
 
-**3. Reducerを作る**
+**3. Reducer を作る**
 
-次に、Reducerを作ります。
-今回はStateが単純なので、Reducerは1つだけでOKです。
+次に、Reducer を作ります。
+今回は State が単純なので、Reducer は 1 つだけで OK です。
 
 <code class="gist-code" data-gist-id="705e41267e50dee76d28eb98849edd90" data-gist-file="reducers.js" data-gist-enable-cache="true"></code>
 
-**4. Storeを作る**
+**4. Store を作る**
 
-ReducerからStoreを作るのは簡単です。
-非同期リクエストを扱うので、redux-thunkで提供されている`thunkMiddleware`をかませます。
+Reducer から Store を作るのは簡単です。
+非同期リクエストを扱うので、redux-thunk で提供されている`thunkMiddleware`をかませます。
 
 <code class="gist-code" data-gist-id="705e41267e50dee76d28eb98849edd90" data-gist-file="configureStore.js" data-gist-enable-cache="true"></code>
 

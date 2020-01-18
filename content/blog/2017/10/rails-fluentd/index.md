@@ -7,26 +7,26 @@ tags:
 ogp: ./2017-10-16-ogp.png
 ---
 
-RailsのログをFluentdでS3に保存する方法を調べました。
+Rails のログを Fluentd で S3 に保存する方法を調べました。
 次のようにログの集約サーバを配置する構成で考えます。
 
 ![構成](./2017-10-16-structure.png)
 
-集約サーバはCentOS7系で進めます。
+集約サーバは CentOS7 系で進めます。
 
-## **IAMユーザの用意**
+## **IAM ユーザの用意**
 
-S3にログを保存するために、
-保存先のバケットへのアクセス権限を持つIAMユーザを作成します。
-作成したらアクセスキーIDとシークレットキーを控えておきます。
+S3 にログを保存するために、
+保存先のバケットへのアクセス権限を持つ IAM ユーザを作成します。
+作成したらアクセスキー ID とシークレットキーを控えておきます。
 
 ## **集約サーバの準備**
 
 まずログの集約サーバの準備をします。
 
-#### td-agentのインストール
+#### td-agent のインストール
 
-はじめにtd-agentをインストールします。
+はじめに td-agent をインストールします。
 
 ```sh
 $ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
@@ -44,15 +44,15 @@ $ sudo td-agent-gem install fluent-plugin-forest
 [fluent-plugin-forest](https://github.com/tagomoris/fluent-plugin-forest)は
 `<template>`や`<case>`ディレクティブでマッチしたタグ名を使えるプラグインです。
 タグ名毎に出力するファイルを分けたいときなどに、設定が冗長にならずに済みます。
-ちなみにFluentdの最新バージョンであるv0.14ではプラグインなしでできるそうです。
+ちなみに Fluentd の最新バージョンである v0.14 ではプラグインなしでできるそうです。
 
 #### 環境変数の設定
 
-IAMユーザのアクセスキーなどは環境変数として設定して、
-それをtd-agentの設定ファイルから読むことにします。
+IAM ユーザのアクセスキーなどは環境変数として設定して、
+それを td-agent の設定ファイルから読むことにします。
 環境変数はこちらの方法を使って設定します。
 
-[td-agent.conf 設定パラメータの値を環境変数から参照したい - ようへいの日々精進XP](http://inokara.hateblo.jp/entry/2016/09/17/091659)
+[td-agent.conf 設定パラメータの値を環境変数から参照したい - ようへいの日々精進 XP](http://inokara.hateblo.jp/entry/2016/09/17/091659)
 
 `/etc/sysconfig/td-agent`は設定後、次のようになると思います。
 
@@ -95,11 +95,11 @@ export AWS_SEC_KEY=abcdefghijklmnopqrstuvwxyz1234567890ABCD # 上記IAMユーザ
 
 これにて集約サーバの設定は完了です。
 
-## **Railsの設定**
+## **Rails の設定**
 
-次にRailsの設定をしていきます。
+次に Rails の設定をしていきます。
 
-#### gemのインストール
+#### gem のインストール
 
 ```ruby
 # Gemfile
@@ -107,9 +107,9 @@ gem 'act-fluent-logger-rails'
 ```
 
 [act-fluent-logger-rails](https://github.com/actindi/act-fluent-logger-rails)は
-ログをFluentdに流すためのgemです。
+ログを Fluentd に流すための gem です。
 カスタマイズ性は低いですが、
-取り急ぎFluentdにログを流したいときにサッと使えるので今回はこれを使っていきます。
+取り急ぎ Fluentd にログを流したいときにサッと使えるので今回はこれを使っていきます。
 
 #### 設定ファイルの更新
 
@@ -139,11 +139,11 @@ end
 
 ```yml
 production:
-  fluent_host:   <%= ENV['FLUENT_HOST'] %>
-  fluent_port:   24224
-  tag:           'sample.tag'
-  messages_type: 'string'
+  fluent_host: <%= ENV['FLUENT_HOST'] %>
+  fluent_port: 24224
+  tag: "sample.tag"
+  messages_type: "string"
 ```
 
-以上でRailsの設定も完了です。
-これで集約サーバを介してS3にログが保存されるようになります。
+以上で Rails の設定も完了です。
+これで集約サーバを介して S3 にログが保存されるようになります。

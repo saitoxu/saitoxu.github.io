@@ -1,5 +1,5 @@
 ---
-title:  "How to create C/C++ Addons of Node.js"
+title: "How to create C/C++ Addons of Node.js"
 date: "2016-10-08T00:00:00.000Z"
 tags:
   - JavaScript
@@ -7,6 +7,7 @@ tags:
   - C
   - C++
 ---
+
 We can create Node.js Addons written in C/C++.
 
 See the following page for more detail.
@@ -17,10 +18,11 @@ In this post, I'll introduce how to create factorial method addon.
 Finally, we can use the method like this.
 
 ```js
-console.log(addon.factorial(5)); // 120
+console.log(addon.factorial(5)) // 120
 ```
 
 #### **Step 1**
+
 First, Set up npm project.
 
 ```sh
@@ -28,6 +30,7 @@ $ npm init
 ```
 
 #### **Step 2**
+
 Install following packages.
 
 ```sh
@@ -46,24 +49,24 @@ we don't need to consider backward compatibility.
 `bindings` is helper module for loading your native module's .node file.
 
 #### **Step 3**
-Create a *binding.gyp* file with the following content.
-This is needed for build C/C++ program, and NAN needs *include_dirs*.
+
+Create a _binding.gyp_ file with the following content.
+This is needed for build C/C++ program, and NAN needs _include_dirs_.
 
 ```json
 {
   "targets": [
     {
       "target_name": "factorial",
-      "sources": [ "factorial.cc" ],
-      "include_dirs": [
-        "<!(node -e \"require('nan')\")"
-      ]
+      "sources": ["factorial.cc"],
+      "include_dirs": ["<!(node -e \"require('nan')\")"]
     }
   ]
 }
 ```
 
 #### **Step 4**
+
 Create `factorial.cc` like this.
 
 ```c++
@@ -104,25 +107,27 @@ There are 3 important modules.
 `NAN_MODULE_INIT` registers the method.
 
 `NODE_MODULE` is entry point for this addon,
-the first argument must be same as `target_name` in *binding.gyp*.
+the first argument must be same as `target_name` in _binding.gyp_.
 
 #### **Step 5**
+
 Build the code by the following command.
 
 ```sh
 $ node-gyp configure build
 ```
 
-Then *factorial.node* is created in *build/Release* directory.
+Then _factorial.node_ is created in _build/Release_ directory.
 
 #### **Step 6**
+
 Write some JavaScript code.
 
 ```js
-const addon = require('bindings')('factorial.node');
+const addon = require("bindings")("factorial.node")
 // const addon = require('./build/Release/addon'); // no bindings module
 
-console.log(addon.factorial(10)); // 3628800
+console.log(addon.factorial(10)) // 3628800
 ```
 
 I put the above code on GitHub repository: [Node.js Addon Sample](https://github.com/saitoxu/nodejs-addon-sample)

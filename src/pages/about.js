@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Tags from '../components/tags'
+import Tags from "../components/tags"
 import { rhythm, scale } from "../utils/typography"
 
 class AboutPage extends React.Component {
@@ -23,7 +23,7 @@ class AboutPage extends React.Component {
           meta={[
             { property: `og:url`, content: url },
             { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords.join(',') }
+            { name: `keywords`, content: keywords.join(",") },
           ]}
         />
         <article>
@@ -71,7 +71,7 @@ export const pageQuery = graphql`
         keywords
       }
     }
-    ogp: file(absolutePath: { regex: "/content\/assets\/ogp.png/" }) {
+    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
       childImageSharp {
         fixed(width: 1200, height: 630) {
           ...GatsbyImageSharpFixed

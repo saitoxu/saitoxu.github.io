@@ -7,11 +7,13 @@ tags:
   - Sass
   - SCSS
 ---
+
 Today I'll introduce the first step of Gulp.
 
 As first step, let's try to compile SCSS file by using Gulp.
 
 #### **Step 1**
+
 First, create npm project.
 
 ```sh
@@ -21,6 +23,7 @@ $ npm init
 ```
 
 #### **Step 2**
+
 Next, install `gulp` and `gulp-sass`,
 and install `http-server` too for debug.
 
@@ -29,6 +32,7 @@ $ npm install gulp gulp-sass http-server
 ```
 
 #### **Step 3**
+
 Create `index.html` and `style.scss`.
 
 ```html
@@ -36,9 +40,9 @@ Create `index.html` and `style.scss`.
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Gulp First Step</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Gulp First Step</h1>
@@ -56,21 +60,24 @@ body {
 ```
 
 #### **Step 4**
+
 Next, create `gulpfile.js` in project directory top.
 
 ```js
 // gulpfile.js
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+const gulp = require("gulp")
+const sass = require("gulp-sass")
 
-gulp.task('scss', () => {
-  gulp.src('*.scss')
+gulp.task("scss", () => {
+  gulp
+    .src("*.scss")
     .pipe(sass())
-    .pipe(gulp.dest(''));
-});
+    .pipe(gulp.dest(""))
+})
 ```
 
 #### **Step 5**
+
 OK, let's execute gulp task.
 
 Then you can find `style.css` created.
@@ -83,6 +90,7 @@ body h1 {
 ```
 
 #### **Step 6**
+
 Finally, start http server,
 and let's access `http://127.0.0.1:8080` by your browser.
 

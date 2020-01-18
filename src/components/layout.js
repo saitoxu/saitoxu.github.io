@@ -68,7 +68,7 @@ class Layout extends React.Component {
             flexDirection: "row",
             alignItems: "center",
             marginBottom: rhythm(2),
-            flexWrap: 'wrap'
+            flexWrap: "wrap",
           }}
         >
           {header}

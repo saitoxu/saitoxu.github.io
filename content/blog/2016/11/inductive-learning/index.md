@@ -5,6 +5,7 @@ tags:
   - JavaScript
   - Machine Learning
 ---
+
 I created a simple module to do an inductive learning.
 
 [GitHub: Inductive Learning](https://github.com/saitoxu/ml-kitchen-sink/tree/master/01-inductive-learning)
@@ -15,6 +16,7 @@ It generates some patterns to match with training data,
 and calculate the score and select the best pattern.
 
 #### **Description**
+
 Question is below.
 
 We want to predict whether the stock price of company x will be up or down tomorrow.
@@ -48,6 +50,7 @@ This algorithm generates some patterns like above,
 and select the pattern having the best score.
 
 #### **Usage**
+
 It is easy to use.
 
 1. Give training data to `fit()`.
@@ -57,9 +60,9 @@ It is easy to use.
 For more detail, please check [example.js](https://github.com/saitoxu/ml-kitchen-sink/blob/master/01-inductive-learning/example.js).
 
 ```js
-const il = new InductiveLearning(10000);
+const il = new InductiveLearning(10000)
 
-il.fit(teachers);
-console.log(il.predict(testData));
+il.fit(teachers)
+console.log(il.predict(testData))
 // e.g. { result: [ 2, 2, 1, 2, 1, 2, 2, 2, 2, 2 ], accuracy: 0.78 }
 ```

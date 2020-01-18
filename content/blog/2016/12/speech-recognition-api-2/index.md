@@ -6,14 +6,17 @@ tags:
   - iOS
   - Xcode
 ---
+
 This is continued article of [the previous post]({{ site.baseurl }}/2016/12/02/speech-recognition-api.html).
 
 #### **Step 5**
+
 Add a label and a button to first view on storyboard.
 
 ![Storyboard]({{ site.baseurl }}/images/2016-12-07-storyboard.png)
 
 #### **Step 6**
+
 Next, load required modules and create a method called when tapping the button.
 
 Please choose a language which you want to recognize as locale when initializing `SFSpeechRecognizer`.
@@ -54,6 +57,7 @@ class ViewController: UIViewController {
 ```
 
 #### **Step 7**
+
 Add extension of `SFSpeechRecognizerDelegate` to `ViewController`.
 
 ```swift
@@ -89,6 +93,7 @@ class ViewController: UIViewController {
 ```
 
 #### **Step 8**
+
 To use speech recognition, the app needs user's permission.
 
 So add process to get the permission and call it when the view is appeared.

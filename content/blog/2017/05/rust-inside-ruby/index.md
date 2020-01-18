@@ -7,13 +7,13 @@ tags:
 ogp: ./2017-05-24-ogp.png
 ---
 
-最近趣味でRustを勉強しています。
+最近趣味で Rust を勉強しています。
 
 まだ公式サイトを読んだり写経してる程度ですが、並列処理の性能は期待できますね。
 
-今回は他言語(Ruby)からRustを呼び出して、並列性能の恩恵に与るというのをやってみます。
+今回は他言語(Ruby)から Rust を呼び出して、並列性能の恩恵に与るというのをやってみます。
 
-Rustの公式サイトの3.3節の内容になります。
+Rust の公式サイトの 3.3 節の内容になります。
 
 [Rust Inside Other Languages](https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/rust-inside-other-languages.html)
 
@@ -26,9 +26,9 @@ Rustの公式サイトの3.3節の内容になります。
 全部のスレッドでカウントが終了したら'done!'と表示する。
 ```
 
-## **2. Rubyで書く**
+## **2. Ruby で書く**
 
-Rubyで書くと次のようになります。
+Ruby で書くと次のようになります。
 
 ```rb
 threads = []
@@ -51,13 +51,13 @@ end
 puts "done!"
 ```
 
-これを実行すると、自分の手元のPCでは **2.286s** かかりました。
+これを実行すると、自分の手元の PC では **2.286s** かかりました。
 
-## **3. Rustで書く**
+## **3. Rust で書く**
 
-同じプログラムをRustで書いてみます。
+同じプログラムを Rust で書いてみます。
 
-RustとRustのパッケージマネージャであるCargoはインストール済みとします。
+Rust と Rust のパッケージマネージャである Cargo はインストール済みとします。
 
 ```sh
 $ cargo new embed # プロジェクト作成
@@ -89,20 +89,20 @@ fn process() {
 }
 ```
 
-この関数をRubyから呼び出してみましょう。
+この関数を Ruby から呼び出してみましょう。
 
-## **4. RubyからRustを呼び出す**
+## **4. Ruby から Rust を呼び出す**
 
-Rubyから他言語のプログラムを呼ぶには、
+Ruby から他言語のプログラムを呼ぶには、
 FFI(Foreign Function Interface)というインターフェースにのっとります。
 
 日本語だと以下の記事が詳しいです。
 
-[Ruby FFIを使ったエクステンションの作り方 - Boost Your Programming!](http://kazegusuri.hateblo.jp/entry/2014/03/02/192729)
+[Ruby FFI を使ったエクステンションの作り方 - Boost Your Programming!](http://kazegusuri.hateblo.jp/entry/2014/03/02/192729)
 
-FFIの実装はgemで提供されているので、`gem install ffi`でインストールして使います。
+FFI の実装は gem で提供されているので、`gem install ffi`でインストールして使います。
 
-次にRustのプログラムを外から呼び出せるようライブラリ化しましょう。
+次に Rust のプログラムを外から呼び出せるようライブラリ化しましょう。
 
 そのためには、上記のプログラムの次の部分を
 
@@ -117,7 +117,7 @@ fn process() {
 pub extern fn process() {
 ```
 
-もう一つ、プロジェクトトップにある`Cargo.toml`に次の3行を追加して、
+もう一つ、プロジェクトトップにある`Cargo.toml`に次の 3 行を追加して、
 
 ```toml
 [lib]
@@ -128,7 +128,7 @@ crate-type = ["dylib"]
 `cargo build --release`でビルドすれば完了です。
 
 `target/release`以下に`libembed.so`という共有ライブラリができていると思うので、
-これをFFIを使ってRubyから呼び出します。
+これを FFI を使って Ruby から呼び出します。
 
 ```rb
 require 'ffi'
@@ -146,11 +146,11 @@ puts 'done!'
 
 これを実行すると、同じ環境で **0.109s** で完了しました。
 
-Rust速いですね。
+Rust 速いですね。
 
 ## **5. おわりに**
 
-以上、RubyからRustを呼び出してみました。
+以上、Ruby から Rust を呼び出してみました。
 
 まだちょっとしか触ってませんが、この速さと安全性は良いなと思います。
 

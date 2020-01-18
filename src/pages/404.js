@@ -18,7 +18,7 @@ class NotFoundPage extends React.Component {
           meta={[
             { property: `og:url`, content: siteUrl },
             { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords.join(',') }
+            { name: `keywords`, content: keywords.join(",") },
           ]}
         />
         <h1>Not Found</h1>
@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         keywords
       }
     }
-    ogp: file(absolutePath: { regex: "/content\/assets\/ogp.png/" }) {
+    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
       childImageSharp {
         fixed(width: 1200, height: 630) {
           ...GatsbyImageSharpFixed

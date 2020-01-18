@@ -6,16 +6,19 @@ tags:
   - OpenCV
   - Xcode
 ---
+
 I try to use OpenCV library in Swift today.
 
 Let's convert an picture by camera to a black-and-white image.
 
 #### **Environment**
+
 - iOS9.3.4
 - Xcode8.1 (Swift3.0.1)
 - OpenCV (3.1.0.1)
 
 #### **Step 1**
+
 First, create a project in Xcode,
 and do `pod init` at the project top directory.
 
@@ -33,6 +36,7 @@ end
 And, install OpenCV library by `pod install` and open the project.
 
 #### **Step 2**
+
 Put an image view and a button on the first view.
 
 The image view is for showing an image of camera,
@@ -43,6 +47,7 @@ After putting, storyboard is like this.
 ![Storyboard]({{ site.baseurl }}/images/2016-11-06-storyboard.png)
 
 #### **Step 3**
+
 Next, get the backside camera device,
 and show its image in the image view you prepared.
 
@@ -180,6 +185,7 @@ class CameraUtil {
 ```
 
 #### **Step 4**
+
 Let's check temporarily.
 
 If the camera image is shown in the image view,
