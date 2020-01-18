@@ -58,8 +58,8 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              resolve: `gatsby-remark-prismjs`,
               noInlineHighlight: true,
               aliases: {
                 sh: "bash",

@@ -83,7 +83,7 @@ arcs.map((arc, index) => {
 
 あとは、取得したパスを`Shape`コンポーネントに渡せば完成です！
 
-```js
+```jsx
 return (
   <Surface width={width} height={width}>
     <Group x={width / 2} y={width / 2}>
