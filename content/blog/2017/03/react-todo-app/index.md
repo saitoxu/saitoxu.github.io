@@ -31,13 +31,13 @@ TODO リスト全体の状態管理は`App`コンポーネントでやって、
 
 ※これ以外にエントリーポイントの JS や CSS が必要になります。
 
-<code class="gist-code" data-gist-id="84fcb8f20c23d26fd1cc22b39de13398" data-gist-file="App.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/84fcb8f20c23d26fd1cc22b39de13398?file=App.js`
 
-<code class="gist-code" data-gist-id="84fcb8f20c23d26fd1cc22b39de13398" data-gist-file="Form.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/84fcb8f20c23d26fd1cc22b39de13398?file=Form.js`
 
-<code class="gist-code" data-gist-id="84fcb8f20c23d26fd1cc22b39de13398" data-gist-file="TodoList.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/84fcb8f20c23d26fd1cc22b39de13398?file=TodoList.js`
 
-<code class="gist-code" data-gist-id="84fcb8f20c23d26fd1cc22b39de13398" data-gist-file="Todo.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/84fcb8f20c23d26fd1cc22b39de13398?file=Todo.js`
 
 ## **3. おわりに**
 

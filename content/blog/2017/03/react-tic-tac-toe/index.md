@@ -26,7 +26,7 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 
 `create-react-app`が入ってない場合は`yarn`か`npm`でインストールすると便利です。
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="create-react-app.sh" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=create-react-app.sh`
 
 ## **2. マスの作成**
 
@@ -34,13 +34,13 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 
 `Square`クラスは状態を持たないので`React.Component`を継承するのではなく`stateless functional components`という関数でよいみたいです。
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Square.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=Square.js`
 
 ## **3. ボードの作成**
 
 次にボードを表す`Board`クラスを作ります。
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Board.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=Board.js`
 
 ## **4. ゲームの作成**
 
@@ -50,15 +50,15 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 
 勝敗の判定は`calculateWinner`というヘルパーメソッドで行っています。
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="Game.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=Game.js`
 
 ## **5. 最後に**
 
 エントリーポイントとなる`index.js`でゲーム盤のコンポーネントをレンダリングして、
 あとは CSS などを修正して終わりです。
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=index.js`
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.html" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=index.html`
 
-<code class="gist-code" data-gist-id="7ca9e498ef04e1c65be01751631a1eae" data-gist-file="index.css" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7ca9e498ef04e1c65be01751631a1eae?file=index.css`

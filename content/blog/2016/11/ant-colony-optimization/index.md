@@ -28,14 +28,14 @@ Please see here for details of the algorithm.
 
 In this program, we can find an approximate solution of the shortest path problem as follows.
 
-![graph]({{ site.baseurl }}/images/2016-11-16-graph.png)
+![graph](./2016-11-16-graph.png)
 
 - Start from s and go through all nodes
 - The number on the path represents the distance between the nodes
 
 In this example, when passing in the order of a, d, b, c, the distance becomes the shortest 8.1.
 
-![answer]({{ site.baseurl }}/images/2016-11-16-answer.png)
+![answer](./2016-11-16-answer.png)
 
 #### **How to use this**
 

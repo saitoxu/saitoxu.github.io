@@ -35,7 +35,7 @@ In convolutional layer, a filter (in example, it is 3 pixels _ 3 pixels array) i
 
 Pooling layer receives the image and adapt `max()` function. Finally, 3 pixels \* 3 pixels image is generated.
 
-![convlution-and-pooling]({{ site.baseurl }}/images/2017-01-01-convolution-and-pooling.png)
+![convolution-and-pooling](./2017-01-01-convolution-and-pooling.png)
 
 #### _Source code_
 

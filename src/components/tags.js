@@ -12,7 +12,7 @@ const Tag = ({ tag }) => (
 )
 
 const Tags = ({ tags }) => (
-  <div>
+  <div style={{ marginBottom: 8 }}>
     {(tags || []).map(tag => (
       <Tag key={tag} tag={tag} />
     ))}

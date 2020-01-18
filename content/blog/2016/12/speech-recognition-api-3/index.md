@@ -7,7 +7,7 @@ tags:
   - Xcode
 ---
 
-This is continued article of [the previous post]({{ site.baseurl }}/2016/12/07/speech-recognition-api-2.html).
+This is continued article of [the previous post](/2016/12/speech-recognition-api-2).
 
 This time, we will finally implement the speech recognition part.
 

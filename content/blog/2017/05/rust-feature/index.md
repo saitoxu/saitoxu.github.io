@@ -51,7 +51,7 @@ println!("{}", v[0]); // Error: use of moved value: `v`
 ただし、プリミティブ型に代表される`Copy`トレイトを実装した型は
 所有権を移してもリソースがコピーされるので元の変数が使えます。
 
-ちなみにトレイト<a name="fn1">[\*1](#f1)</a>は「その型が実装しなければならないメソッドの集まり・実装」のことです。
+ちなみにトレイト[\*1](#f1)は「その型が実装しなければならないメソッドの集まり・実装」のことです。
 
 ## **借用**
 
@@ -125,4 +125,4 @@ fn main() {
 関係ないですが、この「[Rust のよいところを教えてください](https://hayato.io/2017/faq/#rust)」を
 読むと学ぶモチベーションになります。
 
-<a name="f1">[\*1](#fn1)</a> トレイト - Wikipedia ([https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88](https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88))
+<a name="f1">*1</a> トレイト - Wikipedia ([https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88](https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88))

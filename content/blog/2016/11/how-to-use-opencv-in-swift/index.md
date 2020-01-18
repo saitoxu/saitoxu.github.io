@@ -44,7 +44,7 @@ and the button is for taking a shot.
 
 After putting, storyboard is like this.
 
-![Storyboard]({{ site.baseurl }}/images/2016-11-06-storyboard.png)
+![Storyboard](./2016-11-06-storyboard.png)
 
 #### **Step 3**
 

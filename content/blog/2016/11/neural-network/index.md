@@ -8,7 +8,7 @@ tags:
 
 Previously, I realized logical AND by creating a neuron.
 
-[Neuron]({{ site.baseurl }}/2016/11/29/neuron.html)
+[Neuron](/2016/11/neuron)
 
 At this time, by using a neural network that combines neurons,
 I will make XOR.

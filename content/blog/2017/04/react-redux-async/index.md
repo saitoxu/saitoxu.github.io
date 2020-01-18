@@ -52,20 +52,20 @@ Action はリクエストを送るときの`REQUEST_REPOS`と、
 
 GitHub の公開リポジトリを取得するのは Fetch API を使いました。
 
-<code class="gist-code" data-gist-id="705e41267e50dee76d28eb98849edd90" data-gist-file="actions.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/705e41267e50dee76d28eb98849edd90?file=actions.js`
 
 **3. Reducer を作る**
 
 次に、Reducer を作ります。
 今回は State が単純なので、Reducer は 1 つだけで OK です。
 
-<code class="gist-code" data-gist-id="705e41267e50dee76d28eb98849edd90" data-gist-file="reducers.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/705e41267e50dee76d28eb98849edd90?file=reducers.js`
 
 **4. Store を作る**
 
 Reducer から Store を作るのは簡単です。
 非同期リクエストを扱うので、redux-thunk で提供されている`thunkMiddleware`をかませます。
 
-<code class="gist-code" data-gist-id="705e41267e50dee76d28eb98849edd90" data-gist-file="configureStore.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/705e41267e50dee76d28eb98849edd90?file=configureStore.js`
 
 残りは[Gist](https://gist.github.com/saitoxu/705e41267e50dee76d28eb98849edd90)にあげているので確認してみてください。

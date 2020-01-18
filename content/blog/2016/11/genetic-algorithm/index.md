@@ -55,9 +55,6 @@ Just pass the item data and some parameters simply.
 
 #### _Parameter_
 
-{::options parse_block_html="true" /}
-
-<div class="table-scroll">
 |Parameter|Meaning|Mandatory|Default|
 |:---|:---|:---|---:|
 |`data`|Information on candidate goods to be put in the knapsack. The format of the data is as described above.|true|-|
@@ -65,8 +62,6 @@ Just pass the item data and some parameters simply.
 |`POOLSIZE`|The number of genes|false|50|
 |`LAST`|The count of genetic manipulation|false|100|
 |`RATE`|Probability of mutation|false|0.01|
-{:.afi_table}
-</div>
 
 #### **Example**
 

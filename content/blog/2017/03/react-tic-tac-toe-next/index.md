@@ -37,17 +37,17 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 
 `Game`コンポーネントの`handleClick()`でクリック後に新しい`state`をセットするとき、そこに位置も計算してセットします（`location`の部分）。
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Game.js" data-gist-enable-cache="true" data-gist-line="33-45"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Game.js&highlights=33-45`
 
 あとはレンダリングするときにこれを表示してあげます。
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Game.js" data-gist-enable-cache="true" data-gist-line="75"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Game.js&highlights=75`
 
 ## **2. 今のステップを強調**
 
 `render()`の中で、こんな感じ。
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Game.js" data-gist-enable-cache="true" data-gist-line="76-78"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Game.js&highlights=76-78`
 
 ## **3. マスのハードコーディングの修正**
 
@@ -55,7 +55,7 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 
 `renderRow()`を定義して、`render()`の中で呼びます。
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Board.js" data-gist-enable-cache="true" data-gist-line="12-35"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Board.js&highlights=12-35`
 
 ## **4. 履歴の表示順序**
 
@@ -65,9 +65,9 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 - `state`に昇順か降順かの状態を持たせる
 - `render()`で`state`に応じて履歴の表示順序を切り替え
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Game.js" data-gist-enable-cache="true" data-gist-line="55-59"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Game.js&highlights=55-59`
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Game.js" data-gist-enable-cache="true" data-gist-line="85-103"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Game.js&highlights=85-103`
 
 ## **5. 勝利ラインのハイライト**
 
@@ -76,11 +76,11 @@ React の[公式チュートリアル](https://facebook.github.io/react/tutorial
 
 まず`Square`コンポーネントは以下のように、`props`によってハイライトするかどうか受けられるようにします。
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Square.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Square.js`
 
 それで`Game`コンポーネントでは次のように、`value`だけでなくハイライトするかどうかを表す値`highlighted`も保持するようにします。
 
-<code class="gist-code" data-gist-id="5aa916e0452aad6a647499ebab2520e3" data-gist-file="Game.js" data-gist-enable-cache="true" data-gist-line="5-16"></code>
+`gist:saitoxu/5aa916e0452aad6a647499ebab2520e3?file=Game.js&highlights=5-16`
 
 あとは勝利判定のときにこの値を変えて、`Square`まで渡るようにすれば OK です。
 

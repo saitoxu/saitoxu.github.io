@@ -7,13 +7,13 @@ tags:
   - Xcode
 ---
 
-This is continued article of [the previous post]({{ site.baseurl }}/2016/12/02/speech-recognition-api.html).
+This is continued article of [the previous post](/2016/12/speech-recognition-api).
 
 #### **Step 5**
 
 Add a label and a button to first view on storyboard.
 
-![Storyboard]({{ site.baseurl }}/images/2016-12-07-storyboard.png)
+![Storyboard](./2016-12-07-storyboard.png)
 
 #### **Step 6**
 

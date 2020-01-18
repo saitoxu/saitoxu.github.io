@@ -69,7 +69,7 @@ This is needed for build C/C++ program, and NAN needs _include_dirs_.
 
 Create `factorial.cc` like this.
 
-```c++
+```cpp
 #include <nan.h>
 
 using namespace v8;

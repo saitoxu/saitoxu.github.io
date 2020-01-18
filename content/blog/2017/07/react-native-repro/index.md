@@ -44,7 +44,7 @@ Podfile に`pod 'Repro'`を記述します。
 `open ReproTest.xcworkspace`で Xcode を開いて、`AppDelegate.m`を編集します。
 トークンを書き換えるのを忘れないようにしてください。
 
-<code class="gist-code" data-gist-id="e50a259af55a8e87f3aa0413762ef027" data-gist-file="AppDelegate.m" data-gist-enable-cache="true"></code>
+`gist:saitoxu/e50a259af55a8e87f3aa0413762ef027?file=AppDelegate.m`
 
 #### **4. アプリ実行**
 

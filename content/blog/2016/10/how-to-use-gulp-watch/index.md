@@ -20,7 +20,7 @@ gulp.watch(["files you want to watch"], ["tasks you want to do"])
 ```
 
 Let's create task which watches the change of SCSS file and compile it
-by using [the previous post sample]({{ site.baseurl }}/2016/10/29/gulp-first-step.html).
+by using [the previous post sample](/2016/10/gulp-first-step).
 
 #### **Step 1**
 

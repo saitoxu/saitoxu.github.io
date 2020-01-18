@@ -42,7 +42,7 @@ Let's learn the neural network by giving the above data to back propagation.
 
 The program of back propagation is like below.
 
-Internally, this uses Neuron class which is created in [Neuron]({{ site.url }}/2016/11/29/neuron.html).
+Internally, this uses Neuron class which is created in [Neuron](/2016/11/neuron).
 
 ```js
 const random = require("../lib/random")

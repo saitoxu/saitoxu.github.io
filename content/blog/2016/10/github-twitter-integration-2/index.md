@@ -11,7 +11,7 @@ tags:
 ---
 
 I will start from where we left off, in this post,
-I will introduce my small system I mentioned in [the previous post]({{ site.baseurl }}/2016/10/12/github-twitter-integration.html).
+I will introduce my small system I mentioned in [the previous post](/2016/10/github-twitter-integration).
 
 The system works as below.
 
@@ -19,7 +19,7 @@ The system works as below.
 2. GitHub sends a POST request to my system.
 3. My system posts a tweet automatically.
 
-![Figure]({{ site.baseurl }}/images/2016-10-15-figure.png)
+![Figure](./2016-10-15-figure.png)
 
 As I said at the last time, my system is built by Sinatra, Thin, Nginx.
 

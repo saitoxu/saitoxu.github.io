@@ -11,7 +11,7 @@ ogp: ./2017-11-10-ogp.png
 [redis-store/redis-rails](https://github.com/redis-store/redis-rails)
 を使って Redis に保存するところまでを試しました。
 
-[Rails のセッションを Redis に保存する (1) \| yosuke.saito](https://saitoxu.io/2017/11/10/redis-rails.html)
+[Rails のセッションを Redis に保存する (1) \| yosuke.saito](/2017/11/redis-rails)
 
 今回は Rails の認証ライブラリで有名な
 [plataformatec/devise](https://github.com/plataformatec/devise)

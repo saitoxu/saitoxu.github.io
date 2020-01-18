@@ -38,7 +38,7 @@ npm モジュールとして公開されているのでそれを読み込むこ�
 となります。
 実際のコードだとこんな感じです ↓
 
-<code class="gist-code" data-gist-id="0e87c9824f1c5962fab800951d1b0e7e" data-gist-file="sample.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/0e87c9824f1c5962fab800951d1b0e7e?file=sample.js`
 
 また、サンプルアプリのコードは[こちら](https://gist.github.com/saitoxu/0e87c9824f1c5962fab800951d1b0e7e)に載せています。
 

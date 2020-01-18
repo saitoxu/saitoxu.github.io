@@ -26,7 +26,7 @@ React Native でもそれは変わりません。
 関数の引数としてエラー情報が入った`Proxy`オブジェクトが返ってくるので、
 それを使って外部ブラウザで開いたりすると良さそうです。
 
-<code class="gist-code" data-gist-id="19f31c67c7aff98fc56f9bd24c070cb9" data-gist-file="WebViewSample.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/19f31c67c7aff98fc56f9bd24c070cb9?file=WebViewSample.js`
 
 ## **おわりに**
 

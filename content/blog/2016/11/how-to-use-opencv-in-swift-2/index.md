@@ -7,13 +7,13 @@ tags:
   - Xcode
 ---
 
-This is a continuation of [my previous post]({{ site.baseurl }}/2016/11/06/how-to-use-opencv-in-swift.html).
+This is a continuation of [my previous post](/2016/11/how-to-use-opencv-in-swift).
 
 #### **Step 5**
 
 Create a header file to use OpenCV.
 
-```objc
+```objectivec
 // OpenCVTest-Briding-Header.h
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -30,7 +30,7 @@ Next, prepare the content of defined method.
 To use OpenCV, we have to write C++,
 so change the extension from m to mm.
 
-```objc
+```objectivec
 // ImageConverter.mm
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -106,4 +106,4 @@ Let's start your app and check it.
 If you can take a black-and-white picture as below,
 your app works fine.
 
-![Black-and-white]({{ site.baseurl }}/images/2016-11-07-black-and-white.png)
+![Black-and-white](./2016-11-07-black-and-white.png)

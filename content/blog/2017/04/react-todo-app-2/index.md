@@ -33,7 +33,7 @@ ogp: ./2017-04-02-ogp.png
 
 前回はちょっとややこしい作りにしてましたが、今回は`App`コンポーネントだけで state 管理をし、他のコンポーネントは基本レンダリングするだけにしました。
 
-<code class="gist-code" data-gist-id="ea1f9838f288975bbbfe3722fe13d8ad" data-gist-file="App.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/ea1f9838f288975bbbfe3722fe13d8ad?file=App.js`
 
 ※一応、残りの主要なコンポーネントも[Gist](https://gist.github.com/saitoxu/ea1f9838f288975bbbfe3722fe13d8ad)にあげてます。
 

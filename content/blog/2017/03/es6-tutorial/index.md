@@ -24,47 +24,47 @@ Yarn や webpack を使ったことがなかったので、
 
 Yarn が入ってない人はインストールしてください。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="yarn.sh" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=yarn.sh`
 
 ## **2. webpack + babel インストール**
 
 最初に Yarn を使って webpack と babel をインストールします。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="init.sh" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=init.sh`
 
 ## **3. Yarn と webpack の設定**
 
 ディレクトリ構成は以下のようにします。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="tree.sh" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=tree.sh`
 
 それに合わせて`webpack.config.js`を以下のように書きます。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="webpack.config.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=webpack.config.js`
 
 webpack で ES6 をコンパイルするときのコマンドを`package.json`の scripts に書いておきます。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="package.json" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=package.json`
 
 ## **4. ES6 でコードを書く**
 
 ES6 でコードを書きます。
 この辺は元記事とだいたいいっしょです。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="person.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=person.js`
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="friend.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=friend.js`
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="application.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=application.js`
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="index.html" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=index.html`
 
 ## **5. コンパイル＆確認**
 
 webpack でコンパイルして、ブラウザで確認してみましょう。
 alert が出れば OK です。
 
-<code class="gist-code" data-gist-id="70b7d3522332f55afbbad275c62abc6b" data-gist-file="compile.sh" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70b7d3522332f55afbbad275c62abc6b?file=compile.sh`
 
 ちなみに最後の`hs`は[http-server](https://www.npmjs.com/package/http-server)という npm モジュールで、
 さくっと web サーバを立てるのに便利です。

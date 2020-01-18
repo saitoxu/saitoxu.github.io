@@ -22,7 +22,7 @@ $ curl 'http://b.hatena.ne.jp/entrylist/json?url=saitoxu.io&threshold=1&sort=cou
 ([{"link":"https://saitoxu.io/hoge","count":"1","title":"hoge"}, ... ]);
 ```
 
-で、エントリーを取得したら以前（[preact を使ってブログのアーカイブメニューを作る \| yosuke.saito](https://saitoxu.io/2017/07/01/jekyll-archive-preact.html)）やったように React のサブセット実装である[preact](https://preactjs.com/)を使って表示すればいいかと思ったんですがいくつか問題があります。
+で、エントリーを取得したら以前（[preact を使ってブログのアーカイブメニューを作る \| yosuke.saito](/2017/07/jekyll-archive-preact)）やったように React のサブセット実装である[preact](https://preactjs.com/)を使って表示すればいいかと思ったんですがいくつか問題があります。
 
 **問題**
 

@@ -16,7 +16,7 @@ then the blog post is automatically tweeted.
 
 For example, when I push the commit having the following message,
 
-```
+```sh
 POST: GitHub and Twitter integration
 ```
 

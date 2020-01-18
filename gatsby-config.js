@@ -59,6 +59,13 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-embed-gist`,
+            options: {
+              username: 'saitoxu',
+              includeDefaultCss: true
+            }
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               noInlineHighlight: true,
@@ -81,19 +88,19 @@ module.exports = {
         trackingId: `UA-37617637-3`,
       },
     },
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `saitoxu.io`,
-        short_name: `saitoxu.io`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
-      },
-    },
+    // `gatsby-plugin-feed`,
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `saitoxu.io`,
+    //     short_name: `saitoxu.io`,
+    //     start_url: `/`,
+    //     background_color: `#ffffff`,
+    //     theme_color: `#663399`,
+    //     display: `minimal-ui`,
+    //     icon: `content/assets/gatsby-icon.png`,
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,

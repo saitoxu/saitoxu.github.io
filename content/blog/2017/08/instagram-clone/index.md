@@ -10,7 +10,7 @@ React Native で動画ってどう扱うんだろうと思い、
 [react-native-community/react-native-video](https://github.com/react-native-community/react-native-video)
 を触りだしたんですが、いっそもう少し形にしようと思い Instagram のクローンを作りました（ホーム画面だけ）。
 
-<img src="/images/2017-08-20-screenshot.gif" alt="screenshot" style="margin: 0 auto; display: block;" />
+![screenshot](/2017-08-20-screenshot.gif)
 
 ## **機能**
 

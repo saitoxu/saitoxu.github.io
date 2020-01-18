@@ -29,7 +29,7 @@ $ yarn add eslint-plugin-prettier eslint-config-prettier --dev
 
 `.eslintrc`はこんな感じ。
 
-```
+```json
 {
   "extends": [
     "plugin:react/recommended",

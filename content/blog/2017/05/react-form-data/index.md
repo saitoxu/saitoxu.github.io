@@ -14,7 +14,7 @@ JavaScript でフォームデータを送信する方法のメモです。
 
 使い方は簡単で、key-value 形式で送信するデータを詰め込むだけです。
 
-<code class="gist-code" data-gist-id="7bb93564d4345ed95f61274e9b792b46" data-gist-file="FormData.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7bb93564d4345ed95f61274e9b792b46?file=FormData.js`
 
 詳しくはこちら ↓
 
@@ -29,9 +29,9 @@ React/Rails で使った場合のサンプルを載せておきます。
 `FormData.append()`のキーをサンプルのようにすると、
 通常の Rails のフォームデータ受信と同じようにデータを受け取れます。
 
-<code class="gist-code" data-gist-id="7bb93564d4345ed95f61274e9b792b46" data-gist-file="Client.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7bb93564d4345ed95f61274e9b792b46?file=Client.js`
 
 サーバサイドはこんな感じです。
 通常の Rails と変わったところはないですね。
 
-<code class="gist-code" data-gist-id="7bb93564d4345ed95f61274e9b792b46" data-gist-file="users_controller.rb" data-gist-enable-cache="true"></code>
+`gist:saitoxu/7bb93564d4345ed95f61274e9b792b46?file=users_controller.rb`

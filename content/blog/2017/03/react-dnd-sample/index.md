@@ -56,7 +56,7 @@ $ yarn start
 
 例えば`Knight`クラスはドラッグされる対象なので、`DragSource`でラップしています。
 
-<code class="gist-code" data-gist-id="70aa7204b3b3fb4e82b749fa55115a1b" data-gist-file="Knight.js" data-gist-enable-cache="true"></code>
+`gist:saitoxu/70aa7204b3b3fb4e82b749fa55115a1b?file=Knight.js`
 
 今回使っている`react-dnd-html5-backend`だとタッチデバイスのときに動作しないのですが、
 [react-dnd-touch-backend](https://github.com/yahoo/react-dnd-touch-backend)というのもあるみたいなので次使ってみたいです。
