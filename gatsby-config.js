@@ -2,22 +2,22 @@ module.exports = {
   siteMetadata: {
     title: `saitoxu.io`,
     author: `Yosuke Saito`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Web開発や機械学習からプロダクトマネジメントや組織運営まで雑多に書きます`,
     siteUrl: `https://saitoxu.io`,
     social: {
       twitter: `saitoxu`,
-      github: `saitoxu`
+      github: `saitoxu`,
     },
     keywords: [
-      'Programming',
-      'Web',
-      'AI',
-      'Machine Learning',
-      'saitoxu',
-      'Yosuke Saito',
-      '斎藤',
-      '斎藤陽介'
-    ]
+      "Programming",
+      "Web",
+      "AI",
+      "Machine Learning",
+      "saitoxu",
+      "Yosuke Saito",
+      "斎藤",
+      "斎藤陽介",
+    ],
   },
   plugins: [
     {
@@ -57,7 +57,16 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            options: {
+              resolve: `gatsby-remark-prismjs`,
+              noInlineHighlight: true,
+              aliases: {
+                sh: "bash",
+                rb: "ruby",
+              },
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -75,8 +84,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `saitoxu.io`,
+        short_name: `saitoxu.io`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

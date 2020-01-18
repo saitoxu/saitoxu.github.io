@@ -36,17 +36,6 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          charSet: 'utf-8'
-        },
-        {
-          httpEquiv: 'X-UA-Compatible',
-          content: 'IE=edge'
-        },
-        {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1'
-        },
-        {
           name: `title`,
           content: title
         },
