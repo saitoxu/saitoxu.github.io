@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import AdSense from 'react-adsense'
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from '../components/tags'
@@ -16,7 +15,13 @@ class BlogPostTemplate extends React.Component {
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
     const keywords = post.frontmatter.tags.join(',')
-    const ogpImage = `${siteUrl}${post.frontmatter.ogp.childImageSharp.fixed.src}`
+    const defaultOgpSrc = this.props.data.ogp.childImageSharp.fixed.src
+    const ogpImage = `${siteUrl}${
+      post.frontmatter.ogp
+        ? post.frontmatter.ogp.childImageSharp.fixed.src
+        : defaultOgpSrc
+    }`
+      
     const url = `${siteUrl}${uri}`
 
     return (
@@ -57,9 +62,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
+          <footer />
         </article>
 
         <AdSense.Google
@@ -117,6 +120,13 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         siteUrl
+      }
+    }
+    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
