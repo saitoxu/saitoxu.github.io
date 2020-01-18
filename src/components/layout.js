@@ -13,9 +13,10 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            ...scale(1),
             marginTop: 0,
+            marginBottom: 0,
+            flex: 1,
           }}
         >
           <Link
@@ -35,6 +36,8 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
+            marginBottom: 0,
+            flex: 1,
           }}
         >
           <Link
@@ -59,25 +62,51 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        <header
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            marginBottom: rhythm(2),
+            flexWrap: 'wrap'
+          }}
+        >
+          {header}
+          <Link
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+              marginRight: 12,
+            }}
+            to={`/about`}
+          >
+            About
+          </Link>
+          <a
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+              marginRight: 12,
+            }}
+            href={`https://twitter.com/saitoxu`}
+          >
+            Twitter
+          </a>
+          <a
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+            }}
+            href="https://github.com/saitoxu"
+          >
+            GitHub
+          </a>
+        </header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          <p>
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={`/about`}
-            >
-              About
-            </Link>
-          </p>
-        </footer>
+        <footer>© {new Date().getFullYear()}, Yosuke Saito</footer>
       </div>
     )
   }

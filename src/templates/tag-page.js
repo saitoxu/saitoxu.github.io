@@ -7,24 +7,25 @@ import { rhythm } from "../utils/typography"
 
 const TagPageTemplate = ({ data, location, pageContext }) => {
   const url = `${data.site.siteMetadata.siteUrl}${location.pathname}`
+  const siteTitle = data.site.siteMetadata.title
   const ogpImage = `${data.site.siteMetadata.siteUrl}${data.ogp.childImageSharp.fixed.src}`
   const { keywords } = data.site.siteMetadata
   const tagName = pageContext.slug
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title="title">
+    <Layout location={location} title={siteTitle}>
       <SEO
-        title={`タグ: ${tagName}`}
+        title={tagName}
         description={`${tagName}タグを含む記事の一覧ページです`}
         meta={[
           { property: `og:url`, content: url },
           { property: `og:image`, content: ogpImage },
-          { name: `keywords`, content: keywords.join(',') }
+          { name: `keywords`, content: keywords.join(",") },
         ]}
       />
       <div className="top">
-        <h1>{tagName}</h1>
+        <h1>#{tagName}</h1>
         <p>
           <b>{posts.length}</b>件の投稿があります
         </p>
@@ -71,7 +72,7 @@ export const pageQuery = graphql`
         keywords
       }
     }
-    ogp: file(absolutePath: { regex: "/content\/assets\/ogp.png/" }) {
+    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
       childImageSharp {
         fixed(width: 1200, height: 630) {
           ...GatsbyImageSharpFixed
@@ -85,12 +86,12 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(truncate: true)
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "YYYY-MM-DD")
+            date(formatString: "MMMM DD, YYYY")
             title
             tags
           }

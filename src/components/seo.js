@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={title === 'saitoxu.io' ? '' : `%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `title`,

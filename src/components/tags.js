@@ -3,17 +3,17 @@ import { Link } from 'gatsby'
 import slugify from "slugify"
 
 const Tag = ({ tag }) => (
-  <Link to={`/tags/${slugify(tag, { remove: /[*+~.()'"!:@]/g, lower: true })}`}>
-    <li>{tag}</li>
+  <Link to={`/tags/${slugify(tag, { remove: /[*+~.()'"!:@]/g, lower: true })}`} style={{ marginRight: 8 }}>
+    #{tag}
   </Link>
 )
 
 const Tags = ({ tags }) => (
-  <ul>
+  <div>
     {(tags || []).map(tag => (
-      <Tag key={tag} tag={tag} />
+        <Tag key={tag} tag={tag} />
     ))}
-  </ul>
-);
+  </div>
+)
 
 export default Tags

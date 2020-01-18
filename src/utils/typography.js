@@ -28,16 +28,29 @@ import Typography from "typography"
 
 const typography = new Typography({
   bodyFontFamily: [
-    '-apple-system',
-    'BlinkMacSystemFont',
-    'Helvetica Neue',
-    'Hiragino Sans',
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Helvetica Neue",
+    "Hiragino Sans",
     "游ゴシック Medium",
     "YuGothic",
     "Hiragino Kaku Gothic ProN",
     "メイリオ",
-    "Meiryo,sans-serif"
-  ]
+    "Meiryo,sans-serif",
+  ],
+  bodyColor: "hsla(0,0%,0%,0.8)",
+  overrideStyles: ({ _adjustFontSizeTo, _scale, rhythm }, _options) => {
+    const linkColor = "#007acc"
+    return {
+      a: {
+        color: linkColor,
+        textDecoration: "none",
+      },
+      "a:visited": {
+        color: linkColor,
+      },
+    }
+  },
 })
 
 // Hot reload typography in development.

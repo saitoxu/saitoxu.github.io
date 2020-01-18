@@ -16,7 +16,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" meta={[
+        <SEO title="saitoxu.io" meta={[
           { property: `og:url`, content: siteUrl },
           { property: `og:image`, content: ogpImage },
           { name: `keywords`, content: keywords.join(',') }

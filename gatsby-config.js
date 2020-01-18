@@ -2,17 +2,18 @@ module.exports = {
   siteMetadata: {
     title: `saitoxu.io`,
     author: `Yosuke Saito`,
-    description: `Web開発や機械学習からプロダクトマネジメントや組織運営まで雑多に書きます`,
+    description: `Web開発や機械学習, プロダクトマネジメントなどについて雑多に書きます`,
     siteUrl: `https://saitoxu.io`,
     social: {
       twitter: `saitoxu`,
       github: `saitoxu`,
     },
     keywords: [
-      "Programming",
       "Web",
       "AI",
       "Machine Learning",
+      "Product Management",
+      "プロダクト開発",
       "saitoxu",
       "Yosuke Saito",
       "斎藤",
