@@ -1,0 +1,189 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.4;
+
+$spacing-unit:     30px;
+
+$text-color:       #333;
+// $background-color: #fdfdfd;
+$background-color: #ffffff;
+$brand-color:      #2a7ae2;
+$label-color:      #4a4a4a;
+$dark-color:       #222222;
+
+$grey-color:       #737373;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Import partials from the `minima` theme.
+@import "minima";
+@import "highlight";
+@import "gist";
+@import "footer";
+
+// Override
+body {
+  word-break: break-word;
+}
+.label-default {
+  background: $label-color !important;
+  line-height: 28px;
+  a {
+    color: white;
+    &:visited, &:hover {
+      color: white;
+    }
+  }
+}
+.fb-like {
+  iframe {
+    margin-top: -4px;
+  }
+}
+.site-header {
+  border-top: none;
+}
+.site-title {
+  font-weight: bold;
+  line-height: 52px;
+}
+.highlighter-rouge .highlight, code {
+  background-color: #f8f8f8;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+pre {
+  &.highlight {
+    code {
+      white-space: pre;
+    }
+  }
+}
+.home h2 {
+  margin-bottom: 8px;
+}
+a, a:visited, a:hover {
+  color: $brand-color;
+}
+
+.my-site-nav {
+  float: right;
+  line-height: 56px;
+  .menu-icon {
+    display: none;
+  }
+  .page-link {
+    color: #111;
+    line-height: 1.4;
+  }
+}
+
+.post-list {
+  li {
+    .post-link {
+      font-weight: bold;
+    }
+    .partial {
+      margin-top: 16px;
+    }
+  }
+}
+
+.post-header {
+  .post-title {
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .social-buttons {
+     float: right;
+     margin-bottom: 20px;
+  }
+}
+
+.post-content {
+  clear: both;
+  line-height: 1.8;
+  h1 {
+    font-size: 28px;
+    margin-top: 45px;
+  }
+  h2 {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+
+.pagination {
+  width: 100%;
+  .page_number {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .previous {
+    float: left;
+    margin-top: -22px;
+  }
+  .next {
+    float: right;
+    margin-top: -22px;
+  }
+}
+
+table {
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  th, td {
+    padding: 5px 10px;
+    border: 1px #ddd solid;
+  }
+  tr:nth-child(even) { background-color: #f7f7f7; }
+}
+
+.related {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.page-navigation {
+  margin-top: 20px;
+  .next {
+    float: left;
+  }
+  .prev {
+    float: right;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% capture title %}{% if page.title %}{{ page.title | append: ' | yosuke.saito' }}{% else %}yosuke.saito{% endif %}{% endcapture %}
+    {% capture description %}{% if page.url != '/' and page.url != '/about/' %}{{ page.content | strip_html | strip_new_lines | slice: 0, 200 | append: '...' }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+    {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+    {% capture keywords %}{% if page.url != '/' and page.url != '/about/' %}{{ page.tags | join: ',' }}{% else %}{{ site.keywords }}{% endif %}{% endcapture %}
+    {% capture ogp %}{% if page.url != '/' and page.url != '/about/' and page.ogp %}{{ site.url | append: '/images/' | append: page.ogp }}{% else %}{{ site.url | append: '/images/ogp.png' }}{% endif %}{% endcapture %}
+    <title>{{ title }}</title>
+
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="{{ description }}">
+
+    <meta name="keywords" content="{{ keywords }}">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="{{ ogp }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@saitoxu">
+    <meta name="twitter:creator" content="@saitoxu">
+    <meta name="twitter:text:description" content="{{ description }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?v=2">
+    <link rel="canonical" href="{{ url }}">
+    <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico" >
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" href="/">yosuke.saito</a>
+        <nav class="my-site-nav">
+          <div class="trigger">
+            <a class="page-link" href="{{ site.baseurl }}/about">About</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="col-xs-12 col-sm-4 about-me">
+          <h3><strong>About me</strong></h3>
+          <img src="/images/killer-machine.png">
+          <h4 class="media-heading"><strong>Yosuke Saito</strong></h4>
+          <h5 class="help-block">CTO@Carat Inc.</h5>
+          <p class="links">
+            <a href="https://github.com/saitoxu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/saitoxu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yosuke.saito.125" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/yosukesaito" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 latest">
+          <h3><strong>Popular Posts</strong></h3>
+          <div id="popular"></div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h3><strong>Archives</strong></h3>
+          <div id="archive"></div>
+        </div>
+        <div class="col-xs-12">
+          <h3><strong>Tags</strong></h3>
+          {% for tag in site.tags %}
+            <span class="label label-default"><a href="/tags/{{ tag[0] | slugify: 'pretty' | replace: '.', '' }}">{{ tag[0] }}</a></span>
+          {% endfor %}
+        </div>
+        <div class="col-xs-12 text-center copyright">
+          <p>© Yosuke Saito</p>
+        </div>
+        <input id="archive-data" type="hidden" value="{{ site.posts | map: 'date' | jsonify | escape }}" />
+      </div>
+    </footer>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+    <script type="text/javascript" src="/js/bundle.js?v=2"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37617637-3', 'auto');
+      if (!localStorage['gaExclude']) {
+        ga('send', 'pageview');
+      }
+    </script>
+  </body>
+</html>
