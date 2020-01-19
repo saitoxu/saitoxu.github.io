@@ -108,13 +108,12 @@ class Layout extends React.Component {
         </header>
         <main>{children}</main>
         <AdSense.Google
-          key={location}
           client="ca-pub-9850282304993778"
           slot="1979280137"
           style={{ display: "block" }}
           layout="in-article"
           format="auto"
-          responsive
+          responsive="true"
         />
         <footer>© {new Date().getFullYear()}, Yosuke Saito</footer>
       </div>
