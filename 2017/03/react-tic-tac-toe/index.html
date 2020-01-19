@@ -1,0 +1,1258 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.45 -apple-system,'BlinkMacSystemFont','Helvetica Neue','Hiragino Sans','游ゴシック Medium','YuGothic','Hiragino Kaku Gothic ProN','メイリオ','Meiryo,sans-serif';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Helvetica Neue','Hiragino Sans','游ゴシック Medium','YuGothic','Hiragino Kaku Gothic ProN','メイリオ','Meiryo,sans-serif';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:1.45rem;margin-right:1.45rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li > ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:#007acc;text-decoration:none;}a:visited{color:#007acc;}</style><meta data-react-helmet="true" property="og:site_name" content="Reactで三目並べ"/><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/icons/icon-48x48.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=f6a054bd2935bdf22daf778c2adcc3d0"/><title data-react-helmet="true">Reactで三目並べ | saitoxu.io</title><meta data-react-helmet="true" name="title" content="Reactで三目並べ"/><meta data-react-helmet="true" name="og:locale" content="ja_JP"/><meta data-react-helmet="true" name="description" content="React の公式チュートリアルにある三目並べを作ってみました。 成果物はここにおいたので確認してみてください。 react-tic-tac-toe 環境 MacOS Sierra 10.12.3 Node.js v6.10.0 React 15.4.2 Create React App 1.3.0…"/><meta name="generator" content="Gatsby 2.18.12"/><meta data-react-helmet="true" property="og:title" content="Reactで三目並べ"/><meta data-react-helmet="true" property="og:description" content="React の公式チュートリアルにある三目並べを作ってみました。 成果物はここにおいたので確認してみてください。 react-tic-tac-toe 環境 MacOS Sierra 10.12.3 Node.js v6.10.0 React 15.4.2 Create React App 1.3.0…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:site" content="@saitoxu"/><meta data-react-helmet="true" name="twitter:creator" content="@saitoxu"/><meta data-react-helmet="true" name="twitter:title" content="Reactで三目並べ"/><meta data-react-helmet="true" name="twitter:description" content="React の公式チュートリアルにある三目並べを作ってみました。 成果物はここにおいたので確認してみてください。 react-tic-tac-toe 環境 MacOS Sierra 10.12.3 Node.js v6.10.0 React 15.4.2 Create React App 1.3.0…"/><meta data-react-helmet="true" property="og:url" content="https://saitoxu.io/"/><meta data-react-helmet="true" property="og:image" content="https://saitoxu.io/static/8660cfe35e2a9c3a60dcd5d382739644/e7e81/2017-03-21-ogp.png"/><meta data-react-helmet="true" name="keywords" content="React,JavaScript"/><style data-href="/styles.a03ac9cc63f55f1507aa.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-889d416fe066a8b8c3bd.js"/><link as="script" rel="preload" href="/commons-6d97bf0d5f2f53da620a.js"/><link as="script" rel="preload" href="/app-e4dbeb61faa1c68958b1.js"/><link as="script" rel="preload" href="/styles-f1b6d0f80cdf5e16b149.js"/><link as="script" rel="preload" href="/webpack-runtime-1c39489b9f92f74a76c6.js"/><link as="fetch" rel="preload" href="/page-data/2017/03/react-tic-tac-toe/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:46.4rem;padding:2.175rem 1.0875rem"><header style="display:flex;flex-direction:row;align-items:center;margin-bottom:2.9rem;flex-wrap:wrap"><h3 style="margin-top:0;margin-bottom:0;flex:1"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">saitoxu.io</a></h3><a style="box-shadow:none;text-decoration:none;color:inherit;margin-right:12px" href="/about">About</a><a style="box-shadow:none;text-decoration:none;color:inherit;margin-right:12px" href="https://twitter.com/saitoxu">Twitter</a><a style="box-shadow:none;text-decoration:none;color:inherit" href="https://github.com/saitoxu">GitHub</a></header><main><article><header><h1 style="margin-top:1.45rem;margin-bottom:0">Reactで三目並べ</h1><p style="font-size:0.87055rem;line-height:1.45rem;display:block;margin-bottom:1.45rem">March 21, 2017</p></header><div style="margin-bottom:8px"><a style="margin-right:8px" href="/tags/react">#<!-- -->React</a><a style="margin-right:8px" href="/tags/javascript">#<!-- -->JavaScript</a></div><section><p>React の<a href="https://facebook.github.io/react/tutorial/tutorial.html">公式チュートリアル</a>にある三目並べを作ってみました。</p>
+<p>成果物はここにおいたので確認してみてください。</p>
+<p><a href="/playground/react-tic-tac-toe/">react-tic-tac-toe</a></p>
+<h2><strong>環境</strong></h2>
+<ul>
+<li>MacOS Sierra 10.12.3</li>
+<li>Node.js v6.10.0</li>
+<li>React 15.4.2</li>
+<li>Create React App 1.3.0</li>
+</ul>
+<h2><strong>1. プロジェクト作成</strong></h2>
+<p><a href="https://github.com/facebookincubator/create-react-app">Create React App</a>を使って React のプロジェクトを作ります。</p>
+<p><code>create-react-app</code>が入ってない場合は<code>yarn</code>か<code>npm</code>でインストールすると便利です。</p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-create-react-app-sh" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-shell ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-create-react-app-sh-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-create-react-app-sh-LC1" class="blob-code blob-code-inner js-file-line">$ yarn global add create-react-app</td>
+      </tr>
+      <tr>
+        <td id="file-create-react-app-sh-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-create-react-app-sh-LC2" class="blob-code blob-code-inner js-file-line">$ create-react-app react-tic-tac-toe</td>
+      </tr>
+      <tr>
+        <td id="file-create-react-app-sh-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-create-react-app-sh-LC3" class="blob-code blob-code-inner js-file-line">$ <span class="pl-c1">cd</span> react-tic-tac-toe</td>
+      </tr>
+      <tr>
+        <td id="file-create-react-app-sh-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-create-react-app-sh-LC4" class="blob-code blob-code-inner js-file-line">$ yarn start</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/create-react-app.sh" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-create-react-app-sh">create-react-app.sh</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h2><strong>2. マスの作成</strong></h2>
+<p>三目並べの各マスを表す<code>Square</code>クラスを作ります。</p>
+<p><code>Square</code>クラスは状態を持たないので<code>React.Component</code>を継承するのではなく<code>stateless functional components</code>という関数でよいみたいです。</p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-square-js" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-square-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-square-js-LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>React</span> <span class=pl-k>from</span> <span class=pl-s>&#39;react&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-square-js-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-square-js-LC3" class="blob-code blob-code-inner js-file-line"><span class=pl-k>function</span> <span class=pl-v>Square</span><span class=pl-kos>(</span><span class=pl-s1>props</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-square-js-LC4" class="blob-code blob-code-inner js-file-line">  <span class=pl-k>return</span> <span class=pl-kos>(</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-square-js-LC5" class="blob-code blob-code-inner js-file-line">    <span class=pl-c1>&lt;</span><span class=pl-ent>button</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;square&quot;</span> <span class=pl-c1>onClick</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-c1>=&gt;</span> <span class=pl-s1>props</span><span class=pl-kos>.</span><span class=pl-en>onClick</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-kos>}</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-square-js-LC6" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>{</span><span class=pl-s1>props</span><span class=pl-kos>.</span><span class=pl-c1>value</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-square-js-LC7" class="blob-code blob-code-inner js-file-line">    <span class=pl-c1>&lt;</span>/<span class=pl-ent>button</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-square-js-LC8" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-square-js-LC9" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-square-js-LC10" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-square-js-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-square-js-LC11" class="blob-code blob-code-inner js-file-line"><span class=pl-k>export</span> <span class=pl-k>default</span> <span class=pl-v>Square</span><span class=pl-kos>;</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/Square.js" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-square-js">Square.js</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h2><strong>3. ボードの作成</strong></h2>
+<p>次にボードを表す<code>Board</code>クラスを作ります。</p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-board-js" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-board-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-board-js-LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>React</span><span class=pl-kos>,</span> <span class=pl-kos>{</span> <span class=pl-v>Component</span> <span class=pl-kos>}</span> <span class=pl-k>from</span> <span class=pl-s>&#39;react&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-board-js-LC2" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>Square</span> <span class=pl-k>from</span> <span class=pl-s>&#39;./Square&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-board-js-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-board-js-LC4" class="blob-code blob-code-inner js-file-line"><span class=pl-k>class</span> <span class=pl-v>Board</span> <span class=pl-k>extends</span> <span class=pl-v>Component</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-board-js-LC5" class="blob-code blob-code-inner js-file-line">  <span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-s1>i</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-board-js-LC6" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>return</span> <span class=pl-c1>&lt;</span><span class=pl-ent>Square</span> <span class=pl-c1>value</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>props</span><span class=pl-kos>.</span><span class=pl-c1>squares</span><span class=pl-kos>[</span><span class=pl-s1>i</span><span class=pl-kos>]</span><span class=pl-kos>}</span> <span class=pl-c1>onClick</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-c1>=&gt;</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>props</span><span class=pl-kos>.</span><span class=pl-en>onClick</span><span class=pl-kos>(</span><span class=pl-s1>i</span><span class=pl-kos>)</span><span class=pl-kos>}</span> /<span class=pl-c1>&gt;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-board-js-LC7" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-board-js-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-board-js-LC9" class="blob-code blob-code-inner js-file-line">  <span class=pl-en>render</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-board-js-LC10" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>return</span> <span class=pl-kos>(</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-board-js-LC11" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-board-js-LC12" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;board-row&quot;</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-board-js-LC13" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>0</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-board-js-LC14" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>1</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-board-js-LC15" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>2</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-board-js-LC16" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-board-js-LC17" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;board-row&quot;</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-board-js-LC18" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>3</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-board-js-LC19" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>4</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-board-js-LC20" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>5</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-board-js-LC21" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-board-js-LC22" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;board-row&quot;</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-board-js-LC23" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>6</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-board-js-LC24" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>7</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-board-js-LC25" class="blob-code blob-code-inner js-file-line">          <span class=pl-kos>{</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>renderSquare</span><span class=pl-kos>(</span><span class=pl-c1>8</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-board-js-LC26" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-board-js-LC27" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-board-js-LC28" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-board-js-LC29" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-board-js-LC30" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-board-js-LC31" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-board-js-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-board-js-LC32" class="blob-code blob-code-inner js-file-line"><span class=pl-k>export</span> <span class=pl-k>default</span> <span class=pl-v>Board</span><span class=pl-kos>;</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/Board.js" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-board-js">Board.js</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h2><strong>4. ゲームの作成</strong></h2>
+<p>次にゲーム全体を表す<code>Game</code>クラスを作ります。</p>
+<p>ここでは盤面の状態や手番、履歴の管理をします。</p>
+<p>勝敗の判定は<code>calculateWinner</code>というヘルパーメソッドで行っています。</p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-game-js" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-game-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-game-js-LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>React</span><span class=pl-kos>,</span> <span class=pl-kos>{</span> <span class=pl-v>Component</span> <span class=pl-kos>}</span> <span class=pl-k>from</span> <span class=pl-s>&#39;react&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-game-js-LC2" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>Board</span> <span class=pl-k>from</span> <span class=pl-s>&#39;./Board&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-game-js-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-game-js-LC4" class="blob-code blob-code-inner js-file-line"><span class=pl-k>class</span> <span class=pl-v>Game</span> <span class=pl-k>extends</span> <span class=pl-v>Component</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-game-js-LC5" class="blob-code blob-code-inner js-file-line">  <span class=pl-en>constructor</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-game-js-LC6" class="blob-code blob-code-inner js-file-line">    <span class=pl-smi>super</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-game-js-LC7" class="blob-code blob-code-inner js-file-line">    <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span> <span class=pl-c1>=</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-game-js-LC8" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>stepNumber</span>: <span class=pl-c1>0</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-game-js-LC9" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>history</span>: <span class=pl-kos>[</span><span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-game-js-LC10" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>squares</span>: <span class=pl-v>Array</span><span class=pl-kos>(</span><span class=pl-c1>9</span><span class=pl-kos>)</span><span class=pl-kos>.</span><span class=pl-en>fill</span><span class=pl-kos>(</span>null<span class=pl-kos>)</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-game-js-LC11" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-game-js-LC12" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>xIsNext</span>: <span class=pl-c1>true</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-game-js-LC13" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-game-js-LC14" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-game-js-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-game-js-LC16" class="blob-code blob-code-inner js-file-line">  <span class=pl-en>handleClick</span><span class=pl-kos>(</span><span class=pl-s1>i</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-game-js-LC17" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>history</span> <span class=pl-c1>=</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>history</span><span class=pl-kos>.</span><span class=pl-en>slice</span><span class=pl-kos>(</span><span class=pl-c1>0</span><span class=pl-kos>,</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>stepNumber</span> <span class=pl-c1>+</span> <span class=pl-c1>1</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-game-js-LC18" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>current</span> <span class=pl-c1>=</span> <span class=pl-s1>history</span><span class=pl-kos>[</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>stepNumber</span><span class=pl-kos>]</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-game-js-LC19" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>squares</span> <span class=pl-c1>=</span> <span class=pl-s1>current</span><span class=pl-kos>.</span><span class=pl-c1>squares</span><span class=pl-kos>.</span><span class=pl-en>slice</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-game-js-LC20" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>if</span> <span class=pl-kos>(</span><span class=pl-en>calculateWinner</span><span class=pl-kos>(</span><span class=pl-s1>squares</span><span class=pl-kos>)</span> <span class=pl-c1>||</span> <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>i</span><span class=pl-kos>]</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-game-js-LC21" class="blob-code blob-code-inner js-file-line">      <span class=pl-k>return</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-game-js-LC22" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-game-js-LC23" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>i</span><span class=pl-kos>]</span> <span class=pl-c1>=</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>xIsNext</span> ? <span class=pl-s>&#39;X&#39;</span> : <span class=pl-s>&#39;O&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-game-js-LC24" class="blob-code blob-code-inner js-file-line">    <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>setState</span><span class=pl-kos>(</span><span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-game-js-LC25" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>stepNumber</span>: <span class=pl-s1>history</span><span class=pl-kos>.</span><span class=pl-c1>length</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-game-js-LC26" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>history</span>: <span class=pl-s1>history</span><span class=pl-kos>.</span><span class=pl-en>concat</span><span class=pl-kos>(</span><span class=pl-kos>[</span><span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-game-js-LC27" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>squares</span>: <span class=pl-s1>squares</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-game-js-LC28" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>]</span><span class=pl-kos>)</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-game-js-LC29" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>xIsNext</span>: !<span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>xIsNext</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-game-js-LC30" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-game-js-LC31" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-game-js-LC32" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-game-js-LC33" class="blob-code blob-code-inner js-file-line">  <span class=pl-en>jumpTo</span><span class=pl-kos>(</span><span class=pl-s1>step</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-game-js-LC34" class="blob-code blob-code-inner js-file-line">    <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>setState</span><span class=pl-kos>(</span><span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-game-js-LC35" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>stepNumber</span>: <span class=pl-s1>step</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-game-js-LC36" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>xIsNext</span>: <span class=pl-kos>(</span><span class=pl-s1>step</span> % <span class=pl-c1>2</span><span class=pl-kos>)</span> ? <span class=pl-c1>false</span> : <span class=pl-c1>true</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-game-js-LC37" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-game-js-LC38" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-game-js-LC39" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-game-js-LC40" class="blob-code blob-code-inner js-file-line">  <span class=pl-en>render</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-game-js-LC41" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>history</span> <span class=pl-c1>=</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>history</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-game-js-LC42" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>current</span> <span class=pl-c1>=</span> <span class=pl-s1>history</span><span class=pl-kos>[</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>stepNumber</span><span class=pl-kos>]</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-game-js-LC43" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>winner</span> <span class=pl-c1>=</span> <span class=pl-en>calculateWinner</span><span class=pl-kos>(</span><span class=pl-s1>current</span><span class=pl-kos>.</span><span class=pl-c1>squares</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-game-js-LC44" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-game-js-LC45" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>let</span> <span class=pl-s1>status</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-game-js-LC46" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>if</span> <span class=pl-kos>(</span><span class=pl-s1>winner</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-game-js-LC47" class="blob-code blob-code-inner js-file-line">      <span class=pl-s1>status</span> <span class=pl-c1>=</span> <span class=pl-s>&#39;Winner: &#39;</span> <span class=pl-c1>+</span> <span class=pl-s1>winner</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-game-js-LC48" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span> <span class=pl-k>else</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-game-js-LC49" class="blob-code blob-code-inner js-file-line">      <span class=pl-s1>status</span> <span class=pl-c1>=</span> <span class=pl-s>&#39;Next player: &#39;</span> <span class=pl-c1>+</span> <span class=pl-kos>(</span><span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-c1>state</span><span class=pl-kos>.</span><span class=pl-c1>xIsNext</span>? <span class=pl-s>&#39;X&#39;</span> : <span class=pl-s>&#39;O&#39;</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-game-js-LC50" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-game-js-LC51" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-game-js-LC52" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-s1>moves</span> <span class=pl-c1>=</span> <span class=pl-s1>history</span><span class=pl-kos>.</span><span class=pl-en>map</span><span class=pl-kos>(</span><span class=pl-kos>(</span><span class=pl-s1>step</span><span class=pl-kos>,</span> <span class=pl-s1>move</span><span class=pl-kos>)</span> <span class=pl-c1>=&gt;</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-game-js-LC53" class="blob-code blob-code-inner js-file-line">      <span class=pl-k>const</span> <span class=pl-s1>desc</span> <span class=pl-c1>=</span> <span class=pl-s1>move</span> ? <span class=pl-s>&#39;Move #&#39;</span> <span class=pl-c1>+</span> <span class=pl-s1>move</span> : <span class=pl-s>&#39;Game start&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-game-js-LC54" class="blob-code blob-code-inner js-file-line">      <span class=pl-k>return</span> <span class=pl-kos>(</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-game-js-LC55" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span><span class=pl-ent>li</span> <span class=pl-c1>key</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-s1>move</span><span class=pl-kos>}</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-game-js-LC56" class="blob-code blob-code-inner js-file-line">          <span class=pl-c1>&lt;</span><span class=pl-ent>a</span> <span class=pl-c1>href</span><span class=pl-c1>=</span><span class=pl-s>&quot;#&quot;</span> <span class=pl-c1>onClick</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-c1>=&gt;</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>jumpTo</span><span class=pl-kos>(</span><span class=pl-s1>move</span><span class=pl-kos>)</span><span class=pl-kos>}</span><span class=pl-c1>&gt;</span><span class=pl-kos>{</span><span class=pl-s1>desc</span><span class=pl-kos>}</span><span class=pl-c1>&lt;</span>/<span class=pl-ent>a</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-game-js-LC57" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span>/<span class=pl-ent>li</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="file-game-js-LC58" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="file-game-js-LC59" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="file-game-js-LC60" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="file-game-js-LC61" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>return</span> <span class=pl-kos>(</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="file-game-js-LC62" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;game&quot;</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="file-game-js-LC63" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;game-board&quot;</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="file-game-js-LC64" class="blob-code blob-code-inner js-file-line">          <span class=pl-c1>&lt;</span><span class=pl-ent>Board</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="file-game-js-LC65" class="blob-code blob-code-inner js-file-line">            <span class=pl-c1>squares</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-s1>current</span><span class=pl-kos>.</span><span class=pl-c1>squares</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="file-game-js-LC66" class="blob-code blob-code-inner js-file-line">            <span class=pl-c1>onClick</span><span class=pl-c1>=</span><span class=pl-kos>{</span><span class=pl-kos>(</span><span class=pl-s1>i</span><span class=pl-kos>)</span> <span class=pl-c1>=&gt;</span> <span class=pl-smi>this</span><span class=pl-kos>.</span><span class=pl-en>handleClick</span><span class=pl-kos>(</span><span class=pl-s1>i</span><span class=pl-kos>)</span><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="file-game-js-LC67" class="blob-code blob-code-inner js-file-line">          /<span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="file-game-js-LC68" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="file-game-js-LC69" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>className</span><span class=pl-c1>=</span><span class=pl-s>&quot;game-info&quot;</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="file-game-js-LC70" class="blob-code blob-code-inner js-file-line">          <span class=pl-c1>&lt;</span><span class=pl-ent>div</span><span class=pl-c1>&gt;</span><span class=pl-kos>{</span><span class=pl-s1>status</span><span class=pl-kos>}</span><span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="file-game-js-LC71" class="blob-code blob-code-inner js-file-line">          <span class=pl-c1>&lt;</span><span class=pl-ent>ol</span><span class=pl-c1>&gt;</span><span class=pl-kos>{</span><span class=pl-s1>moves</span><span class=pl-kos>}</span><span class=pl-c1>&lt;</span>/<span class=pl-ent>ol</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="file-game-js-LC72" class="blob-code blob-code-inner js-file-line">        <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="file-game-js-LC73" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span>/<span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="file-game-js-LC74" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="file-game-js-LC75" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="file-game-js-LC76" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="file-game-js-LC77" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="file-game-js-LC78" class="blob-code blob-code-inner js-file-line"><span class=pl-k>function</span> <span class=pl-en>calculateWinner</span><span class=pl-kos>(</span><span class=pl-s1>squares</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="file-game-js-LC79" class="blob-code blob-code-inner js-file-line">  <span class=pl-k>const</span> <span class=pl-s1>lines</span> <span class=pl-c1>=</span> <span class=pl-kos>[</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="file-game-js-LC80" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>0</span><span class=pl-kos>,</span> <span class=pl-c1>1</span><span class=pl-kos>,</span> <span class=pl-c1>2</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="file-game-js-LC81" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>3</span><span class=pl-kos>,</span> <span class=pl-c1>4</span><span class=pl-kos>,</span> <span class=pl-c1>5</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="file-game-js-LC82" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>6</span><span class=pl-kos>,</span> <span class=pl-c1>7</span><span class=pl-kos>,</span> <span class=pl-c1>8</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="file-game-js-LC83" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>0</span><span class=pl-kos>,</span> <span class=pl-c1>3</span><span class=pl-kos>,</span> <span class=pl-c1>6</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="file-game-js-LC84" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>1</span><span class=pl-kos>,</span> <span class=pl-c1>4</span><span class=pl-kos>,</span> <span class=pl-c1>7</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="file-game-js-LC85" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>2</span><span class=pl-kos>,</span> <span class=pl-c1>5</span><span class=pl-kos>,</span> <span class=pl-c1>8</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="file-game-js-LC86" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>0</span><span class=pl-kos>,</span> <span class=pl-c1>4</span><span class=pl-kos>,</span> <span class=pl-c1>8</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td id="file-game-js-LC87" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>[</span><span class=pl-c1>2</span><span class=pl-kos>,</span> <span class=pl-c1>4</span><span class=pl-kos>,</span> <span class=pl-c1>6</span><span class=pl-kos>]</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td id="file-game-js-LC88" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>]</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td id="file-game-js-LC89" class="blob-code blob-code-inner js-file-line">  <span class=pl-k>for</span> <span class=pl-kos>(</span><span class=pl-k>let</span> <span class=pl-s1>i</span> <span class=pl-c1>=</span> <span class=pl-c1>0</span><span class=pl-kos>;</span> <span class=pl-s1>i</span> <span class=pl-c1>&lt;</span> <span class=pl-s1>lines</span><span class=pl-kos>.</span><span class=pl-c1>length</span><span class=pl-kos>;</span> <span class=pl-s1>i</span><span class=pl-c1>++</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td id="file-game-js-LC90" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>const</span> <span class=pl-kos>[</span><span class=pl-s1>a</span><span class=pl-kos>,</span> <span class=pl-s1>b</span><span class=pl-kos>,</span> <span class=pl-s1>c</span><span class=pl-kos>]</span> <span class=pl-c1>=</span> <span class=pl-s1>lines</span><span class=pl-kos>[</span><span class=pl-s1>i</span><span class=pl-kos>]</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td id="file-game-js-LC91" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>if</span> <span class=pl-kos>(</span><span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>a</span><span class=pl-kos>]</span> <span class=pl-c1>&amp;&amp;</span> <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>a</span><span class=pl-kos>]</span> <span class=pl-c1>===</span> <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>b</span><span class=pl-kos>]</span> <span class=pl-c1>&amp;&amp;</span> <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>a</span><span class=pl-kos>]</span> <span class=pl-c1>===</span> <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>c</span><span class=pl-kos>]</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td id="file-game-js-LC92" class="blob-code blob-code-inner js-file-line">      <span class=pl-k>return</span> <span class=pl-s1>squares</span><span class=pl-kos>[</span><span class=pl-s1>a</span><span class=pl-kos>]</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td id="file-game-js-LC93" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td id="file-game-js-LC94" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td id="file-game-js-LC95" class="blob-code blob-code-inner js-file-line">  <span class=pl-k>return</span> null<span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td id="file-game-js-LC96" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td id="file-game-js-LC97" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-game-js-L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td id="file-game-js-LC98" class="blob-code blob-code-inner js-file-line"><span class=pl-k>export</span> <span class=pl-k>default</span> <span class=pl-v>Game</span><span class=pl-kos>;</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/Game.js" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-game-js">Game.js</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h2><strong>5. 最後に</strong></h2>
+<p>エントリーポイントとなる<code>index.js</code>でゲーム盤のコンポーネントをレンダリングして、
+あとは CSS などを修正して終わりです。</p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-index-js" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-index-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-index-js-LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>React</span> <span class=pl-k>from</span> <span class=pl-s>&#39;react&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-index-js-LC2" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>ReactDOM</span> <span class=pl-k>from</span> <span class=pl-s>&#39;react-dom&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-index-js-LC3" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>Game</span> <span class=pl-k>from</span> <span class=pl-s>&#39;./Game&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-index-js-LC4" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-s>&#39;./index.css&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-index-js-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-index-js-LC6" class="blob-code blob-code-inner js-file-line"><span class=pl-v>ReactDOM</span><span class=pl-kos>.</span><span class=pl-en>render</span><span class=pl-kos>(</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-index-js-LC7" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>&lt;</span><span class=pl-ent>Game</span> /<span class=pl-c1>&gt;</span><span class=pl-kos>,</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-index-js-LC8" class="blob-code blob-code-inner js-file-line">  <span class=pl-smi>document</span><span class=pl-kos>.</span><span class=pl-en>getElementById</span><span class=pl-kos>(</span><span class=pl-s>&#39;root&#39;</span><span class=pl-kos>)</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-js-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-index-js-LC9" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/index.js" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-index-js">index.js</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-index-html" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-index-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-index-html-LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-c1>&lt;!doctype html<span class=pl-kos>&gt;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-index-html-LC2" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>&lt;</span><span class=pl-ent>html</span> <span class=pl-c1>lang</span>=&quot;<span class=pl-s>en</span>&quot;<span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-index-html-LC3" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>&lt;</span><span class=pl-ent>head</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-index-html-LC4" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>meta</span> <span class=pl-c1>charset</span>=&quot;<span class=pl-s>utf-8</span>&quot;<span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-index-html-LC5" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>meta</span> <span class=pl-c1>name</span>=&quot;<span class=pl-s>viewport</span>&quot; <span class=pl-c1>content</span>=&quot;<span class=pl-s>width=device-width, initial-scale=1</span>&quot;<span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-index-html-LC6" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>link</span> <span class=pl-c1>rel</span>=&quot;<span class=pl-s>shortcut icon</span>&quot; <span class=pl-c1>href</span>=&quot;<span class=pl-s>%PUBLIC_URL%/favicon.ico</span>&quot;<span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-index-html-LC7" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>title</span><span class=pl-kos>&gt;</span>react-tic-tac-toe<span class=pl-kos>&lt;/</span><span class=pl-ent>title</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-index-html-LC8" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>&lt;/</span><span class=pl-ent>head</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-index-html-LC9" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>&lt;</span><span class=pl-ent>body</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-index-html-LC10" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>id</span>=&quot;<span class=pl-s>errors</span>&quot; <span class=pl-c1>style</span>=&quot;<span class=pl-s></span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-index-html-LC11" class="blob-code blob-code-inner js-file-line"><span class=pl-s>      background: #c00;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-index-html-LC12" class="blob-code blob-code-inner js-file-line"><span class=pl-s>      color: #fff;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-index-html-LC13" class="blob-code blob-code-inner js-file-line"><span class=pl-s>      display: none;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-index-html-LC14" class="blob-code blob-code-inner js-file-line"><span class=pl-s>      margin: -20px -20px 20px;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-index-html-LC15" class="blob-code blob-code-inner js-file-line"><span class=pl-s>      padding: 20px;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-index-html-LC16" class="blob-code blob-code-inner js-file-line"><span class=pl-s>      white-space: pre-wrap;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-index-html-LC17" class="blob-code blob-code-inner js-file-line"><span class=pl-s>    </span>&quot;<span class=pl-kos>&gt;</span><span class=pl-kos>&lt;/</span><span class=pl-ent>div</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-index-html-LC18" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>div</span> <span class=pl-c1>id</span>=&quot;<span class=pl-s>root</span>&quot;<span class=pl-kos>&gt;</span><span class=pl-kos>&lt;/</span><span class=pl-ent>div</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-index-html-LC19" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;</span><span class=pl-ent>script</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-index-html-LC20" class="blob-code blob-code-inner js-file-line">      <span class=pl-smi>window</span><span class=pl-kos>.</span><span class=pl-en>addEventListener</span><span class=pl-kos>(</span><span class=pl-s>&#39;mousedown&#39;</span><span class=pl-kos>,</span> <span class=pl-k>function</span><span class=pl-kos>(</span><span class=pl-s1>e</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-index-html-LC21" class="blob-code blob-code-inner js-file-line">        <span class=pl-smi>document</span><span class=pl-kos>.</span><span class=pl-c1>body</span><span class=pl-kos>.</span><span class=pl-c1>classList</span><span class=pl-kos>.</span><span class=pl-en>add</span><span class=pl-kos>(</span><span class=pl-s>&#39;mouse-navigation&#39;</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-index-html-LC22" class="blob-code blob-code-inner js-file-line">        <span class=pl-smi>document</span><span class=pl-kos>.</span><span class=pl-c1>body</span><span class=pl-kos>.</span><span class=pl-c1>classList</span><span class=pl-kos>.</span><span class=pl-en>remove</span><span class=pl-kos>(</span><span class=pl-s>&#39;kbd-navigation&#39;</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-index-html-LC23" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-index-html-LC24" class="blob-code blob-code-inner js-file-line">      <span class=pl-smi>window</span><span class=pl-kos>.</span><span class=pl-en>addEventListener</span><span class=pl-kos>(</span><span class=pl-s>&#39;keydown&#39;</span><span class=pl-kos>,</span> <span class=pl-k>function</span><span class=pl-kos>(</span><span class=pl-s1>e</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-index-html-LC25" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>if</span> <span class=pl-kos>(</span><span class=pl-s1>e</span><span class=pl-kos>.</span><span class=pl-c1>keyCode</span> <span class=pl-c1>===</span> <span class=pl-c1>9</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-index-html-LC26" class="blob-code blob-code-inner js-file-line">          <span class=pl-smi>document</span><span class=pl-kos>.</span><span class=pl-c1>body</span><span class=pl-kos>.</span><span class=pl-c1>classList</span><span class=pl-kos>.</span><span class=pl-en>add</span><span class=pl-kos>(</span><span class=pl-s>&#39;kbd-navigation&#39;</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-index-html-LC27" class="blob-code blob-code-inner js-file-line">          <span class=pl-smi>document</span><span class=pl-kos>.</span><span class=pl-c1>body</span><span class=pl-kos>.</span><span class=pl-c1>classList</span><span class=pl-kos>.</span><span class=pl-en>remove</span><span class=pl-kos>(</span><span class=pl-s>&#39;mouse-navigation&#39;</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-index-html-LC28" class="blob-code blob-code-inner js-file-line">        <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-index-html-LC29" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-index-html-LC30" class="blob-code blob-code-inner js-file-line">      <span class=pl-smi>window</span><span class=pl-kos>.</span><span class=pl-en>addEventListener</span><span class=pl-kos>(</span><span class=pl-s>&#39;click&#39;</span><span class=pl-kos>,</span> <span class=pl-k>function</span><span class=pl-kos>(</span><span class=pl-s1>e</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-index-html-LC31" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>if</span> <span class=pl-kos>(</span><span class=pl-s1>e</span><span class=pl-kos>.</span><span class=pl-c1>target</span><span class=pl-kos>.</span><span class=pl-c1>tagName</span> <span class=pl-c1>===</span> <span class=pl-s>&#39;A&#39;</span> <span class=pl-c1>&amp;&amp;</span> <span class=pl-s1>e</span><span class=pl-kos>.</span><span class=pl-c1>target</span><span class=pl-kos>.</span><span class=pl-en>getAttribute</span><span class=pl-kos>(</span><span class=pl-s>&#39;href&#39;</span><span class=pl-kos>)</span> <span class=pl-c1>===</span> <span class=pl-s>&#39;#&#39;</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-index-html-LC32" class="blob-code blob-code-inner js-file-line">          <span class=pl-s1>e</span><span class=pl-kos>.</span><span class=pl-en>preventDefault</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-index-html-LC33" class="blob-code blob-code-inner js-file-line">        <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-index-html-LC34" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-index-html-LC35" class="blob-code blob-code-inner js-file-line">      <span class=pl-smi>window</span><span class=pl-kos>.</span><span class=pl-en>onerror</span> <span class=pl-c1>=</span> <span class=pl-k>function</span><span class=pl-kos>(</span><span class=pl-s1>message</span><span class=pl-kos>,</span> <span class=pl-s1>source</span><span class=pl-kos>,</span> <span class=pl-s1>line</span><span class=pl-kos>,</span> <span class=pl-s1>col</span><span class=pl-kos>,</span> <span class=pl-s1>error</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-index-html-LC36" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>var</span> <span class=pl-s1>text</span> <span class=pl-c1>=</span> <span class=pl-s1>error</span> ? <span class=pl-s1>error</span><span class=pl-kos>.</span><span class=pl-c1>stack</span> <span class=pl-c1>||</span> <span class=pl-s1>error</span> : <span class=pl-s1>message</span> <span class=pl-c1>+</span> <span class=pl-s>&#39; (at &#39;</span> <span class=pl-c1>+</span> <span class=pl-s1>source</span> <span class=pl-c1>+</span> <span class=pl-s>&#39;:&#39;</span> <span class=pl-c1>+</span> <span class=pl-s1>line</span> <span class=pl-c1>+</span> <span class=pl-s>&#39;:&#39;</span> <span class=pl-c1>+</span> <span class=pl-s1>col</span> <span class=pl-c1>+</span> <span class=pl-s>&#39;)&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-index-html-LC37" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>errors</span><span class=pl-kos>.</span><span class=pl-c1>textContent</span> <span class=pl-c1>+=</span> <span class=pl-s1>text</span> <span class=pl-c1>+</span> <span class=pl-s>&#39;\n&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-index-html-LC38" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>errors</span><span class=pl-kos>.</span><span class=pl-c1>style</span><span class=pl-kos>.</span><span class=pl-c1>display</span> <span class=pl-c1>=</span> <span class=pl-s>&#39;&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-index-html-LC39" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-index-html-LC40" class="blob-code blob-code-inner js-file-line">      <span class=pl-smi>console</span><span class=pl-kos>.</span><span class=pl-c1>error</span> <span class=pl-c1>=</span> <span class=pl-kos>(</span><span class=pl-k>function</span><span class=pl-kos>(</span><span class=pl-s1>old</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-index-html-LC41" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>return</span> <span class=pl-k>function</span> <span class=pl-en>error</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-index-html-LC42" class="blob-code blob-code-inner js-file-line">          <span class=pl-s1>errors</span><span class=pl-kos>.</span><span class=pl-c1>textContent</span> <span class=pl-c1>+=</span> <span class=pl-v>Array</span><span class=pl-kos>.</span><span class=pl-c1>prototype</span><span class=pl-kos>.</span><span class=pl-c1>slice</span><span class=pl-kos>.</span><span class=pl-en>call</span><span class=pl-kos>(</span><span class=pl-smi>arguments</span><span class=pl-kos>)</span><span class=pl-kos>.</span><span class=pl-en>join</span><span class=pl-kos>(</span><span class=pl-s>&#39; &#39;</span><span class=pl-kos>)</span> <span class=pl-c1>+</span> <span class=pl-s>&#39;\n&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-index-html-LC43" class="blob-code blob-code-inner js-file-line">          <span class=pl-s1>errors</span><span class=pl-kos>.</span><span class=pl-c1>style</span><span class=pl-kos>.</span><span class=pl-c1>display</span> <span class=pl-c1>=</span> <span class=pl-s>&#39;&#39;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-index-html-LC44" class="blob-code blob-code-inner js-file-line">          <span class=pl-s1>old</span><span class=pl-kos>.</span><span class=pl-en>apply</span><span class=pl-kos>(</span><span class=pl-smi>this</span><span class=pl-kos>,</span> <span class=pl-smi>arguments</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-index-html-LC45" class="blob-code blob-code-inner js-file-line">        <span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-index-html-LC46" class="blob-code blob-code-inner js-file-line">      <span class=pl-kos>}</span><span class=pl-kos>)</span><span class=pl-kos>(</span><span class=pl-smi>console</span><span class=pl-kos>.</span><span class=pl-c1>error</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-index-html-LC47" class="blob-code blob-code-inner js-file-line">    <span class=pl-kos>&lt;/</span><span class=pl-ent>script</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-index-html-LC48" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>&lt;/</span><span class=pl-ent>body</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-index-html-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-index-html-LC49" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>&lt;/</span><span class=pl-ent>html</span><span class=pl-kos>&gt;</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/index.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-index-html">index.html</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p><div id="gist45907887" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-index-css" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-index-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-index-css-LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-ent>body</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-index-css-LC2" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>font</span>: <span class=pl-c1>14<span class=pl-smi>px</span></span> <span class=pl-s>&quot;Century Gothic&quot;</span><span class=pl-kos>,</span> Futura<span class=pl-kos>,</span> sans-serif;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-index-css-LC3" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>margin</span>: <span class=pl-c1>20<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-index-css-LC4" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-index-css-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-index-css-LC6" class="blob-code blob-code-inner js-file-line"><span class=pl-ent>ol</span><span class=pl-kos>,</span> <span class=pl-ent>ul</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-index-css-LC7" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>padding-left</span>: <span class=pl-c1>30<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-index-css-LC8" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-index-css-LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-index-css-LC10" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>board-row</span>:<span class=pl-c1>after</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-index-css-LC11" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>clear</span>: both;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-index-css-LC12" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>content</span>: <span class=pl-s>&quot;&quot;</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-index-css-LC13" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>display</span>: table;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-index-css-LC14" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-index-css-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-index-css-LC16" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>status</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-index-css-LC17" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>margin-bottom</span>: <span class=pl-c1>10<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-index-css-LC18" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-index-css-LC19" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-index-css-LC20" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>square</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-index-css-LC21" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>background</span>: <span class=pl-pds><span class=pl-kos>#</span>fff</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-index-css-LC22" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>border</span>: <span class=pl-c1>1<span class=pl-smi>px</span></span> solid <span class=pl-pds><span class=pl-kos>#</span>999</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-index-css-LC23" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>float</span>: left;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-index-css-LC24" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>font-size</span>: <span class=pl-c1>24<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-index-css-LC25" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>font-weight</span>: bold;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-index-css-LC26" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>line-height</span>: <span class=pl-c1>34<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-index-css-LC27" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>height</span>: <span class=pl-c1>34<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-index-css-LC28" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>margin-right</span>: -1px;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-index-css-LC29" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>margin-top</span>: -1px;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-index-css-LC30" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>padding</span>: <span class=pl-c1>0</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-index-css-LC31" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>text-align</span>: center;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-index-css-LC32" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>width</span>: <span class=pl-c1>34<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-index-css-LC33" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-index-css-LC34" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-index-css-LC35" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>square</span>:<span class=pl-c1>focus</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-index-css-LC36" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>outline</span>: none;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-index-css-LC37" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-index-css-LC38" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-index-css-LC39" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>kbd-navigation</span> .<span class=pl-c1>square</span>:<span class=pl-c1>focus</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-index-css-LC40" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>background</span>: <span class=pl-pds><span class=pl-kos>#</span>ddd</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-index-css-LC41" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-index-css-LC42" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-index-css-LC43" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>game</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-index-css-LC44" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>display</span>: flex;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-index-css-LC45" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>flex-direction</span>: row;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-index-css-LC46" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-index-css-LC47" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-index-css-LC48" class="blob-code blob-code-inner js-file-line">.<span class=pl-c1>game-info</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-index-css-LC49" class="blob-code blob-code-inner js-file-line">  <span class=pl-c1>margin-left</span>: <span class=pl-c1>20<span class=pl-smi>px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-index-css-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-index-css-LC50" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae/raw/bda9be734381f0f7ce1b74ce2243ebeaf184d967/index.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/saitoxu/7ca9e498ef04e1c65be01751631a1eae#file-index-css">index.css</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p></section><hr style="margin-bottom:1.45rem"/><footer></footer></article><ins class=" adsbygoogle" style="display:block" data-ad-client="ca-pub-9850282304993778" data-ad-slot="1979280137" data-ad-layout="in-article" data-ad-layout-key="" data-ad-format="fluid" data-full-width-responsive="false"></ins><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="next" href="/2017/03/react-dnd-sample">← <!-- -->React DnDを使ってみた</a></li><li><a rel="prev" href="/2017/03/es6-tutorial">Yarn + webpack + BabelでES6入門<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Yosuke Saito</footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-37617637-3', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2017/03/react-tic-tac-toe";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e4dbeb61faa1c68958b1.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-889d416fe066a8b8c3bd.js"],"component---src-templates-tag-page-js":["/component---src-templates-tag-page-js-4c962b602a3fd1be224b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-51a47645d34d07ad4ea6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ca5b3eecc617d9659430.js"],"component---src-pages-about-js":["/component---src-pages-about-js-8acd6d5ef360b3c11714.js"]};/*]]>*/</script><script src="/webpack-runtime-1c39489b9f92f74a76c6.js" async=""></script><script src="/styles-f1b6d0f80cdf5e16b149.js" async=""></script><script src="/app-e4dbeb61faa1c68958b1.js" async=""></script><script src="/commons-6d97bf0d5f2f53da620a.js" async=""></script><script src="/component---src-templates-blog-post-js-889d416fe066a8b8c3bd.js" async=""></script></body><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></html>
