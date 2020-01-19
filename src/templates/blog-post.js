@@ -65,13 +65,15 @@ class BlogPostTemplate extends React.Component {
           <footer />
         </article>
 
-        <AdSense.Google
-          client="ca-pub-9850282304993778"
-          slot="1979280137"
-          style={{ display: "block" }}
-          layout="in-article"
-          format="fluid"
-        />
+        <div>
+          <AdSense.Google
+            client="ca-pub-9850282304993778"
+            slot="1979280137"
+            style={{ display: "block" }}
+            layout="in-article"
+            format="fluid"
+          />
+        </div>
 
         {/* <AdSense.Google
           client="ca-pub-9850282304993778"
