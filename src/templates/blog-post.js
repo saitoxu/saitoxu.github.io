@@ -72,7 +72,8 @@ class BlogPostTemplate extends React.Component {
             slot="1979280137"
             style={{ display: "block" }}
             layout="in-article"
-            format="fluid"
+            format="auto"
+            responsive
           />
         </div>
 
