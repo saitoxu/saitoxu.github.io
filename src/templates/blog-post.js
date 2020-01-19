@@ -67,6 +67,7 @@ class BlogPostTemplate extends React.Component {
 
         <div>
           <AdSense.Google
+            key={uri}
             client="ca-pub-9850282304993778"
             slot="1979280137"
             style={{ display: "block" }}
