@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AdSense from "react-adsense"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -106,6 +107,15 @@ class Layout extends React.Component {
           </a>
         </header>
         <main>{children}</main>
+        <AdSense.Google
+          key={location}
+          client="ca-pub-9850282304993778"
+          slot="1979280137"
+          style={{ display: "block" }}
+          layout="in-article"
+          format="auto"
+          responsive
+        />
         <footer>© {new Date().getFullYear()}, Yosuke Saito</footer>
       </div>
     )

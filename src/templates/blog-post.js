@@ -65,7 +65,7 @@ class BlogPostTemplate extends React.Component {
           <footer />
         </article>
 
-        <div>
+        {/* <div>
           <AdSense.Google
             key={uri}
             client="ca-pub-9850282304993778"
@@ -75,7 +75,7 @@ class BlogPostTemplate extends React.Component {
             format="auto"
             responsive
           />
-        </div>
+        </div> */}
 
         {/* <AdSense.Google
           client="ca-pub-9850282304993778"
