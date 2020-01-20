@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
-import Ad from '../components/ad'
 
 class Layout extends React.Component {
   render() {
@@ -107,7 +106,6 @@ class Layout extends React.Component {
           </a>
         </header>
         <main>{children}</main>
-        <Ad />
         <footer style={{ textAlign: 'center' }}>© {new Date().getFullYear()}, Yosuke Saito</footer>
       </div>
     )

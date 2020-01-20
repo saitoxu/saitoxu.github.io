@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from "../components/tags"
+import Ad from '../components/ad'
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -65,17 +66,9 @@ class BlogPostTemplate extends React.Component {
           <footer />
         </article>
 
-        {/* <div>
-          <AdSense.Google
-            key={uri}
-            client="ca-pub-9850282304993778"
-            slot="1979280137"
-            style={{ display: "block" }}
-            layout="in-article"
-            format="auto"
-            responsive
-          />
-        </div> */}
+        <div style={{ marginBottom: rhythm(1) }}>
+          <Ad />
+        </div>
 
         {/* <AdSense.Google
           client="ca-pub-9850282304993778"
@@ -103,6 +96,7 @@ class BlogPostTemplate extends React.Component {
                 </Link>
               )}
             </li>
+            <li style={{ width: 10 }} />
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">

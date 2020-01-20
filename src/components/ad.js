@@ -8,7 +8,7 @@ export default class Ad extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(this.showAd, 500)
+    setTimeout(this.showAd, 800)
   }
   
   showAd = () => {
