@@ -96,7 +96,7 @@ module.exports = {
         short_name: `saitoxu.io`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#007acc`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
       },

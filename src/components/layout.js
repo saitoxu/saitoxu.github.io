@@ -108,7 +108,7 @@ class Layout extends React.Component {
         </header>
         <main>{children}</main>
         <Ad />
-        <footer>© {new Date().getFullYear()}, Yosuke Saito</footer>
+        <footer style={{ textAlign: 'center' }}>© {new Date().getFullYear()}, Yosuke Saito</footer>
       </div>
     )
   }
