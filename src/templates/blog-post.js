@@ -58,6 +58,9 @@ class BlogPostTemplate extends React.Component {
           </header>
           <Tags tags={post.frontmatter.tags} />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div style={{ marginBottom: rhythm(1) }}>
+            <Ad />
+          </div>
           <hr
             style={{
               marginBottom: rhythm(1),
@@ -65,19 +68,6 @@ class BlogPostTemplate extends React.Component {
           />
           <footer />
         </article>
-
-        <div style={{ marginBottom: rhythm(1) }}>
-          <Ad />
-        </div>
-
-        {/* <AdSense.Google
-          client="ca-pub-9850282304993778"
-          slot="6628204643"
-          style={{ display: "block" }}
-          layout="in-article"
-          format="fluid"
-        /> */}
-
         <nav>
           <ul
             style={{
