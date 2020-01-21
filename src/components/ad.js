@@ -2,27 +2,15 @@ import React from "react";
 // import AdSense from "react-adsense"
 
 export default class Ad extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { show: false }
-  }
-
   componentDidMount() {
-    setTimeout(this.showAd, 800)
+    try {
+      if (window) (window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (_error) {
+      // do nothing
+    }
   }
   
-  showAd = () => {
-    this.setState({ show: true }, () => {
-      try {
-        if (window) (window.adsbygoogle = window.adsbygoogle || []).push({})
-      } catch (_error) {
-        // do nothing
-      }
-    })
-  }
-
   render() {
-    if (!this.state.show) return null
     return (
       <ins className="adsbygoogle"
         style={{ display: "block" }}
