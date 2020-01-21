@@ -49,6 +49,9 @@ const typography = new Typography({
       "a:visited": {
         color: linkColor,
       },
+      code: {
+        fontSize: '1em'
+      }
     }
   },
 })
