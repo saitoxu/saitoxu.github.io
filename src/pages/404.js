@@ -21,7 +21,7 @@ class NotFoundPage extends React.Component {
             { name: `keywords`, content: keywords.join(",") },
           ]}
         />
-        <h1 style={{ textAlign: 'center', marginBottom: 160 }}>404 Not Found 🙈</h1>
+        <h1 style={{ textAlign: 'center', marginBottom: 160 }}>404 Not Found <span role="img" aria-label="monkey">🙈</span></h1>
       </Layout>
     )
   }
