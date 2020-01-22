@@ -6,17 +6,17 @@ tags:
   - Gatsby
 ---
 
-このブログはJekyllとGitHub Pagesを利用して公開しているのですが、
+このブログはJekyllとGitHub Pagesを利用して公開していたのですが、
 最近Gatsbyに移行したのでそのときの手順をまとめておきます。
 
 ## Jekyllのソースを退避
 
-Jekyllのソースを`jekyll`のようなディレクトリに退避させます。
+まず`jekyll`のようなディレクトリを作成し、Jekyllのソースを退避させます。
 
 ## Gatsbyのプロジェクト作成
 
-Gatsbyのディレクトリ`gatsby`を作成してその下で以下を実行します。
-Gatsbyは空のディレクトリでないとこけるため。
+Gatsbyのプロジェクトを作成します。
+Gatsbyは空のディレクトリでないと実行できないため、`gatsby`のようなディレクトリを作成し、その下で以下を実行します。
 
 ```sh
 $ npx gatsby new . https://github.com/gatsbyjs/gatsby-starter-blog
@@ -26,15 +26,15 @@ $ npx gatsby new . https://github.com/gatsbyjs/gatsby-starter-blog
 
 ## `gh-pages`をインストール
 
-GitHub Pagesを使ってホストする場合は、Gatsbyのプラグインである[gh-pages]()をインストールします。
+GitHub Pagesを使ってホストする場合は、Gatsbyのプラグインである[gh-pages](https://github.com/tschaub/gh-pages)をインストールします。
 
 ```sh
 $ npm install gh-pages --save-dev
 ```
 
-デプロイ時は`npm run deploy`を実行します。
+`package.json`にデプロイコマンドを追記します。
 
-```json
+```diff
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -51,10 +51,12 @@ $ npm install gh-pages --save-dev
 
 ## Jekyllの記事を移行
 
-`jekyll/_posts`以下にあるmdファイルを、`content/blog`など`gatsby-source-filesystem`が読み込むディレクトリに移行します。
+`jekyll/_posts`以下にあるマークダウンを、`content/blog`などの`gatsby-source-filesystem`が読み込むディレクトリに移行します。
 自分はそれなりにファイル数が多かったので、スクリプトを書いて移行しました。
 
 ### 移行前
+
+移行前は次のような構成になってると思いますが
 
 ```sh
 jekyll/_posts
@@ -64,6 +66,8 @@ jekyll/_posts
 ```
 
 ### 移行後
+
+移行後は次のようになります。
 
 ```sh
 content/blog
@@ -83,7 +87,6 @@ content/blog
 
 記事に紐づく画像も、`content/assets`などに移行します。
 最後にJekyllのソースを退避させた`jekyll`ディレクトリを削除します。
-
 これで移行が完了しました。
 
 ## その他

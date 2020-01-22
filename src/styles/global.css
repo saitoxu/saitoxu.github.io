@@ -1,0 +1,13 @@
+div.gatsby-highlight {
+  margin-bottom: 1.45rem;
+}
+
+code[class*="language-"] {
+  color: #36313d;
+  font-size: 0.85em;
+  font-family: Consolas,"Roboto Mono","Liberation Mono",Menlo,Courier,monospace;
+}
+
+pre[class*="language-"] {
+  border-radius: 3px;
+}
