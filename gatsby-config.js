@@ -68,7 +68,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              noInlineHighlight: true,
+              noInlineHighlight: false,
               aliases: {
                 sh: "bash",
                 rb: "ruby",
