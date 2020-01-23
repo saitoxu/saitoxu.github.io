@@ -87,13 +87,6 @@ content/blog
 
 記事に紐づく画像も、`content/assets`などに移行します。
 最後にJekyllのソースを退避させた`jekyll`ディレクトリを削除します。
-これで移行が完了しました。
 
-## その他
-
-* CNAMEは/staticに移行
-* masterブランチにぶちまけられる
-* タグの追加 https://suzukalight.com/2019-07-06-tags/
-* 抜粋の対応 https://qiita.com/K-Kachi/items/03259fe07d1d3b89d6f3
-* 末尾のスラッシュ除去 https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-remove-trailing-slashes
-* slugifyの利用 https://github.com/simov/slugify
+`npm run deploy`を実行すると`master`ブランチにビルドされたファイルがコミットされ、ページが公開されます。
+これにて移行完了です。
