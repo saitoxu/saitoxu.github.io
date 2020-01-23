@@ -1,6 +1,6 @@
 ---
 title: ブログをJekyllからGatsbyに移行しました
-date: "2020-01-25T00:00:00.000Z"
+date: "2020-01-24T00:00:00.000Z"
 tags:
   - Jekyll
   - Gatsby
