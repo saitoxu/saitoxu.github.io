@@ -4,6 +4,7 @@ date: "2020-01-24T00:00:00.000Z"
 tags:
   - Jekyll
   - Gatsby
+ogp: ./ogp.png
 ---
 
 このブログはJekyllとGitHub Pagesを利用して公開していたのですが、
