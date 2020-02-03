@@ -6,5 +6,5 @@ My blog & portfolio site
 
 ```sh
 $ npm install
-$ npm run develop
+$ npm run dev
 ```
