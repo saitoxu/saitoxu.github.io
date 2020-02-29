@@ -8,3 +8,9 @@ My blog & portfolio site
 $ npm install
 $ npm run dev
 ```
+
+## Publishment
+
+```sh
+$ npm run deploy
+```
