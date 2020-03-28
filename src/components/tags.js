@@ -5,7 +5,7 @@ import slugify from "slugify"
 const Tag = ({ tag }) => (
   <Link
     to={`/tags/${slugify(tag, { remove: /[*+~.()'"!:@]/g, lower: true })}`}
-    style={{ marginRight: 8 }}
+    style={{ marginRight: 10 }}
   >
     #{tag}
   </Link>

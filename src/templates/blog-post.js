@@ -9,19 +9,28 @@ import Ad from '../components/ad'
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
+  constructor(props) {
+    super(props)
+    // NOTE: たまにprops.data.markdownRemarkがnullになりエラーになるため,
+    // 前の内容をstateにキャッシュしておく
+    // ref. https://github.com/gatsbyjs/gatsby/issues/11183
+    this.state = { oldPost: props.data.markdownRemark }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.data.markdownRemark) {
+      this.setState({ oldPost: nextProps.data.markdownRemark })
+    }
+  }
+
   render() {
     const { uri } = this.props
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.markdownRemark || this.state.oldPost
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
     const keywords = post.frontmatter.tags.join(",")
-    const defaultOgpSrc = this.props.data.ogp.childImageSharp.fixed.src
-    const ogpImage = `${siteUrl}${
-      post.frontmatter.ogp
-        ? post.frontmatter.ogp.childImageSharp.fixed.src
-        : defaultOgpSrc
-    }`
+    const ogpImage = `https://res.cloudinary.com/saitoxu/image/upload/l_text:NotoSansJP-Bold.otf_50:${post.frontmatter.title},co_rgb:333,w_1000,c_fit/v1585389194/blog_ogp_bg.png`
 
     const url = `${siteUrl}${uri}`
 
