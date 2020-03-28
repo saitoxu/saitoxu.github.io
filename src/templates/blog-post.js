@@ -17,6 +17,17 @@ class BlogPostTemplate extends React.Component {
     this.state = { oldPost: props.data.markdownRemark }
   }
 
+  componentDidMount() {
+    // Load AddToAny script asynchronously
+    (function() {
+      var a = document.createElement('script');
+      a.async = true;
+      a.src = 'https://static.addtoany.com/menu/page.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a, s);
+    })();
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.data.markdownRemark) {
       this.setState({ oldPost: nextProps.data.markdownRemark })
@@ -67,6 +78,12 @@ class BlogPostTemplate extends React.Component {
           </header>
           <Tags tags={post.frontmatter.tags} />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_dd" href="https://www.addtoany.com/share" />
+            <a class="a2a_button_facebook" />
+            <a class="a2a_button_twitter" />
+            <a class="a2a_button_hatena" />
+          </div>
           <div style={{ marginBottom: rhythm(1) }}>
             <Ad />
           </div>
