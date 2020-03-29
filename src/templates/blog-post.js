@@ -18,14 +18,30 @@ class BlogPostTemplate extends React.Component {
   }
 
   componentDidMount() {
-    // Load AddToAny script asynchronously
-    // (function() {
-    //   var a = document.createElement('script');
-    //   a.async = true;
-    //   a.src = 'https://static.addtoany.com/menu/page.js';
-    //   var s = document.getElementsByTagName('script')[0];
-    //   s.parentNode.insertBefore(a, s);
-    // })();
+    // hatena bookmark
+    (function() {
+      var a = document.createElement('script')
+      a.async = true
+      a.src = 'https://b.st-hatena.com/js/bookmark_button.js'
+      var s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(a, s)
+    })()
+
+    // twitter
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+      t._e = []
+      t.ready = function(f) {
+        t._e.push(f)
+      }
+      return t
+    }(document, 'script', 'twitter-wjs'))
   }
 
   componentWillReceiveProps(nextProps) {
@@ -42,8 +58,8 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const keywords = post.frontmatter.tags.join(",")
     const ogpImage = `https://res.cloudinary.com/saitoxu/image/upload/l_text:NotoSansJP-Bold.otf_50:${post.frontmatter.title},co_rgb:333,w_1000,c_fit/v1585389194/blog_ogp_bg.png`
-
     const url = `${siteUrl}${uri}`
+    const shareSuffix = ' | saitoxu.io (@saitoxu)'
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -78,12 +94,25 @@ class BlogPostTemplate extends React.Component {
           </header>
           <Tags tags={post.frontmatter.tags} />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          {/* <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-            <a class="a2a_dd" href="https://www.addtoany.com/share" />
-            <a class="a2a_button_facebook" />
-            <a class="a2a_button_twitter" />
-            <a class="a2a_button_hatena" />
-          </div> */}
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <a class="twitter-share-button"
+              href={`https://twitter.com/intent/tweet?text=${post.frontmatter.title}${shareSuffix}`}
+            >Tweet</a>
+            <div style={{ width: 10 }} />
+            <a href="https://b.hatena.ne.jp/entry/"
+              class="hatena-bookmark-button"
+              data-hatena-bookmark-layout="basic-label-counter"
+              data-hatena-bookmark-lang="ja"
+              title="このエントリーをはてなブックマークに追加"
+            >
+              <img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
+                alt="このエントリーをはてなブックマークに追加"
+                width="20"
+                height="20"
+                style={{ border: 'none' }}
+              />
+            </a>
+          </div>
           <div style={{ marginBottom: rhythm(1) }}>
             <Ad />
           </div>
