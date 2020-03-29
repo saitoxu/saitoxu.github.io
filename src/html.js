@@ -15,6 +15,7 @@ export default function HTML(props) {
           async
           src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

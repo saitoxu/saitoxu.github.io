@@ -28,20 +28,7 @@ class BlogPostTemplate extends React.Component {
     })()
 
     // twitter
-    window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {}
-      if (d.getElementById(id)) return t
-      js = d.createElement(s)
-      js.id = id
-      js.src = 'https://platform.twitter.com/widgets.js'
-      fjs.parentNode.insertBefore(js, fjs)
-      t._e = []
-      t.ready = function(f) {
-        t._e.push(f)
-      }
-      return t
-    }(document, 'script', 'twitter-wjs'))
+    window.twttr.widgets.load(this.refs.tweetButton)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -95,12 +82,13 @@ class BlogPostTemplate extends React.Component {
           <Tags tags={post.frontmatter.tags} />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <a class="twitter-share-button"
+            <a ref="tweetButton"
+              className="twitter-share-button"
               href={`https://twitter.com/intent/tweet?text=${post.frontmatter.title}${shareSuffix}`}
             >Tweet</a>
             <div style={{ width: 10 }} />
             <a href="https://b.hatena.ne.jp/entry/"
-              class="hatena-bookmark-button"
+              className="hatena-bookmark-button"
               data-hatena-bookmark-layout="basic-label-counter"
               data-hatena-bookmark-lang="ja"
               title="このエントリーをはてなブックマークに追加"
