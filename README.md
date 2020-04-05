@@ -12,5 +12,5 @@ $ npm run dev
 ## Publishment
 
 ```sh
-$ npm run deploy
+$ npm run publish
 ```

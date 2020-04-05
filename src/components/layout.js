@@ -17,6 +17,9 @@ class Layout extends React.Component {
             marginTop: 0,
             marginBottom: 0,
             flex: 1,
+            // h3のサイズに変更
+            fontSize: '1.31951rem',
+            lineHeight: 1.1
           }}
         >
           <Link
