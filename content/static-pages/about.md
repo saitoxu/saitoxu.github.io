@@ -2,7 +2,22 @@
 title: About
 ---
 
-## **Yosuke Saito**
+## Yosuke Saito
+
+English version is below.
+
+1989年生まれ、東京在住のソフトウェアエンジニアです。
+フロントエンド開発からインフラ構築まで幅広い経験があります。
+特に以下が得意です。
+
+* React.jsを使ったSPA開発
+* React Nativeを使ったアプリ開発
+* Ruby on Railsを使ったAPI開発
+* Pythonを使った機械学習基盤の開発
+
+現在は株式会社Caratの共同創業者兼CTOとして、
+レコメンド型転職アプリ「GLIT」を日本一使われる転職サービスにすべく、
+日々開発に勤しんでいます。
 
 I'm a software engineer with extensive experience from web front to cloud infrastructure construction.
 Especially I'm good at the following.
@@ -16,14 +31,14 @@ My current goal is to make [GLIT](https://glit.io), which I'm developing in my c
 
 ## Work Experiences
 
-### **[Carat Inc.](https://www.caratinc.jp)**
+### [Carat Inc.](https://www.caratinc.jp)
 
 Co-Founder & CTO (2016/12 - Current)
 
 In charge of developing and operating AI recruitment app [GLIT](https://glit.io).
 I'm programming myself and managing some members.
 
-### **[SHIFT, Inc.](http://www.shiftinc.jp)**
+### [SHIFT, Inc.](http://www.shiftinc.jp)
 
 Lead Engineer (2014/04 - 2016/11)
 
@@ -33,11 +48,11 @@ Managed the offshore company engineers in India.
 
 ## Education
 
-### **Kyoto University, Japan**
+### Kyoto University, Japan
 
 M.S. in Social Informatics (2012/04 - 2014/03)
 
-### **Kyoto University, Japan**
+### Kyoto University, Japan
 
 B.S. in Informatics (2008/04 - 2012/03)
 
