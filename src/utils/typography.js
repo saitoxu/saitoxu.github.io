@@ -51,6 +51,9 @@ const typography = new Typography({
       },
       code: {
         fontSize: '1em'
+      },
+      p: {
+        lineHeight: 1.66
       }
     }
   },
