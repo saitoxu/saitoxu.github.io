@@ -64,7 +64,8 @@ class BlogPostTemplate extends React.Component {
             <h1
               style={{
                 marginTop: rhythm(1),
-                marginBottom: 0,
+                lineHeight: 1.2,
+                marginBottom: rhythm(0.6)
               }}
             >
               {post.frontmatter.title}
@@ -81,27 +82,32 @@ class BlogPostTemplate extends React.Component {
           </header>
           <Tags tags={post.frontmatter.tags} />
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <a ref="tweetButton"
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <a
+              ref="tweetButton"
               className="twitter-share-button"
               href={`https://twitter.com/intent/tweet?text=${post.frontmatter.title}${shareSuffix}`}
-            >Tweet</a>
+            >
+              Tweet
+            </a>
             <div style={{ width: 10 }} />
-            <a href="https://b.hatena.ne.jp/entry/"
+            <a
+              href="https://b.hatena.ne.jp/entry/"
               className="hatena-bookmark-button"
               data-hatena-bookmark-layout="basic-label-counter"
               data-hatena-bookmark-lang="ja"
               title="このエントリーをはてなブックマークに追加"
             >
-              <img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
+              <img
+                src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
                 alt="このエントリーをはてなブックマークに追加"
                 width="20"
                 height="20"
-                style={{ border: 'none' }}
+                style={{ border: "none" }}
               />
             </a>
           </div>
-          <div style={{ marginBottom: rhythm(1) }}>
+          <div style={{ marginBottom: rhythm(1), minHeight: "280px" }}>
             <Ad />
           </div>
           <hr
@@ -119,7 +125,7 @@ class BlogPostTemplate extends React.Component {
               justifyContent: `space-between`,
               listStyle: `none`,
               padding: 0,
-              marginLeft: 0
+              marginLeft: 0,
             }}
           >
             <li>
