@@ -7,9 +7,20 @@ import Tags from "../components/tags"
 import { rhythm, scale } from "../utils/typography"
 
 class AboutPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { oldPost: props.data.markdownRemark }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.data.markdownRemark) {
+      this.setState({ oldPost: nextProps.data.markdownRemark })
+    }
+  }
+
   render() {
     const { data } = this.props
-    const post = data.markdownRemark
+    const post = data.markdownRemark || this.state.oldPost
     const siteTitle = data.site.siteMetadata.title
     const { siteUrl, keywords } = data.site.siteMetadata
     const ogpImage = `${siteUrl}${data.ogp.childImageSharp.fixed.src}`
