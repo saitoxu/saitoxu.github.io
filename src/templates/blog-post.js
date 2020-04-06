@@ -107,9 +107,8 @@ class BlogPostTemplate extends React.Component {
               />
             </a>
           </div>
-          <div style={{ marginBottom: rhythm(1), minHeight: "280px" }}>
-            <Ad />
-          </div>
+          <Ad />
+          <div style={{ marginBottom: rhythm(1) }} />
           <hr
             style={{
               marginBottom: rhythm(1),
