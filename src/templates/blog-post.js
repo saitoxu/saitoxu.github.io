@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
     // NOTE: たまにprops.data.markdownRemarkがnullになりエラーになるため,
     // 前の内容をstateにキャッシュしておく
     // ref. https://github.com/gatsbyjs/gatsby/issues/11183
-    this.state = { oldPost: props.data.markdownRemark }
+    this.state = { oldPost: props.data.markdownRemark, adShown: false }
   }
 
   componentDidMount() {
@@ -29,6 +29,15 @@ class BlogPostTemplate extends React.Component {
 
     // twitter
     window.twttr.widgets.load(this.refs.tweetButton)
+
+    // AdSenseのロード失敗時にiframeがリンクに被らないようにマージンを挿入する
+    const intervalId = setInterval(() => {
+      const ad = document.getElementsByClassName('adsbygoogle')[0]
+      if (ad.clientHeight > 0) {
+        this.setState({ adShown: true })
+        clearInterval(intervalId)
+      }
+    }, 1000)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -39,7 +48,8 @@ class BlogPostTemplate extends React.Component {
 
   render() {
     const { uri } = this.props
-    const post = this.props.data.markdownRemark || this.state.oldPost
+    const { oldPost, adShown } = this.state
+    const post = this.props.data.markdownRemark || oldPost
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
@@ -108,12 +118,9 @@ class BlogPostTemplate extends React.Component {
             </a>
           </div>
           <Ad />
+          {!adShown && <div style={{ height: '280px'}} />}
           <div style={{ marginBottom: rhythm(1) }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <hr style={{ marginBottom: rhythm(1) }} />
           <footer />
         </article>
         <nav>
