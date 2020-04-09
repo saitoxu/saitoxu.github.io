@@ -3,6 +3,15 @@ import React from "react";
 
 export default class Ad extends React.Component {
   componentDidMount() {
+    const target = document.getElementsByClassName('adsbygoogle')[0]
+    const observer = new MutationObserver(records => {
+      this.props.onLoad(records[0].target)
+    })
+    observer.observe(target, {
+      attributes: true,
+      attributeFilter: ['style']
+    })
+
     try {
       if (window) (window.adsbygoogle = window.adsbygoogle || []).push({})
     } catch (_error) {
