@@ -8,6 +8,8 @@ import Tags from "../components/tags"
 import Ad from '../components/ad'
 import { rhythm, scale } from "../utils/typography"
 
+import 'katex/dist/katex.min.css'
+
 class BlogPostTemplate extends React.Component {
   constructor(props) {
     super(props)
