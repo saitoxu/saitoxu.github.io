@@ -44,7 +44,6 @@ class BlogPostTemplate extends React.Component {
   }
 
   render() {
-    const { uri } = this.props
     const { oldPost, adLoadFailed } = this.state
     const post = this.props.data.markdownRemark || oldPost
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -52,8 +51,9 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const keywords = post.frontmatter.tags
     const ogpImage = `https://res.cloudinary.com/saitoxu/image/upload/l_text:NotoSansJP-Bold.otf_50:${post.frontmatter.title},co_rgb:333,w_1000,c_fit/v1585389194/blog_ogp_bg.png`
-    const url = `${siteUrl}${uri}`
+    const url = `${siteUrl}${post.fields.slug}`
     const shareSuffix = ' | saitoxu.io (@saitoxu)'
+    console.log(url)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -172,6 +172,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
