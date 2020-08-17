@@ -50,7 +50,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
-    const keywords = post.frontmatter.tags.join(",")
+    const keywords = post.frontmatter.tags
     const ogpImage = `https://res.cloudinary.com/saitoxu/image/upload/l_text:NotoSansJP-Bold.otf_50:${post.frontmatter.title},co_rgb:333,w_1000,c_fit/v1585389194/blog_ogp_bg.png`
     const url = `${siteUrl}${uri}`
     const shareSuffix = ' | saitoxu.io (@saitoxu)'
@@ -60,11 +60,9 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          meta={[
-            { property: `og:url`, content: url },
-            { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords },
-          ]}
+          url={url}
+          image={ogpImage}
+          keywords={keywords}
         />
         <article>
           <header>

@@ -31,11 +31,9 @@ class AboutPage extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          meta={[
-            { property: `og:url`, content: url },
-            { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords.join(",") },
-          ]}
+          url={url}
+          image={ogpImage}
+          keywords={keywords}
         />
         <article>
           <header>

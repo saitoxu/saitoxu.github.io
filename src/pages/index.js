@@ -18,11 +18,9 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="saitoxu.io"
-          meta={[
-            { property: `og:url`, content: siteUrl },
-            { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords.join(",") },
-          ]}
+          url={siteUrl}
+          image={ogpImage}
+          keywords={keywords}
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

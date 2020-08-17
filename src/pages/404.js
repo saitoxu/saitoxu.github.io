@@ -15,11 +15,9 @@ class NotFoundPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="404 Not Found"
-          meta={[
-            { property: `og:url`, content: siteUrl },
-            { property: `og:image`, content: ogpImage },
-            { name: `keywords`, content: keywords.join(",") },
-          ]}
+          url={siteUrl}
+          image={ogpImage}
+          keywords={keywords}
         />
         <h1 style={{ textAlign: 'center', marginBottom: 160 }}>404 Not Found <span role="img" aria-label="monkey">🙈</span></h1>
       </Layout>

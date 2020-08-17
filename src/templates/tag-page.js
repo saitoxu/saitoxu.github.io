@@ -18,11 +18,9 @@ const TagPageTemplate = ({ data, location, pageContext }) => {
       <SEO
         title={tagName}
         description={`${tagName}タグを含む記事の一覧ページです`}
-        meta={[
-          { property: `og:url`, content: url },
-          { property: `og:image`, content: ogpImage },
-          { name: `keywords`, content: keywords.join(",") },
-        ]}
+        url={url}
+        image={ogpImage}
+        keywords={keywords}
       />
       <div className="top">
         <h1>#{tagName}</h1>
