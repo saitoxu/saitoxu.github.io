@@ -115,12 +115,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    { 
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true,
-      },
-    },
     `gatsby-plugin-remove-trailing-slashes`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
