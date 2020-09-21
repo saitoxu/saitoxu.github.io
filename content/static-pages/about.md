@@ -10,8 +10,8 @@ English version is below.
 フロントエンド開発からインフラ構築まで一通り一人でこなすことができます。
 0→1の開発が得意で、現職では主に以下の業務に携わっています。
 
-* React.jsを使ったSPA開発
-* React Nativeを使ったiOSアプリ開発
+* Reactを使ったSPA開発
+* React Nativeを使ったiOS/Androidアプリ開発
 * Ruby on Railsを使ったREST API開発
 * Pythonを使った機械学習基盤の開発
 
