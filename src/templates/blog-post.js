@@ -53,7 +53,6 @@ class BlogPostTemplate extends React.Component {
     const ogpImage = `https://res.cloudinary.com/saitoxu/image/upload/l_text:NotoSansJP-Bold.otf_50:${post.frontmatter.title},co_rgb:333,w_1000,c_fit/v1585389194/blog_ogp_bg.png`
     const url = `${siteUrl}${post.fields.slug}`
     const shareSuffix = ' | saitoxu.io (@saitoxu)'
-    console.log(url)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

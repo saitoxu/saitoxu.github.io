@@ -138,3 +138,15 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+
+li {
+	margin-bottom: 0.4rem;
+}
+
+li > p {
+	margin-bottom: 0.4rem;
+}
+
+li > ul {
+	margin-top: 0;
+}
