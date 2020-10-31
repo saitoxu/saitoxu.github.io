@@ -53,8 +53,7 @@ const typography = new Typography({
         fontSize: '1em'
       },
       p: {
-        lineHeight: 1.66,
-        whiteSpace: 'pre-wrap'
+        lineHeight: 1.66
       }
     }
   },
