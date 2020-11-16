@@ -289,3 +289,28 @@ $$
 \tag{1.53}
 p(\textsf{\textbf{x}}|\mu, \sigma^2)= \prod_{n=1}^{N}\mathcal{N}(x_n|\mu,\sigma^2)
 $$
+
+$$
+\tag{1.54}
+\ln p(\textsf{\textbf{x}}|\mu, \sigma^2) = -\frac{1}{2\sigma^2}\sum_{n=1}^{N}(x_n-\mu)^2 - \frac{N}{2}\ln \sigma^2 - \frac{N}{2} \ln (2\pi)
+$$
+
+$$
+\tag{1.55}
+\mu_{\text{ML}} = \frac{1}{N} \sum_{n=1}^{N}x_n
+$$
+
+$$
+\tag{1.56}
+\sigma_{\text{ML}}^2 = \frac{1}{N} \sum_{n=1}^{N}(x_n - \mu_{\text{ML}})^2
+$$
+
+$$
+\tag{1.57}
+\mathbb{E}[\mu_{\text{ML}}] = \mu
+$$
+
+$$
+\tag{1.58}
+\mathbb{E}[\sigma_{\text{ML}}^2] = \left( \frac{N - 1}{N} \right) \sigma^2
+$$
