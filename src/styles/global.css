@@ -150,3 +150,10 @@ li > p {
 li > ul {
 	margin-top: 0;
 }
+
+blockquote {
+	border-left: solid 2px #999;
+	color: #999;
+	margin-left: 0;
+	padding-left: 1.45rem;
+}
