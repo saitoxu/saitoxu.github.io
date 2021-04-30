@@ -17,6 +17,8 @@ English version is below.
 
 現在は株式会社Caratの共同創業者兼CTOとして、レコメンド型転職アプリ「[GLIT](https://glit.io)(グリットと読みます)」を日本一使われる転職サービスにすべく、日々開発に勤しんでいます。
 
+2021年4月から博士後期課程に進学し、会社の業務をこなしつつ推薦システムの研究にも従事しています。
+
 ### 経歴
 
 #### 株式会社Carat (2016-12 - 現在)
@@ -31,7 +33,11 @@ English version is below.
 
 ### 学歴
 
-#### 京都大学大学院情報学研究科 (2012-04 - 2014-03)
+#### 京都大学大学院情報学研究科 博士課程 (2021-04 - 現在)
+
+推薦システムの研究を行っています。
+
+#### 京都大学大学院情報学研究科 修士課程 (2012-04 - 2014-03)
 
 某広告代理店との共同研究で、広告オークションにおける経済学の手法を応用した入札戦略の研究を行っていました。
 
@@ -51,6 +57,8 @@ Especially I'm good at the following.
 
 My current goal is to make [GLIT](https://glit.io), which I'm developing in my company, the best recruitment service in Japan.
 
+I'm working on researching about recommendation systems from April 2021.
+
 ### Work Experiences
 
 #### Carat Inc (2016-12 - Current)
@@ -66,5 +74,6 @@ Managed the offshore company engineers in India.
 
 ### Education
 
-* Kyoto University, Japan M.S. in Social Informatics (2012-04 - 2014-03)
-* Kyoto University, Japan B.S. in Informatics (2008-04 - 2012-03)
+* Ph.D. Student in Social Informatics, Graduate School of Informatics, Kyoto University (2021-04 - Current)
+* M.S. in Social Informatics, Graduate School of Informatics, Kyoto University (2012-04 - 2014-03)
+* B.S. in Informatics, Kyoto University (2008-04 - 2012-03)
