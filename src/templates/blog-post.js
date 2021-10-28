@@ -160,7 +160,7 @@ export const pageQuery = graphql`
         siteUrl
       }
     }
-    ogp: file(absolutePath: { regex: "\/content\/assets\/ogp.png" }) {
+    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
       childImageSharp {
         fixed(width: 1200, height: 630) {
           ...GatsbyImageSharpFixed
