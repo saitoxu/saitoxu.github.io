@@ -8,7 +8,7 @@ import { rhythm } from "../utils/typography"
 const TagPageTemplate = ({ data, location, pageContext }) => {
   const url = `${data.site.siteMetadata.siteUrl}${location.pathname}`
   const siteTitle = data.site.siteMetadata.title
-  const ogpImage = `${data.site.siteMetadata.siteUrl}${data.ogp.childImageSharp.fixed.src}`
+  const ogpImage = `${data.site.siteMetadata.siteUrl}${data.ogp.childImageSharp.gatsbyImageData.src}`
   const { keywords } = data.site.siteMetadata
   const tagName = pageContext.slug
   const posts = data.allMarkdownRemark.edges
@@ -60,41 +60,38 @@ const TagPageTemplate = ({ data, location, pageContext }) => {
 
 export default TagPageTemplate
 
-export const pageQuery = graphql`
-  query($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        description
-        siteUrl
-        keywords
-      }
+export const pageQuery = graphql`query ($slug: String!) {
+  site {
+    siteMetadata {
+      title
+      description
+      siteUrl
+      keywords
     }
-    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
-      childImageSharp {
-        fixed(width: 1200, height: 630) {
-          ...GatsbyImageSharpFixed
+  }
+  ogp: file(absolutePath: {regex: "/content/assets/ogp.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 1200, height: 630, layout: FIXED)
+    }
+  }
+  allMarkdownRemark(
+    filter: {frontmatter: {tags: {in: [$slug]}}}
+    sort: {fields: [frontmatter___date], order: DESC}
+    limit: 1000
+  ) {
+    edges {
+      node {
+        excerpt(truncate: true)
+        fields {
+          slug
         }
-      }
-    }
-    allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$slug] } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 1000
-    ) {
-      edges {
-        node {
-          excerpt(truncate: true)
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-          }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          tags
         }
       }
     }
   }
+}
 `

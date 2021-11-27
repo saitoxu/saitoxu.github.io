@@ -12,7 +12,7 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const { siteUrl, keywords } = data.site.siteMetadata
     const posts = data.allMarkdownRemark.edges
-    const ogpImage = `${siteUrl}${data.ogp.childImageSharp.fixed.src}`
+    const ogpImage = `${siteUrl}${data.ogp.childImageSharp.gatsbyImageData.src}`
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -56,39 +56,36 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-        keywords
-      }
+export const pageQuery = graphql`{
+  site {
+    siteMetadata {
+      title
+      siteUrl
+      keywords
     }
-    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
-      childImageSharp {
-        fixed(width: 1200, height: 630) {
-          ...GatsbyImageSharpFixed
+  }
+  ogp: file(absolutePath: {regex: "/content/assets/ogp.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 1200, height: 630, layout: FIXED)
+    }
+  }
+  allMarkdownRemark(
+    filter: {fields: {slug: {ne: "/about"}}}
+    sort: {fields: [frontmatter___date], order: DESC}
+  ) {
+    edges {
+      node {
+        excerpt(truncate: true)
+        fields {
+          slug
         }
-      }
-    }
-    allMarkdownRemark(
-      filter: { fields: { slug: { ne: "/about" } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          excerpt(truncate: true)
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-          }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          tags
         }
       }
     }
   }
+}
 `

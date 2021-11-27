@@ -23,7 +23,7 @@ class AboutPage extends React.Component {
     const post = data.markdownRemark || this.state.oldPost
     const siteTitle = data.site.siteMetadata.title
     const { siteUrl, keywords } = data.site.siteMetadata
-    const ogpImage = `${siteUrl}${data.ogp.childImageSharp.fixed.src}`
+    const ogpImage = `${siteUrl}${data.ogp.childImageSharp.gatsbyImageData.src}`
     const url = `${siteUrl}${post.fields.slug}`
 
     return (
@@ -71,34 +71,31 @@ class AboutPage extends React.Component {
 
 export default AboutPage
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-        keywords
-      }
-    }
-    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
-      childImageSharp {
-        fixed(width: 1200, height: 630) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    markdownRemark(fields: { slug: { eq: "/about" } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        tags
-      }
-      fields {
-        slug
-      }
+export const pageQuery = graphql`{
+  site {
+    siteMetadata {
+      title
+      siteUrl
+      keywords
     }
   }
+  ogp: file(absolutePath: {regex: "/content/assets/ogp.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 1200, height: 630, layout: FIXED)
+    }
+  }
+  markdownRemark(fields: {slug: {eq: "/about"}}) {
+    id
+    excerpt(pruneLength: 160)
+    html
+    frontmatter {
+      title
+      date(formatString: "MMMM DD, YYYY")
+      tags
+    }
+    fields {
+      slug
+    }
+  }
+}
 `
