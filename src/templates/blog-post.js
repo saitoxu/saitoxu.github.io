@@ -152,40 +152,35 @@ class BlogPostTemplate extends React.Component {
 
 export default BlogPostTemplate
 
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-      }
+export const pageQuery = graphql`query BlogPostBySlug($slug: String!) {
+  site {
+    siteMetadata {
+      title
+      siteUrl
     }
-    ogp: file(absolutePath: { regex: "/content/assets/ogp.png/" }) {
-      childImageSharp {
-        fixed(width: 1200, height: 630) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+  }
+  ogp: file(absolutePath: {regex: "/content/assets/ogp.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 1200, height: 630, layout: FIXED)
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        tags
-        ogp {
-          childImageSharp {
-            fixed(width: 1200, height: 630) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+  }
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    id
+    excerpt(pruneLength: 160)
+    html
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      date(formatString: "MMMM DD, YYYY")
+      tags
+      ogp {
+        childImageSharp {
+          gatsbyImageData(width: 1200, height: 630, layout: FIXED)
         }
       }
     }
   }
+}
 `
