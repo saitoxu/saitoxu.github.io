@@ -13,9 +13,7 @@ tags:
 
 自分はSIGIR'21で発表された[Learning Recommender Systems with Implicit Feedback via Soft Target Enhancement](https://dl.acm.org/doi/abs/10.1145/3404835.3462863)について発表しました(発表時間は10分)。この研究ではImplicit Feedbackを使った推薦タスクにおける、Softmax Lossを使う場合の効果的な学習方法の提案を行っています。詳しくはスライドを見てみてください。
 
-<div style="text-align: center;">
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3c3db53ad9d74f9a80b8f70a573b9b15" title="論文紹介: Learning Recommender Systems with Implicit Feedback via Soft Target Enhancement (SIGIR’21)" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-</div>
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/3c3db53ad9d74f9a80b8f70a573b9b15" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="encrypted-media;"></iframe></div>
 <br />
 
 やや自分の専門とずれるので読むのに少し苦労しましたが、その分色々な知識を得ることができました。参加者の方から質問もたくさんもらうことができ、これもまた非常に勉強になりました。
