@@ -2,6 +2,7 @@
 title: CTOになって1年経ったので雑に振り返ってみる
 date: "2017-12-31T00:00:00.000Z"
 tags:
+  - Look Back
   - Daily
   - Startup
 ogp: ./2017-12-31-ogp.png

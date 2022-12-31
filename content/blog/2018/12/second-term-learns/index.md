@@ -2,6 +2,7 @@
 title: 創業2期目を終えて - 今期得た4つの学び
 date: "2018-12-31T00:00:00.000Z"
 tags:
+  - Look Back
   - Startup
 ogp: ./12-31-ogp.png
 ---

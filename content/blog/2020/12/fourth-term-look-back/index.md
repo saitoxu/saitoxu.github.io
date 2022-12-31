@@ -2,6 +2,7 @@
 title: 4期目の振り返り
 date: "2020-12-28T00:00:00.000Z"
 tags:
+  - Look Back
   - Startup
   - Business
 ---

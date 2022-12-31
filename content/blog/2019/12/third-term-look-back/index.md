@@ -2,6 +2,7 @@
 title: 3期目の振り返り
 date: "2019-12-31T00:00:00.000Z"
 tags:
+  - Look Back
   - Startup
 ogp: ./12-31-ogp.png
 ---
