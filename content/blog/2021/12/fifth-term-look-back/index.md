@@ -2,6 +2,7 @@
 title: 5期目の振り返り
 date: "2021-12-30T00:00:00.000Z"
 tags:
+  - Look Back
   - Startup
   - Business
 ---
