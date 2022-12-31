@@ -5,7 +5,6 @@ tags:
   - Look Back
   - Startup
   - Doctor
-ogp: ./kotora.jpg
 ---
 
 毎年恒例の今年の振り返り記事です。
