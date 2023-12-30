@@ -1,69 +1,29 @@
 {
-  "name": "saitoxu.io",
+  "name": "saitoxu.github.io",
+  "version": "0.1.0",
   "private": true,
-  "description": "Yosuke Saito's Blog",
-  "version": "1.0.0",
-  "author": "Yosuke Saito <yosuke.saito1202@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/saitoxu/saitoxu.github.io/issues"
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "gatsby": "^4.0.0",
-    "gatsby-image": "^2.2.34",
-    "gatsby-plugin-feed": "^4.2.0",
-    "gatsby-plugin-google-analytics": "^4.2.0",
-    "gatsby-plugin-image": "^2.2.0",
-    "gatsby-plugin-manifest": "^4.2.0",
-    "gatsby-plugin-offline": "^5.2.0",
-    "gatsby-plugin-react-helmet": "^5.2.0",
-    "gatsby-plugin-sharp": "^4.2.0",
-    "gatsby-plugin-typography": "^4.2.0",
-    "gatsby-remark-copy-linked-files": "^5.2.0",
-    "gatsby-remark-embed-gist": "^1.1.9",
-    "gatsby-remark-images": "^6.2.0",
-    "gatsby-remark-katex": "^6.2.0",
-    "gatsby-remark-prismjs": "^6.2.0",
-    "gatsby-remark-responsive-iframe": "^5.2.0",
-    "gatsby-remark-smartypants": "^5.2.0",
-    "gatsby-source-filesystem": "^4.2.0",
-    "gatsby-transformer-remark": "^5.2.0",
-    "gatsby-transformer-sharp": "^4.2.0",
-    "katex": "^0.15.1",
-    "prismjs": "^1.17.1",
-    "react": "^17.0.2",
-    "react-adsense": "^0.1.0",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-typography": "^0.16.19",
-    "sharp": "^0.29.3",
-    "slugify": "^1.6.3",
-    "typeface-merriweather": "^1.1.13",
-    "typeface-montserrat": "^1.1.13",
-    "typography": "^0.16.19",
-    "typography-theme-doelger": "^0.16.19"
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "gatsby-plugin-remove-trailing-slashes": "^4.2.0",
-    "gh-pages": "^3.2.3",
-    "prettier": "^2.5.0"
-  },
-  "homepage": "https://saitoxu.io",
-  "keywords": [
-    "gatsby"
-  ],
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/saitoxu/saitoxu.github.io.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json}\"",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "publish": "gatsby build && gh-pages -d public -b master",
-    "dev": "npm run develop"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
