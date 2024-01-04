@@ -5,7 +5,7 @@ import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
 
-const font = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
+const font = Noto_Sans_JP({ weight: ["400", "700"], subsets: ["latin"] });
 
 const title = "saitoxu.io";
 const description =
@@ -65,9 +65,11 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={font.className}>
-        <Header />
-        {children}
-        <Footer />
+        <div className="flex justify-center max-w-3xl flex-col mx-auto p-4">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

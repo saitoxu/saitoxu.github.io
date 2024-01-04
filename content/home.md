@@ -1,4 +1,4 @@
-# Yosuke Saito
+# Yosuke Saito 👋
 
 English version is below.
 

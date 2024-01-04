@@ -6,7 +6,7 @@ import html from "remark-html";
 export default async function Home() {
   const content = await getContent();
   return (
-    <main className="text-lg">
+    <main className="markdown">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </main>
   );

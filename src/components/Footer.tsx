@@ -1,9 +1,7 @@
 const Footer = () => {
   return (
-    <footer>
-      <div>
-        <div>© {new Date().getFullYear()}, Yosuke Saito</div>
-      </div>
+    <footer className="pt-8 text-center">
+      <div>© {new Date().getFullYear()}, Yosuke Saito</div>
     </footer>
   );
 };
