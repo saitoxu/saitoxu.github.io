@@ -13,7 +13,7 @@ export default async function Page() {
 }
 
 async function getContent() {
-  const filePath = path.join(process.cwd(), "content", "home.md");
+  const filePath = path.join(process.cwd(), "content", "en.md");
   const fileContent = fs.readFileSync(filePath, "utf8");
   const processedContent = await remark().use(html).process(fileContent);
   const content = processedContent.toString();
