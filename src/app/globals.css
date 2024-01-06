@@ -104,3 +104,9 @@
 .markdown .highlight pre {
   @apply bg-gray-100 !important;
 }
+
+@media (hover: hover) {
+  a:any-link:hover {
+    @apply underline;
+  }
+}
