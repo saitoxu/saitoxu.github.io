@@ -8,7 +8,7 @@ const Header = () => {
           saitoxu.io
         </Link>
         <div>
-          <Link href="/">JA🇯🇵</Link> / <Link href="/en">EN🇺🇸</Link>
+          <Link href="/">🇯🇵JA</Link> / <Link href="/en">🇺🇸EN</Link>
         </div>
       </div>
     </header>
