@@ -7,20 +7,8 @@ import "./globals.css";
 
 const font = Noto_Sans_JP({ weight: ["400", "700"], subsets: ["latin"] });
 
-const title = "saitoxu.io";
-const description =
-  "Web開発や機械学習, プロダクトマネジメントなどについて雑多に書きます。";
-const keywords = [
-  "Web",
-  "AI",
-  "Machine Learning",
-  "Product Management",
-  "プロダクト開発",
-  "saitoxu",
-  "Yosuke Saito",
-  "斎藤",
-  "斎藤陽介",
-];
+const title = "Yosuke Saito";
+const description = "I'm a full-stack developer based in Tokyo, Japan.";
 
 export const viewport = {
   width: "device-width",
@@ -31,7 +19,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://saitoxu.io"),
   title,
   description,
-  keywords,
   openGraph: {
     title,
     description,
@@ -47,6 +34,17 @@ export const metadata: Metadata = {
     ],
     locale: "ja_JP",
     type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   twitter: {
     card: "summary_large_image",
