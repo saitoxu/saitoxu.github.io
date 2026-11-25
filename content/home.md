@@ -39,6 +39,28 @@
 
 インターネット広告の掲載順序の最適化に関する研究を行いました。
 
+## 論文
+
+### JR4CE: Job Recommendation for Career Exploration
+
+Yosuke Saito, Kazunari Sugiyama  
+*ACM Transactions on Recommender Systems (TORS)*, 2026. [DOI](https://doi.org/10.1145/3844504)
+
+### Leveraging Multiple Behaviors and Explicit Preferences for Job Recommendation
+
+Yosuke Saito, Kazunari Sugiyama  
+*Expert Systems with Applications*, 2024. [DOI](https://doi.org/10.1016/j.eswa.2024.125149)
+
+### Multi-Behavior Job Recommendation with Dynamic Availability
+
+Yosuke Saito, Kazunari Sugiyama  
+*SIGIR-AP 2023*. [DOI](https://doi.org/10.1145/3624918.3625314)
+
+### Job Recommendation Based on Multiple Behaviors and Explicit Preferences
+
+Yosuke Saito, Kazunari Sugiyama  
+*WI-IAT 2022*. [DOI](https://doi.org/10.1109/WI-IAT55865.2022.00011)
+
 ## リンク
 
 - [GitHub](https://github.com/saitoxu)
