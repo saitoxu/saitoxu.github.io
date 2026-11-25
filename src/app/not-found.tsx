@@ -1,11 +1,7 @@
-export default async function NotFound() {
+export default function NotFound() {
   return (
-    <main>
-      <div className="py-[20vmin]">
-        <h1 className="leading-tight text-4xl font-semibold mb-4 mt-6 pb-2 text-center">
-          404 Not Found 🙈
-        </h1>
-      </div>
+    <main className="py-[20vmin] text-center">
+      <h1 className="text-4xl font-bold tracking-tight">404 Not Found 🙈</h1>
     </main>
   );
 }

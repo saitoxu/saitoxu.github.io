@@ -2,15 +2,19 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header>
-      <div className="flex flex-row justify-between">
-        <Link href="/" className="font-bold">
-          saitoxu.io
+    <header className="flex items-center justify-between pb-6 text-sm">
+      <Link href="/" className="font-bold tracking-tight text-fg">
+        saitoxu.io
+      </Link>
+      <nav className="flex gap-3 text-muted">
+        <Link href="/" className="hover:text-fg">
+          🇯🇵 JA
         </Link>
-        <div>
-          <Link href="/">🇯🇵JA</Link> / <Link href="/en">🇺🇸EN</Link>
-        </div>
-      </div>
+        <span aria-hidden>/</span>
+        <Link href="/en" className="hover:text-fg">
+          🇺🇸 EN
+        </Link>
+      </nav>
     </header>
   );
 };

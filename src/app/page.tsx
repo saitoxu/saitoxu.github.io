@@ -1,21 +1,10 @@
-import fs from "fs";
-import path from "path";
-import { remark } from "remark";
-import html from "remark-html";
+import { renderMarkdown } from "@/lib/markdown";
 
 export default async function Page() {
-  const content = await getContent();
+  const content = await renderMarkdown("home");
   return (
     <main className="markdown">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </main>
   );
-}
-
-async function getContent() {
-  const filePath = path.join(process.cwd(), "content", "home.md");
-  const fileContent = fs.readFileSync(filePath, "utf8");
-  const processedContent = await remark().use(html).process(fileContent);
-  const content = processedContent.toString();
-  return content;
 }
